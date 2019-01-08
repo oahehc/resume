@@ -46,6 +46,8 @@
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
     "@types/styled-components": "^4.1.5",
+    "grommet": "^2.2.1",
+    "normalize.css": "^8.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3",

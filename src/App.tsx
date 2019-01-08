@@ -1,13 +1,19 @@
 import React, { Component } from 'react'
+import styled from 'styled-components/macro'
+import { Button } from 'grommet'
+
+const P = styled.p`
+  color: red;
+`
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <p>
+          <P>
             Edit <code>src/App.js</code> and save to reload.
-          </p>
+          </P>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -16,6 +22,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          <Button label="Button" />
         </header>
       </div>
     )
