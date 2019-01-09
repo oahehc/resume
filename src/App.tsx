@@ -1,28 +1,24 @@
 import React, { Component } from 'react'
 import styled from 'styled-components/macro'
 import { Button } from 'grommet'
+import { I18nContext } from './Context/Context'
 
 const P = styled.p`
   color: red;
 `
 
 class App extends Component {
-  render() {
+  static contextType = I18nContext
+
+  public render() {
+    const { lang, getContent, toggleLang } = this.context
+
     return (
       <div className="App">
         <header className="App-header">
-          <P>
-            Edit <code>src/App.js</code> and save to reload.
-          </P>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <Button label="Button" />
+          <P>{lang}</P>
+          <P>{getContent('title')}</P>
+          <Button label="Button" onClick={() => toggleLang('zh')} />
         </header>
       </div>
     )
