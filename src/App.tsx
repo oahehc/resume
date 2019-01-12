@@ -1,24 +1,46 @@
-import React, { Component } from 'react'
+import React, { Component, FormEvent } from 'react'
+import styled from 'styled-components/macro'
+import { CheckBox } from 'grommet'
 import { I18nContext } from './Context/Context'
-import Header from './Components/Header/Header'
-import SegmentInfo from './Components/SegmentInfo/SegmentInfo'
-import SegmentExp from './Components/SegmentExp/SegmentExp'
-import SegmentEdu from './Components/SegmentEdu/SegmentEdu'
-import SegmentWork from './Components/SegmentWork/SegmentWork'
+
+const I18nToggle = styled.div`
+  display: flex;
+
+  label > div {
+    margin: 0 5px;
+  }
+`
 
 class App extends Component {
   static contextType = I18nContext
 
+  handleToggleLang = (event: FormEvent<HTMLInputElement>): void => {
+    const { changeLang } = this.context
+    if (event.currentTarget.checked) {
+      changeLang('zh')
+    } else {
+      changeLang('en')
+    }
+  }
+
   render() {
-    const { getContent } = this.context
+    const { lang, getContent } = this.context
 
     return (
-      <div>
-        <Header />
-        <SegmentInfo />
-        <SegmentExp />
-        <SegmentEdu />
-        <SegmentWork />
+      <div className="App">
+        <header className="App-header">
+          <p>{getContent('title')}</p>
+          <p>{getContent('skill')}</p>
+          <I18nToggle>
+            English
+            <CheckBox
+              checked={lang !== 'en'}
+              onChange={this.handleToggleLang}
+              toggle
+            />
+            中文
+          </I18nToggle>
+        </header>
       </div>
     )
   }

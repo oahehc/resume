@@ -1,27 +1,7 @@
 {
-  "resume": {
+  "title": {
     "en": "Resume",
     "zh": "履歷"
-  },
-  "name": {
-    "en": "Andrew",
-    "zh": "張哲豪"
-  },
-  "anchorInfo": {
-    "en": "Information",
-    "zh": "個人資料"
-  },
-  "anchorEdu": {
-    "en": "Education",
-    "zh": "教育程度"
-  },
-  "anchorExp": {
-    "en": "Experience",
-    "zh": "工作經歷"
-  },
-  "anchorWork": {
-    "en": "Works",
-    "zh": "作品"
   },
   "skill": {
     "en": "Skill"
