@@ -10,7 +10,7 @@ const defaultLang: string = 'en'
 export const I18nContext = React.createContext({
   lang: defaultLang,
   content: {},
-  toggleLang: (x: string) => {},
+  changeLang: (x: string): void => {},
   getContent: (x: string): string => x,
 })
 
@@ -24,7 +24,7 @@ export default class Context extends React.Component<ContextProps, any> {
     }
   }
 
-  toggleLang = (lang: string): void => {
+  changeLang = (lang: string): void => {
     this.setState({ lang })
   }
 
@@ -47,7 +47,7 @@ export default class Context extends React.Component<ContextProps, any> {
         value={{
           lang,
           content,
-          toggleLang: this.toggleLang,
+          changeLang: this.changeLang,
           getContent: this.getContent,
         }}
       >
