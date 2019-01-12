@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import cx from 'classnames'
 import styled from 'styled-components/macro'
+import { Local, Briefcase, Book, Code } from 'grommet-icons'
 import { I18nContext } from '../../Context/Context'
 import I18nToggle from '../I18nToggle/I18nToggle'
 
@@ -8,68 +9,91 @@ const HeaderWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: sticky;
-  top: 0;
   height: 50px;
 `
 const Link = styled.a`
+  display: flex;
+  align-items: center;
   margin: 0 8px;
   cursor: pointer;
   text-decoration: none;
 
-  &:hover,
-  &.active {
+  &:hover > div,
+  &.active > div {
     border-bottom: 2px solid red;
   }
+
+  & > svg {
+    margin-right: 5px;
+  }
 `
+// const Aside = styled.div`
+//   position: fixed;
+//   top: 200px;
+//   right: 5px;
+//   display: flex;
+//   flex-direction: column;
+
+//   & > a {
+//     cursor: pointer;
+//     padding: 5px;
+//   }
+
+//   & > a:nth-child(1) {
+//     background-color: red;
+//   }
+// `
+
+const links = [
+  { anchor: '#info', textKey: 'anchorInfo', icon: <Local /> },
+  { anchor: '#edu', textKey: 'anchorEdu', icon: <Book /> },
+  { anchor: '#exp', textKey: 'anchorExp', icon: <Briefcase /> },
+  { anchor: '#work', textKey: 'anchorWork', icon: <Code /> },
+]
 
 class Header extends Component {
   static contextType = I18nContext
   state = {
-    anchor: window.location.hash,
+    currentAnchor: window.location.hash,
   }
 
-  changeAnchor = (anchor: string): void => {
-    this.setState({ anchor })
+  changeAnchor = (currentAnchor: string): void => {
+    this.setState({ currentAnchor })
   }
 
   render() {
     const { getContent } = this.context
-    const { anchor } = this.state
+    const { currentAnchor } = this.state
 
     return (
-      <HeaderWrapper>
-        <Link
-          className={cx({ active: anchor === '#info' })}
-          onClick={() => this.changeAnchor('#info')}
-          href="#info"
-        >
-          {getContent('anchorInfo')}
-        </Link>
-        <Link
-          className={cx({ active: anchor === '#edu' })}
-          onClick={() => this.changeAnchor('#edu')}
-          href="#edu"
-        >
-          {getContent('anchorEdu')}
-        </Link>
-        <Link
-          className={cx({ active: anchor === '#exp' })}
-          onClick={() => this.changeAnchor('#exp')}
-          href="#exp"
-        >
-          {getContent('anchorExp')}
-        </Link>
-        <Link
-          className={cx({ active: anchor === '#work' })}
-          onClick={() => this.changeAnchor('#work')}
-          href="#work"
-        >
-          {getContent('anchorWork')}
-        </Link>
-        |
-        <I18nToggle />
-      </HeaderWrapper>
+      <React.Fragment>
+        <HeaderWrapper>
+          {links.map(({ anchor, textKey, icon }) => (
+            <Link
+              className={cx({ active: anchor === currentAnchor })}
+              onClick={() => this.changeAnchor(anchor)}
+              href={anchor}
+            >
+              {icon}
+              <div>{getContent(textKey)}</div>
+            </Link>
+          ))}
+          |
+          <I18nToggle />
+        </HeaderWrapper>
+        {/* <Aside>
+          {links.map(({ anchor, textKey, icon }) => (
+            <Link
+              className={cx({ active: anchor === currentAnchor })}
+              onClick={() => this.changeAnchor(anchor)}
+              href={anchor}
+              title={getContent(textKey)}
+            >
+              {icon}
+            </Link>
+          ))}
+        </Aside> */}
+      </React.Fragment>
     )
   }
 }
