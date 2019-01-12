@@ -14,7 +14,8 @@
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
     "lint": "eslint src --ext .js,.ts,.tsx",
     "validate": "npm run lint && npm run prettier -- --list-different",
-    "precommit": "npm run tsc && lint-staged"
+    "precommit": "npm run tsc && lint-staged",
+    "postinstall": "patch-package"
   },
   "lint-staged": {
     "*.+(js|ts|tsx)": [
@@ -46,6 +47,7 @@
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
     "@types/styled-components": "^4.1.5",
+    "classnames": "^2.2.6",
     "grommet": "^2.2.1",
     "idx": "^2.5.2",
     "normalize.css": "^8.0.1",
@@ -56,9 +58,11 @@
     "typescript": "^3.2.2"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.7",
     "gh-pages": "^2.0.1",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.0",
+    "patch-package": "^5.1.1",
     "prettier": "^1.15.3",
     "typescript-eslint-parser": "^21.0.2"
   }
