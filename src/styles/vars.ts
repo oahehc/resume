@@ -17,7 +17,9 @@ export const grey5 = '#d0d6dc'
 
 // color
 export const infoColor1 = '#06886d'
+export const infoColor1Light = 'hsla(168, 92%, 88%)'
 export const infoColor2 = '#03CEA4'
+export const infoColor2Light = 'hsla(168, 97%, 92%)'
 export const infoColor3 = '#0cffcd'
 export const expColor1 = '#F4C95D'
 export const expColor2 = '#E7E393'
