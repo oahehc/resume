@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import cx from 'classnames'
 import styled from 'styled-components/macro'
-import { Local, Briefcase, Book, Code } from 'grommet-icons'
+import { Code, Tree, User } from 'grommet-icons'
 import { I18nContext } from '../../Context/Context'
 import I18nToggle from '../I18nToggle/I18nToggle'
 
@@ -45,9 +45,8 @@ const Link = styled.a`
 // `
 
 const links = [
-  { anchor: '#info', textKey: 'anchorInfo', icon: <Local /> },
-  { anchor: '#edu', textKey: 'anchorEdu', icon: <Book /> },
-  { anchor: '#exp', textKey: 'anchorExp', icon: <Briefcase /> },
+  { anchor: '#info', textKey: 'anchorInfo', icon: <User /> },
+  { anchor: '#exp', textKey: 'anchorExp', icon: <Tree /> },
   { anchor: '#work', textKey: 'anchorWork', icon: <Code /> },
 ]
 

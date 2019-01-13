@@ -11,13 +11,9 @@
     "en": "Information",
     "zh": "個人資料"
   },
-  "anchorEdu": {
-    "en": "Education",
-    "zh": "教育程度"
-  },
   "anchorExp": {
     "en": "Experience",
-    "zh": "工作經歷"
+    "zh": "學經歷"
   },
   "anchorWork": {
     "en": "Works",
