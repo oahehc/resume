@@ -25,6 +25,13 @@ const Link = styled.a`
 
   & > svg {
     margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    background: ${(props: LinkProps) => props.indicatorColor || 'black'};
+    padding: 5px;
+    border-radius: 50%;
+    fill: white;
+    stroke: white;
   }
 
   & > div:after {
@@ -46,11 +53,6 @@ const Link = styled.a`
 
     & > div:after {
       width: calc(100% - 30px);
-    }
-
-    & > svg {
-      fill: ${(props: LinkProps) => props.indicatorColor || 'inherit'};
-      stroke: ${(props: LinkProps) => props.indicatorColor || 'inherit'};
     }
   }
 `
