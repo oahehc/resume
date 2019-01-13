@@ -20,6 +20,42 @@
     "zh": "作品"
   },
   "skill": {
-    "en": "Skill"
+    "en": "Skill",
+    "zh": "技能"
+  },
+  "skillFrontEnd": {
+    "en": "Front-end",
+    "zh": "前端"
+  },
+  "skillTest": {
+    "en": "Test",
+    "zh": "測試"
+  },
+  "skillBackEnd": {
+    "en": "Back-end",
+    "zh": "後端"
+  },
+  "skillTool": {
+    "en": "Tools",
+    "zh": "開發工具"
+  },
+  "skillCICD": {
+    "en": "CI/CD"
+  },
+  "skillData": {
+    "en": "Data-analysis",
+    "zh": "資料分析"
+  },
+  "skillOthers": {
+    "en": "Others",
+    "zh": "其他"
+  },
+  "skillLang": {
+    "en": "Language",
+    "zh": "語言"
+  },
+  "skillLangContent": {
+    "en": "Mandarian, English(Toeic 830/990), Taiwanese",
+    "zh": "國語, 台語, 英文(多益 830)"
   }
 }
