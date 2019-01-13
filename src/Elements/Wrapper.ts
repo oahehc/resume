@@ -6,6 +6,9 @@ type WrapperProps = {
 }
 
 export const SegmentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
   width: calc(100% - 20px);
   box-sizing: border-box;
   padding: 10px;

@@ -21,13 +21,14 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: ${vars.linkColor};
 
     &:hover {
-      color: ${vars.grey4};
+      color: ${vars.linkColorHover};
     }
 
     &:active {
-      color: ${vars.grey2};
+      color: ${vars.linkColor};
     }
   }
 `

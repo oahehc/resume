@@ -74,15 +74,16 @@ export default class SegmentInfo extends React.Component<{}, any> {
         <Set>
           <div>
             <label>{getContent('skillFrontEnd')}</label>
-            ReactJS/VueJS/JavaScript/Typescript/jQuery, SASS/CSS, HTML5
+            ReactJS / VueJS / JavaScript / Typescript / jQuery, Styled-component
+            / SASS / CSS / CSS module, HTML5
           </div>
           <div>
             <label>{getContent('skillTest')}</label>
-            Jest/Enzyme, Cypress/testCafe/Nightwatch, eslint
+            Jest / Enzyme, Cypress / testCafe / Nightwatch, eslint
           </div>
           <div>
             <label>{getContent('skillTool')}</label>
-            Git, Webpack, Yarn/NPM, Gulp, vsCode, Slack, Jira, Confluence,
+            Git, Webpack, Yarn / NPM, Gulp, vsCode, Slack, Jira, Confluence,
             Sentry
           </div>
           <div>
@@ -100,6 +101,9 @@ export default class SegmentInfo extends React.Component<{}, any> {
           <div>
             <label>{getContent('skillOthers')}</label>
             google map API, youtube API, DFP, LineBot
+            {
+              // RoR, Phonegap, Unity, Java, Meteor, Ionic
+            }
           </div>
           <div>
             <label>{getContent('skillLang')}</label>
