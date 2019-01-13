@@ -2,9 +2,13 @@ import React from 'react'
 import { expColor1 } from '../../styles/vars'
 import { Row, ExpCardLeft, ExpCardRight } from './SegmentExp.style'
 import { SegmentWrapper } from '../../Elements/Wrapper'
+import { I18nContext } from '../../Context/Context'
 
 export default class SegmentExp extends React.Component<{}, any> {
+  static contextType = I18nContext
   render() {
+    const { getContent } = this.context
+
     return (
       <SegmentWrapper id="exp" topBorderColor={expColor1}>
         <Row>
@@ -12,10 +16,10 @@ export default class SegmentExp extends React.Component<{}, any> {
             <div>
               2018/8 ~ now @
               <a href="https://www.cnyes.com" target="blank">
-                Anue
+                {getContent('anue')}
               </a>
             </div>
-            <div>Principal Front-End Developer</div>
+            <div>{getContent('anueJobTitle')}</div>
             <div>
               <div>
                 <label>Nextjs</label>
@@ -25,7 +29,7 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <label>Styled-jsx</label>
                 <label>Jest</label>
                 <label>Enzyme</label>
-                <div>Online Media</div>
+                <div>{getContent('anueJobContent')}</div>
               </div>
             </div>
           </ExpCardLeft>
@@ -38,7 +42,7 @@ export default class SegmentExp extends React.Component<{}, any> {
                 pebblar
               </a>
             </div>
-            <div>Senior Front-End Developer</div>
+            <div>{getContent('pebblarJobTitle')}</div>
             <div>
               <div>
                 <label>React</label>
@@ -49,7 +53,41 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <label>Enzyme</label>
                 <label>GoogleMap API</label>
                 <label>Firebase</label>
-                <div>Travel Planning Application</div>
+                <div>{getContent('pebblarJobContent')}</div>
+              </div>
+            </div>
+          </ExpCardLeft>
+        </Row>
+        <Row>
+          <ExpCardLeft>
+            <div>
+              2016/06 ~ 2017/11 (17 months) @
+              <a href="http://www.flow.tw/" target="blank">
+                {getContent('flow')}
+              </a>
+            </div>
+            <div>{getContent('flowJobTitle')}</div>
+            <div>
+              <div>
+                <label>VueJS</label>
+                <label>Nightwatch</label>
+                <label>Webpack</label>
+                <label>AWS</label>
+                <div>{getContent('flowJobContent1')}</div>
+              </div>
+              <div>
+                <label>jQuery</label>
+                <label>SCSS</label>
+                <label>Gulp</label>
+                <label>AWS</label>
+                <div>{getContent('flowJobContent2')}</div>
+              </div>
+              <div>
+                <label>jQuery</label>
+                <label>Boostrap</label>
+                <label>SCSS</label>
+                <label>Gulp</label>
+                <div>{getContent('flowJobContent3')}</div>
               </div>
             </div>
           </ExpCardLeft>
@@ -60,7 +98,7 @@ export default class SegmentExp extends React.Component<{}, any> {
                 deepblu
               </a>
             </div>
-            <div>Senior Front-End Developer</div>
+            <div>{getContent('deepbluJobTitle')}</div>
             <div>
               <div>
                 <label>React(SSR)</label>
@@ -68,7 +106,7 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <label>Webpack</label>
                 <label>SCSS</label>
                 <label>CSS module</label>
-                <div>Social Platform</div>
+                <div>{getContent('deepbluJobContent1')}</div>
               </div>
               <div>
                 <label>React(SSR)</label>
@@ -76,11 +114,11 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <label>SCSS</label>
                 <label>CSS module</label>
                 <label>NodeJS</label>
-                <div>Online Shop</div>
+                <div>{getContent('deepbluJobContent2')}</div>
               </div>
               <div>
                 <label>RoR</label>
-                <div>Internal SCM system</div>
+                <div>{getContent('deepbluJobContent3')}</div>
               </div>
             </div>
           </ExpCardRight>
@@ -88,68 +126,33 @@ export default class SegmentExp extends React.Component<{}, any> {
         <Row>
           <ExpCardLeft>
             <div>
-              2016/06 ~ 2017/11 (17 months) @
-              <a href="http://www.flow.tw/" target="blank">
-                Flow INC.
+              2009/12 ~ 2016/05 (6.5 years) @
+              <a href="https://www.asus.com/tw/" target="_blank">
+                {getContent('asus')}
               </a>
             </div>
-            <div>Front-End Developer & ERP Consultant</div>
+            <div>{getContent('asusJobTitle')}</div>
             <div>
               <div>
-                <label>VueJS</label>
-                <label>Nightwatch</label>
-                <label>Webpack</label>
-                <label>AWS</label>
-                <div>Human Resource System</div>
+                <p>{getContent('asusJobContent1')}</p>
+                <div>{getContent('asusJobContent1_1')}</div>
+                <div>{getContent('asusJobContent1_2')}</div>
+                <div>{getContent('asusJobContent1_3')}</div>
               </div>
               <div>
-                <label>jQuery</label>
-                <label>SCSS</label>
-                <label>Gulp</label>
-                <label>AWS</label>
-                <div>Cloud ERP system</div>
+                <p>{getContent('asusJobContent2')}</p>
+                <div>{getContent('asusJobContent2_1')}</div>
+                <div>{getContent('asusJobContent2_2')}</div>
+                <div>{getContent('asusJobContent2_3')}</div>
+                <div>{getContent('asusJobContent2_4')}</div>
               </div>
               <div>
-                <label>jQuery</label>
-                <label>Boostrap</label>
-                <label>SCSS</label>
-                <label>Gulp</label>
-                <div>Company Website</div>
+                <p>{getContent('asusJobContent3')}</p>
+                <div>{getContent('asusJobContent3_1')}</div>
+                <div>{getContent('asusJobContent3_2')}</div>
               </div>
             </div>
           </ExpCardLeft>
-          <ExpCardRight>
-            <div>
-              2009/12 ~ 2016/05 (6.5 years) @
-              <a href="https://www.asus.com/tw/" target="_blank">
-                ASUSTek COMPUTER INC.
-              </a>
-            </div>
-            <div>Project Manager</div>
-            <div>
-              <div>
-                <p>ERP System Introduction</p>
-                <div>Key user and contact window for consultant and MIS</div>
-                <div>Schedule control</div>
-                <div>Program test</div>
-                <div>Internal train and document edit</div>
-                <div>Process improve</div>
-              </div>
-              <div>
-                <p>Supply Chain Management</p>
-                <div>Inventory analysis and control</div>
-                <div>Manufacture and delivery control</div>
-                <div>Cost management</div>
-                <div>Market trend research</div>
-                <div>EMS coordinator</div>
-              </div>
-              <div>
-                <p>Internal Instructor</p>
-                <div>Employee recruit</div>
-                <div>Basic knowledge and process training</div>
-              </div>
-            </div>
-          </ExpCardRight>
         </Row>
       </SegmentWrapper>
     )

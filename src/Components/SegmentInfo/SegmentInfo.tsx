@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import { infoColor1, infoColor2, infoColor2Light } from '../../styles/vars'
 import { Github, LinkedinOption, MailOption, Terminal } from 'grommet-icons'
-import { I18nContext } from '../../Context/Context'
+import { infoColor1, infoColor2, infoColor2Light } from '../../styles/vars'
 import { SegmentWrapper } from '../../Elements/Wrapper'
+import { I18nContext } from '../../Context/Context'
 
 const List = styled.div`
   display: flex;

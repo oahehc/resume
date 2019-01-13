@@ -5,10 +5,16 @@ const ExpCardBase = css`
   border-top: 5px solid ${expColor2};
   box-shadow: 0 0 2px 0 ${grey3};
   padding: 10px;
+  margin-bottom: 10px;
 
   & > div:nth-child(1) {
     font-size: 14px;
     font-weight: 300;
+
+    a {
+      margin-left: 3px;
+      font-weight: 800;
+    }
   }
 
   & > div:nth-child(2) {
@@ -25,7 +31,7 @@ const ExpCardBase = css`
     }
 
     & > div {
-      padding: 0 5px;
+      padding: 2px 5px 0 5px;
 
       &:before {
         content: '➥';
