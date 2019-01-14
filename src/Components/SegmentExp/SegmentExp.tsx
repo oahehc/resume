@@ -1,6 +1,12 @@
 import React from 'react'
 import { expColor1 } from '../../styles/vars'
-import { Row, ExpCardLeft, ExpCardRight } from './SegmentExp.style'
+import {
+  Title,
+  GridContainer,
+  GridItemLeft,
+  GridItemRight,
+  TimeLine,
+} from './SegmentExp.style'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { I18nContext } from '../../Context/Context'
 
@@ -11,8 +17,10 @@ export default class SegmentExp extends React.Component<{}, any> {
 
     return (
       <SegmentWrapper id="exp" topBorderColor={expColor1}>
-        <Row>
-          <ExpCardLeft>
+        <Title>{getContent('expTitle')}</Title>
+        <GridContainer>
+          <TimeLine isStart />
+          <GridItemRight>
             <div>
               2018/8 ~ now @
               <a href="https://www.cnyes.com" target="blank">
@@ -32,10 +40,8 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <div>{getContent('anueJobContent')}</div>
               </div>
             </div>
-          </ExpCardLeft>
-        </Row>
-        <Row>
-          <ExpCardLeft>
+          </GridItemRight>
+          <GridItemLeft>
             <div>
               2018/4 ~ 2018/7 (4 months) @
               <a href="https://pebblar.com/" target="blank">
@@ -56,10 +62,42 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <div>{getContent('pebblarJobContent')}</div>
               </div>
             </div>
-          </ExpCardLeft>
-        </Row>
-        <Row>
-          <ExpCardLeft>
+          </GridItemLeft>
+        </GridContainer>
+        <GridContainer>
+          <TimeLine />
+          <GridItemRight>
+            <div>
+              2017/11 ~ 2018/3 (5 months) @
+              <a href="https://www.deepblu.com/discover/live" target="blank">
+                deepblu
+              </a>
+            </div>
+            <div>{getContent('deepbluJobTitle')}</div>
+            <div>
+              <div>
+                <label>React(SSR)</label>
+                <label>Redux</label>
+                <label>Webpack</label>
+                <label>SCSS</label>
+                <label>CSS module</label>
+                <div>{getContent('deepbluJobContent1')}</div>
+              </div>
+              <div>
+                <label>React(SSR)</label>
+                <label>Redux</label>
+                <label>SCSS</label>
+                <label>CSS module</label>
+                <label>NodeJS</label>
+                <div>{getContent('deepbluJobContent2')}</div>
+              </div>
+              <div>
+                <label>RoR</label>
+                <div>{getContent('deepbluJobContent3')}</div>
+              </div>
+            </div>
+          </GridItemRight>
+          <GridItemLeft>
             <div>
               2016/06 ~ 2017/11 (17 months) @
               <a href="http://www.flow.tw/" target="blank">
@@ -90,41 +128,11 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <div>{getContent('flowJobContent3')}</div>
               </div>
             </div>
-          </ExpCardLeft>
-          <ExpCardRight>
-            <div>
-              2017/11 ~ 2018/3 (5 months) @
-              <a href="https://www.deepblu.com/discover/live" target="blank">
-                deepblu
-              </a>
-            </div>
-            <div>{getContent('deepbluJobTitle')}</div>
-            <div>
-              <div>
-                <label>React(SSR)</label>
-                <label>Redux</label>
-                <label>Webpack</label>
-                <label>SCSS</label>
-                <label>CSS module</label>
-                <div>{getContent('deepbluJobContent1')}</div>
-              </div>
-              <div>
-                <label>React(SSR)</label>
-                <label>Redux</label>
-                <label>SCSS</label>
-                <label>CSS module</label>
-                <label>NodeJS</label>
-                <div>{getContent('deepbluJobContent2')}</div>
-              </div>
-              <div>
-                <label>RoR</label>
-                <div>{getContent('deepbluJobContent3')}</div>
-              </div>
-            </div>
-          </ExpCardRight>
-        </Row>
-        <Row>
-          <ExpCardLeft>
+          </GridItemLeft>
+        </GridContainer>
+        <GridContainer>
+          <TimeLine isSingle />
+          <GridItemRight>
             <div>
               2009/12 ~ 2016/05 (6.5 years) @
               <a href="https://www.asus.com/tw/" target="_blank">
@@ -152,8 +160,8 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <div>{getContent('asusJobContent3_2')}</div>
               </div>
             </div>
-          </ExpCardLeft>
-        </Row>
+          </GridItemRight>
+        </GridContainer>
       </SegmentWrapper>
     )
   }

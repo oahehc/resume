@@ -58,6 +58,10 @@
     "en": "Mandarian, English(Toeic 830/990), Taiwanese",
     "zh": "國語, 台語, 英文(多益 830)"
   },
+  "expTitle": {
+    "en": "My Experience",
+    "zh": "學經歷"
+  },
   "anue": {
     "en": "Anue",
     "zh": "鉅亨網"
@@ -120,7 +124,7 @@
   },
   "asusJobTitle": {
     "en": "Senior Project Manager",
-    "zh": "主任"
+    "zh": "專案經理"
   },
   "asusJobContent1": {
     "en": "ERP System Introduction",
