@@ -26,24 +26,26 @@ const ItemBase = css`
 
     & > p {
       margin: 0;
-      font-weight: 600;
-    }
-
-    & > div {
-      padding: 2px 5px 0 5px;
-
-      &:before {
-        content: '➥';
-        margin-right: 3px;
-      }
     }
 
     & > label {
       background-color: ${expColor3};
-      padding: 5px;
-      margin-right: 5px;
-      font-size: 14px;
+      padding: 2px 5px;
+      margin: 2px;
+      font-size: 13px;
       font-weight: 600;
+      display: inline-block;
+      border-radius: 2px;
+    }
+
+    & > div {
+      padding-top: 3px;
+      font-size: 16px;
+
+      :before {
+        content: '➥';
+        margin-right: 5px;
+      }
     }
   }
 `

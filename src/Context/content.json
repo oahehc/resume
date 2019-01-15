@@ -40,7 +40,8 @@
     "zh": "開發工具"
   },
   "skillCICD": {
-    "en": "CI/CD"
+    "en": "CI/CD",
+    "zh": "CI/CD"
   },
   "skillData": {
     "en": "Data-analysis",
@@ -71,32 +72,36 @@
     "zh": "前端部門經理"
   },
   "anueJobContent": {
-    "en": "Financial Media, Investment social platform",
-    "zh": "財經媒體業務與金融創新服務"
+    "en": [
+      "online news",
+      "stock, forex, index data integrate and virtualization",
+      "Social platform for investor"
+    ],
+    "zh": [
+      "理財網路新聞平台與記者發稿後台",
+      "國內外股市、外匯、指數等投資資訊源串接與視覺化呈現",
+      "投資社群平台"
+    ]
   },
   "pebblarJobTitle": {
     "en": "Senior Front-End Developer",
     "zh": "資深前端工程師"
   },
   "pebblarJobContent": {
-    "en": "Travel Planning Application",
-    "zh": "行程規劃系統"
+    "en": ["Travel Planning Application"],
+    "zh": ["行程規劃系統"]
   },
   "deepbluJobTitle": {
     "en": "Senior Front-End Developer",
     "zh": "資深前端工程師"
   },
   "deepbluJobContent1": {
-    "en": "Social Platform",
-    "zh": "潛水社交平台"
+    "en": ["Social Platform", "Online Shop"],
+    "zh": ["潛水社交平台", "潛水錶線上購物網站"]
   },
   "deepbluJobContent2": {
-    "en": "Online Shop",
-    "zh": "潛水錶線上購物網站"
-  },
-  "deepbluJobContent3": {
-    "en": "Internal SCM system",
-    "zh": "庫存與訂單管理系統"
+    "en": ["Internal SCM system"],
+    "zh": ["內部庫存與訂單管理系統"]
   },
   "flow": {
     "en": "Flow INC.",
@@ -107,16 +112,16 @@
     "zh": "前端工程師暨ERP導入顧問"
   },
   "flowJobContent1": {
-    "en": "Human Resource System",
-    "zh": "人力資源管理系統"
+    "en": ["Human Resource System"],
+    "zh": ["人力資源管理系統"]
   },
   "flowJobContent2": {
-    "en": "Cloud ERP system",
-    "zh": "雲端 ERP 系統"
+    "en": ["Cloud ERP system", "Data virtualization"],
+    "zh": ["雲端 ERP 系統", "資料視覺化報表"]
   },
   "flowJobContent3": {
-    "en": "Company Website",
-    "zh": "公司官網改版"
+    "en": ["Company Website"],
+    "zh": ["公司官網改版"]
   },
   "asus": {
     "en": "ASUSTek COMPUTER INC.",
@@ -126,53 +131,34 @@
     "en": "Senior Project Manager",
     "zh": "專案經理"
   },
-  "asusJobContent1": {
-    "en": "ERP System Introduction",
+  "asusJobItem1": {
+    "en": "ERP System Transition",
     "zh": "ERP 系統導入"
   },
-  "asusJobContent1_1": {
-    "en": "Design System Flow",
-    "zh": "流程設計與規劃"
+  "asusJobContent1": {
+    "en": ["Design System Flow", "Internal training", "Process improve"],
+    "zh": ["流程設計與規劃", "內部教育訓練", "流程改善"]
   },
-  "asusJobContent1_2": {
-    "en": "Internal training",
-    "zh": "內部教育訓練"
-  },
-  "asusJobContent1_3": {
-    "en": "Process improve",
-    "zh": "流程改善"
-  },
-  "asusJobContent2": {
+  "asusJobItem2": {
     "en": "Supply Chain Management",
     "zh": "供應鏈管理"
   },
-  "asusJobContent2_1": {
-    "en": "Inventory analysis and control",
-    "zh": "庫存水位分析與控管"
+  "asusJobContent2": {
+    "en": [
+      "Inventory analysis and control",
+      "Manufacture and delivery control",
+      "Cost management",
+      "Market trend research"
+    ],
+    "zh": ["庫存水位分析與控管", "生產與訂單管理", "成本管理", "市場趨勢分析"]
   },
-  "asusJobContent2_2": {
-    "en": "Manufacture and delivery control",
-    "zh": "生產與訂單管理"
-  },
-  "asusJobContent2_3": {
-    "en": "Cost management",
-    "zh": "成本管理"
-  },
-  "asusJobContent2_4": {
-    "en": "Market trend research",
-    "zh": "市場趨勢分析"
+  "asusJobItem3": {
+    "en": "Team Leader / Internal Instructor",
+    "zh": "課級主管 / 內部講師"
   },
   "asusJobContent3": {
-    "en": "Internal Instructor",
-    "zh": "內部講師"
-  },
-  "asusJobContent3_1": {
-    "en": "Employee recruit",
-    "zh": "員工招募"
-  },
-  "asusJobContent3_2": {
-    "en": "New comer training",
-    "zh": "新人教育訓練"
+    "en": ["Employee recruit", "New comer training"],
+    "zh": ["員工招募", "新人教育訓練"]
   },
   "_temp": {
     "en": "",

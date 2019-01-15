@@ -37,7 +37,11 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <label>Styled-jsx</label>
                 <label>Jest</label>
                 <label>Enzyme</label>
-                <div>{getContent('anueJobContent')}</div>
+                {getContent('anueJobContent').map(
+                  (detail: string, index: number) => (
+                    <div key={index}>{detail}</div>
+                  ),
+                )}
               </div>
             </div>
           </GridItemRight>
@@ -52,14 +56,18 @@ export default class SegmentExp extends React.Component<{}, any> {
             <div>
               <div>
                 <label>React</label>
-                <label>Redux-saga</label>
+                <label>Redux-Saga</label>
+                <label>Styled-Component</label>
                 <label>Webpack</label>
-                <label>Styled-component</label>
                 <label>Jest</label>
                 <label>Enzyme</label>
-                <label>GoogleMap API</label>
                 <label>Firebase</label>
-                <div>{getContent('pebblarJobContent')}</div>
+                <label>GoogleMap API</label>
+                {getContent('pebblarJobContent').map(
+                  (detail: string, index: number) => (
+                    <div key={index}>{detail}</div>
+                  ),
+                )}
               </div>
             </div>
           </GridItemLeft>
@@ -81,19 +89,20 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <label>Webpack</label>
                 <label>SCSS</label>
                 <label>CSS module</label>
-                <div>{getContent('deepbluJobContent1')}</div>
-              </div>
-              <div>
-                <label>React(SSR)</label>
-                <label>Redux</label>
-                <label>SCSS</label>
-                <label>CSS module</label>
                 <label>NodeJS</label>
-                <div>{getContent('deepbluJobContent2')}</div>
+                {getContent('deepbluJobContent1').map(
+                  (detail: string, index: number) => (
+                    <div key={index}>{detail}</div>
+                  ),
+                )}
               </div>
               <div>
                 <label>RoR</label>
-                <div>{getContent('deepbluJobContent3')}</div>
+                {getContent('deepbluJobContent2').map(
+                  (detail: string, index: number) => (
+                    <div key={index}>{detail}</div>
+                  ),
+                )}
               </div>
             </div>
           </GridItemRight>
@@ -111,21 +120,34 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <label>Nightwatch</label>
                 <label>Webpack</label>
                 <label>AWS</label>
-                <div>{getContent('flowJobContent1')}</div>
+                {getContent('flowJobContent1').map(
+                  (detail: string, index: number) => (
+                    <div key={index}>{detail}</div>
+                  ),
+                )}
               </div>
               <div>
                 <label>jQuery</label>
+                <label>ChartJS</label>
                 <label>SCSS</label>
                 <label>Gulp</label>
                 <label>AWS</label>
-                <div>{getContent('flowJobContent2')}</div>
+                {getContent('flowJobContent1').map(
+                  (detail: string, index: number) => (
+                    <div key={index}>{detail}</div>
+                  ),
+                )}
               </div>
               <div>
                 <label>jQuery</label>
                 <label>Boostrap</label>
                 <label>SCSS</label>
                 <label>Gulp</label>
-                <div>{getContent('flowJobContent3')}</div>
+                {getContent('flowJobContent3').map(
+                  (detail: string, index: number) => (
+                    <div key={index}>{detail}</div>
+                  ),
+                )}
               </div>
             </div>
           </GridItemLeft>
@@ -142,22 +164,28 @@ export default class SegmentExp extends React.Component<{}, any> {
             <div>{getContent('asusJobTitle')}</div>
             <div>
               <div>
-                <p>{getContent('asusJobContent1')}</p>
-                <div>{getContent('asusJobContent1_1')}</div>
-                <div>{getContent('asusJobContent1_2')}</div>
-                <div>{getContent('asusJobContent1_3')}</div>
+                <p>{getContent('asusJobItem1')}</p>
+                {getContent('asusJobContent1').map(
+                  (detail: string, index: number) => (
+                    <div key={index}>{detail}</div>
+                  ),
+                )}
               </div>
               <div>
-                <p>{getContent('asusJobContent2')}</p>
-                <div>{getContent('asusJobContent2_1')}</div>
-                <div>{getContent('asusJobContent2_2')}</div>
-                <div>{getContent('asusJobContent2_3')}</div>
-                <div>{getContent('asusJobContent2_4')}</div>
+                <p>{getContent('asusJobItem2')}</p>
+                {getContent('asusJobContent2').map(
+                  (detail: string, index: number) => (
+                    <div key={index}>{detail}</div>
+                  ),
+                )}
               </div>
               <div>
-                <p>{getContent('asusJobContent3')}</p>
-                <div>{getContent('asusJobContent3_1')}</div>
-                <div>{getContent('asusJobContent3_2')}</div>
+                <p>{getContent('asusJobItem3')}</p>
+                {getContent('asusJobContent3').map(
+                  (detail: string, index: number) => (
+                    <div key={index}>{detail}</div>
+                  ),
+                )}
               </div>
             </div>
           </GridItemRight>
