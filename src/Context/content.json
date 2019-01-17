@@ -74,11 +74,13 @@
   "anueJobContent": {
     "en": [
       "online news",
+      "internal CMS system for reporters",
       "stock, forex, index data integrate and virtualization",
       "Social platform for investor"
     ],
     "zh": [
-      "理財網路新聞平台與記者發稿後台",
+      "理財網路新聞平台",
+      "記者發稿後台",
       "國內外股市、外匯、指數等投資資訊源串接與視覺化呈現",
       "投資社群平台"
     ]

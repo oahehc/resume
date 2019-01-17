@@ -6,7 +6,7 @@ interface contentType {
   [key: string]: any
 }
 
-const defaultLang: string = 'zh'
+export const defaultLang: string = 'zh'
 export const I18nContext = React.createContext({
   lang: defaultLang,
   content: {},

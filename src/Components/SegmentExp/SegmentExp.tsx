@@ -9,9 +9,17 @@ import {
 } from './SegmentExp.style'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { I18nContext } from '../../Context/Context'
+import { getDuration } from '../../Utils/date'
 
 export default class SegmentExp extends React.Component<{}, any> {
   static contextType = I18nContext
+
+  generateDateString = (from: string, to: string): string => {
+    const { lang } = this.context
+
+    return `${from} ~ ${to} (${getDuration({ from, to, lang })}) @`
+  }
+
   render() {
     const { getContent } = this.context
 
@@ -22,7 +30,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           <TimeLine isStart />
           <GridItemRight>
             <div>
-              2018/8 ~ now @
+              {this.generateDateString('2018/8', 'now')}
               <a href="https://www.cnyes.com" target="blank">
                 {getContent('anue')}
               </a>
@@ -47,7 +55,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           </GridItemRight>
           <GridItemLeft>
             <div>
-              2018/4 ~ 2018/7 (4 months) @
+              {this.generateDateString('2018/4', '2018/7')}
               <a href="https://pebblar.com/" target="blank">
                 pebblar
               </a>
@@ -76,7 +84,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           <TimeLine />
           <GridItemRight>
             <div>
-              2017/11 ~ 2018/3 (5 months) @
+              {this.generateDateString('2017/11', '2018/3')}
               <a href="https://www.deepblu.com/discover/live" target="blank">
                 deepblu
               </a>
@@ -108,7 +116,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           </GridItemRight>
           <GridItemLeft>
             <div>
-              2016/06 ~ 2017/11 (17 months) @
+              {this.generateDateString('2016/6', '2017/10')}
               <a href="http://www.flow.tw/" target="blank">
                 {getContent('flow')}
               </a>
@@ -132,7 +140,7 @@ export default class SegmentExp extends React.Component<{}, any> {
                 <label>SCSS</label>
                 <label>Gulp</label>
                 <label>AWS</label>
-                {getContent('flowJobContent1').map(
+                {getContent('flowJobContent2').map(
                   (detail: string, index: number) => (
                     <div key={index}>{detail}</div>
                   ),
@@ -156,7 +164,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           <TimeLine isSingle />
           <GridItemRight>
             <div>
-              2009/12 ~ 2016/05 (6.5 years) @
+              {this.generateDateString('2009/12', '2016/5')}
               <a href="https://www.asus.com/tw/" target="_blank">
                 {getContent('asus')}
               </a>
