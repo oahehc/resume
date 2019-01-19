@@ -40,7 +40,8 @@
     "zh": "開發工具"
   },
   "skillCICD": {
-    "en": "CI/CD"
+    "en": "CI/CD",
+    "zh": "CI/CD"
   },
   "skillData": {
     "en": "Data-analysis",
@@ -57,5 +58,176 @@
   "skillLangContent": {
     "en": "Mandarian, English(Toeic 830/990), Taiwanese",
     "zh": "國語, 台語, 英文(多益 830)"
+  },
+  "expTitle": {
+    "en": "My Experience",
+    "zh": "學經歷"
+  },
+  "anue": {
+    "en": "Anue",
+    "zh": "鉅亨網"
+  },
+  "anueJobTitle": {
+    "en": "Front-End Team Leader",
+    "zh": "前端部門經理"
+  },
+  "anueJobContent": {
+    "en": [
+      "online news",
+      "internal CMS system for reporters",
+      "stock, forex, index data integrate and virtualization",
+      "Social platform for investor"
+    ],
+    "zh": [
+      "理財網路新聞平台",
+      "記者發稿後台",
+      "國內外股市、外匯、指數等投資資訊源串接與視覺化呈現",
+      "投資社群平台"
+    ]
+  },
+  "pebblarJobTitle": {
+    "en": "Senior Front-End Developer",
+    "zh": "資深前端工程師"
+  },
+  "pebblarJobContent": {
+    "en": ["Travel Planning Application"],
+    "zh": ["行程規劃系統"]
+  },
+  "deepbluJobTitle": {
+    "en": "Senior Front-End Developer",
+    "zh": "資深前端工程師"
+  },
+  "deepbluJobContent1": {
+    "en": ["Social Platform", "Online Shop"],
+    "zh": ["潛水社交平台", "潛水錶線上購物網站"]
+  },
+  "deepbluJobContent2": {
+    "en": ["Internal SCM system"],
+    "zh": ["內部庫存與訂單管理系統"]
+  },
+  "flow": {
+    "en": "Flow INC.",
+    "zh": "若水國際"
+  },
+  "flowJobTitle": {
+    "en": "Front-End Developer & ERP Consultant",
+    "zh": "前端工程師暨ERP導入顧問"
+  },
+  "flowJobContent1": {
+    "en": ["Human Resource System"],
+    "zh": ["人力資源管理系統"]
+  },
+  "flowJobContent2": {
+    "en": ["Cloud ERP system", "Data virtualization"],
+    "zh": ["雲端 ERP 系統", "資料視覺化報表"]
+  },
+  "flowJobContent3": {
+    "en": ["Company Website"],
+    "zh": ["公司官網改版"]
+  },
+  "asus": {
+    "en": "ASUSTek COMPUTER INC.",
+    "zh": "華碩電腦"
+  },
+  "asusJobTitle": {
+    "en": "Senior Project Manager",
+    "zh": "專案經理"
+  },
+  "asusJobItem1": {
+    "en": "ERP System Transition",
+    "zh": "ERP 系統導入"
+  },
+  "asusJobContent1": {
+    "en": ["Design System Flow", "Internal training", "Process improve"],
+    "zh": ["流程設計與規劃", "內部教育訓練", "流程改善"]
+  },
+  "asusJobItem2": {
+    "en": "Supply Chain Management",
+    "zh": "供應鏈管理"
+  },
+  "asusJobContent2": {
+    "en": [
+      "Inventory analysis and control",
+      "Manufacture and delivery control",
+      "Cost management",
+      "Market trend research"
+    ],
+    "zh": ["庫存水位分析與控管", "生產與訂單管理", "成本管理", "市場趨勢分析"]
+  },
+  "asusJobItem3": {
+    "en": "Team Leader / Internal Instructor",
+    "zh": "課級主管 / 內部講師"
+  },
+  "asusJobContent3": {
+    "en": ["Employee recruit", "New comer training"],
+    "zh": ["員工招募", "新人教育訓練"]
+  },
+  "military": {
+    "en": "Taiwan Army",
+    "zh": "陸軍"
+  },
+  "militaryJobTitle": {
+    "en": "Platoon Leader",
+    "zh": "義務役少尉排長"
+  },
+  "ntu": {
+    "en": "National Taiwan University",
+    "zh": "台灣大學"
+  },
+  "mba": {
+    "en": "MBA, master degree",
+    "zh": "商學研究所"
+  },
+  "mbaTitle": {
+    "en": "majoring in Operation Management",
+    "zh": "主修作業管理"
+  },
+  "math": {
+    "en": "Math, bachelor degree",
+    "zh": "數學系"
+  },
+  "uxCourse": {
+    "en": "UiGathering & Trend Education Foundation",
+    "zh": "UiGathering & 趨勢文教基金會"
+  },
+  "uxCourseContent": {
+    "en": "User Experience Fundamentals",
+    "zh": "走進用戶體驗的世界 UX基礎課程"
+  },
+  "onlineCourse": {
+    "en": "Online Course",
+    "zh": "線上課程"
+  },
+  "onlineCoursePlatform": {
+    "en": "Coursera, Udemy, Udacity",
+    "zh": "Coursera, Udemy, Udacity"
+  },
+  "onlineCourseContent": {
+    "en": [
+      "Algorithmic Thinking, Rice University",
+      "Game Development for Modern Platforms, MSU",
+      "Build Software Applications, Duke",
+      "Build Complete Web Solutions, HKUST",
+      "Make Compelling Design, CalArts",
+      "Web Application Development, UNM",
+      "Create a Web Experience, University Of London",
+      "Deep Learning by Google - Take machine learning to the next level",
+      "Machine Learning / MLDS course - Hung-yi Lee, NTU"
+    ],
+    "zh": [
+      "Algorithmic Thinking, Rice University",
+      "Game Development for Modern Platforms, MSU",
+      "Build Software Applications, Duke",
+      "Build Complete Web Solutions, HKUST",
+      "Make Compelling Design, CalArts",
+      "Web Application Development, UNM",
+      "Create a Web Experience, University Of London",
+      "Deep Learning by Google - Take machine learning to the next level",
+      "Machine Learning / MLDS course - Hung-yi Lee, NTU"
+    ]
+  },
+  "_temp": {
+    "en": "",
+    "zh": ""
   }
 }

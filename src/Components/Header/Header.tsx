@@ -116,6 +116,7 @@ class Header extends Component {
         <HeaderWrapper>
           {links.map(({ anchor, textKey, icon, indicatorColor }) => (
             <Link
+              key={textKey}
               className={cx({ active: anchor === currentAnchor })}
               onClick={() => this.changeAnchor(anchor)}
               href={anchor}
