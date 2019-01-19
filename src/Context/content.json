@@ -162,6 +162,70 @@
     "en": ["Employee recruit", "New comer training"],
     "zh": ["員工招募", "新人教育訓練"]
   },
+  "military": {
+    "en": "Taiwan Army",
+    "zh": "陸軍"
+  },
+  "militaryJobTitle": {
+    "en": "Platoon Leader",
+    "zh": "義務役少尉排長"
+  },
+  "ntu": {
+    "en": "National Taiwan University",
+    "zh": "台灣大學"
+  },
+  "mba": {
+    "en": "MBA, master degree",
+    "zh": "商學研究所"
+  },
+  "mbaTitle": {
+    "en": "majoring in Operation Management",
+    "zh": "主修作業管理"
+  },
+  "math": {
+    "en": "Math, bachelor degree",
+    "zh": "數學系"
+  },
+  "uxCourse": {
+    "en": "UiGathering & Trend Education Foundation",
+    "zh": "UiGathering & 趨勢文教基金會"
+  },
+  "uxCourseContent": {
+    "en": "User Experience Fundamentals",
+    "zh": "走進用戶體驗的世界 UX基礎課程"
+  },
+  "onlineCourse": {
+    "en": "Online Course",
+    "zh": "線上課程"
+  },
+  "onlineCoursePlatform": {
+    "en": "Coursera, Udemy, Udacity",
+    "zh": "Coursera, Udemy, Udacity"
+  },
+  "onlineCourseContent": {
+    "en": [
+      "Algorithmic Thinking, Rice University",
+      "Game Development for Modern Platforms, MSU",
+      "Build Software Applications, Duke",
+      "Build Complete Web Solutions, HKUST",
+      "Make Compelling Design, CalArts",
+      "Web Application Development, UNM",
+      "Create a Web Experience, University Of London",
+      "Deep Learning by Google - Take machine learning to the next level",
+      "Machine Learning / MLDS course - Hung-yi Lee, NTU"
+    ],
+    "zh": [
+      "Algorithmic Thinking, Rice University",
+      "Game Development for Modern Platforms, MSU",
+      "Build Software Applications, Duke",
+      "Build Complete Web Solutions, HKUST",
+      "Make Compelling Design, CalArts",
+      "Web Application Development, UNM",
+      "Create a Web Experience, University Of London",
+      "Deep Learning by Google - Take machine learning to the next level",
+      "Machine Learning / MLDS course - Hung-yi Lee, NTU"
+    ]
+  },
   "_temp": {
     "en": "",
     "zh": ""

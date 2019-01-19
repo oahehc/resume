@@ -1,10 +1,14 @@
 import React from 'react'
-import { expColor1 } from '../../styles/vars'
+import { expColor1, eduColor1, eduColor2, eduColor3 } from '../../styles/vars'
 import {
   Title,
   GridContainer,
   GridItemLeft,
   GridItemRight,
+  GridItemLeftShort,
+  GridItemRightShort,
+  GridItemLeftLarge,
+  GridItemRightLarge,
   TimeLine,
 } from './SegmentExp.style'
 import { SegmentWrapper } from '../../Elements/Wrapper'
@@ -114,7 +118,17 @@ export default class SegmentExp extends React.Component<{}, any> {
               </div>
             </div>
           </GridItemRight>
-          <GridItemLeft>
+          <GridItemLeft borderColor={eduColor2}>
+            <div>{this.generateDateString('2017/4', '2017/7')}</div>
+            <div>{getContent('uxCourse')}</div>
+            <div>
+              <div>{getContent('uxCourseContent')}</div>
+            </div>
+          </GridItemLeft>
+        </GridContainer>
+        <GridContainer>
+          <TimeLine />
+          <GridItemRight>
             <div>
               {this.generateDateString('2016/6', '2017/10')}
               <a href="http://www.flow.tw/" target="blank">
@@ -158,11 +172,8 @@ export default class SegmentExp extends React.Component<{}, any> {
                 )}
               </div>
             </div>
-          </GridItemLeft>
-        </GridContainer>
-        <GridContainer>
-          <TimeLine isSingle />
-          <GridItemRight>
+          </GridItemRight>
+          <GridItemLeft>
             <div>
               {this.generateDateString('2009/12', '2016/5')}
               <a href="https://www.asus.com/tw/" target="_blank">
@@ -196,70 +207,54 @@ export default class SegmentExp extends React.Component<{}, any> {
                 )}
               </div>
             </div>
-          </GridItemRight>
+          </GridItemLeft>
+        </GridContainer>
+        <GridContainer>
+          <TimeLine />
+          <GridItemRightShort>
+            <div>
+              {this.generateDateString('2008/10', '2009/9')}
+              {getContent('military')}
+            </div>
+            <div>{getContent('militaryJobTitle')}</div>
+          </GridItemRightShort>
+          <GridItemLeftShort borderColor={eduColor2}>
+            <div>
+              {this.generateDateString('2006/9', '2008/6')}
+              {getContent('ntu')}
+            </div>
+            <div>{getContent('mba')}</div>
+            <div>
+              <div>
+                <p>{getContent('mbaTitle')}</p>
+              </div>
+            </div>
+          </GridItemLeftShort>
+        </GridContainer>
+        <GridContainer>
+          <TimeLine />
+          <GridItemRightShort borderColor={eduColor2}>
+            <div>
+              {this.generateDateString('2002/9', '2006/6')}
+              {getContent('ntu')}
+            </div>
+            <div>{getContent('math')}</div>
+          </GridItemRightShort>
+          <GridItemLeft borderColor={eduColor2}>
+            <div>{getContent('onlineCourse')}</div>
+            <div>{getContent('onlineCoursePlatform')}</div>
+            <div>
+              <div>
+                {getContent('onlineCourseContent').map(
+                  (detail: string, index: number) => (
+                    <div key={index}>{detail}</div>
+                  ),
+                )}
+              </div>
+            </div>
+          </GridItemLeft>
         </GridContainer>
       </SegmentWrapper>
     )
   }
 }
-
-/*
-
-  <div class="container-fluid page" id="education" data-role="page">
-    <dl class="dl-horizontal">
-      <dt class="subtitleIcon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></dt>
-      <dd class="subtitle">Education</dd>
-      <dt>2002~2006</dt>
-      <dd>
-        Math, National Taiwan University
-        <br><cite> - bachelor degree</cite>
-      </dd>
-      <dt>2006~2008</dt>
-      <dd>
-        MBA, National Taiwan University
-        <br><cite> - master degree (majoring in Operation Management)</cite>
-      </dd>
-      <dt>201704~201707</dt>
-      <dd>
-        User Experience Fundamentals, UiGathering & Trend Education Foundation
-      </dd>
-      <dt>Online Course</dt>
-      <dd>
-        Algorithmic Thinking, Rice University
-        <!-- <br><cite> - Luay Nakhleh, Scott Rixner, Joe Warren</cite> -->
-      </dd>
-      <dd>
-        Game Development for Modern Platforms, MSU
-        <!-- <br><cite> - Brian Winn</cite> -->
-      </dd>
-      <dd>
-        Build Software Applications, Duke
-        <!-- <br><cite> - Andrew D. Hilton, Robert Duvall, Susan H. Rodger, Owen Astrachan</cite> -->
-      </dd>
-      <dd>
-        Build Complete Web Solutions, HKUST
-        <!-- <br><cite> - Jogesh K. Muppala</cite> -->
-      </dd>
-      <dd>
-        Make Compelling Design, CalArts
-        <!-- <br><cite> - Anther Kiley, Michael Worthington, Gail Swanlund, Lorraine Wild, Louise Sandhaus</cite> -->
-      </dd>
-      <dd>
-        Web Application Development, UNM
-        <!-- <br><cite> - Greg Heileman, Manel Martínez-Ramón</cite> -->
-      </dd>
-      <dd>
-        Create a Web Experience, University Of London
-        <!-- <br><cite> - Marco Gillies, James Ohene-Djan, Matthew Yee-King, Mick Grierson, Kate Devlin</cite> -->
-      </dd>
-      <dd>
-        Deep Learning by Google - Take machine learning to the next level
-        <!-- <br><cite> - Vincent Vanhoucke</cite> -->
-      </dd>
-      <dd>
-        Machine Learning / MLDS course - Hung-yi Lee, NTU
-      </dd>
-    </dl>
-  </div>
-
-*/

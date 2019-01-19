@@ -1,8 +1,12 @@
 import styled, { css } from 'styled-components/macro'
-import { expColor1, expColor2, expColor3, grey3 } from '../../styles/vars'
+import { expColor1Light, expColor2, expColor3, grey3 } from '../../styles/vars'
 
+type itemProps = {
+  borderColor?: string
+}
 const ItemBase = css`
   border-top: 5px solid ${expColor2};
+  border-top-color: ${(props: itemProps) => props.borderColor || expColor2};
   box-shadow: 0 0 2px 0 ${grey3};
   padding: 10px;
 
@@ -52,7 +56,7 @@ const ItemBase = css`
 const TimeLinePointBase = css`
   left: -14px;
   border-radius: 50%;
-  border: 10px solid ${expColor1};
+  border: 10px solid ${expColor1Light};
   background-color: white;
   content: '';
   width: 20px;
@@ -67,6 +71,8 @@ export const Title = styled.div`
 export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 2fr 80px 3fr;
+  /* grid-template-rows: auto auto auto; */
+  grid-auto-rows: minmax(10px, auto);
 `
 export const GridItemLeft = styled.div`
   ${ItemBase}
@@ -78,6 +84,27 @@ export const GridItemRight = styled.div`
   grid-column: 3 / span 1;
   grid-row: 1 / span 2;
 `
+export const GridItemLeftShort = styled.div`
+  ${ItemBase}
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+`
+export const GridItemRightShort = styled.div`
+  ${ItemBase}
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+`
+export const GridItemLeftLarge = styled.div`
+  ${ItemBase}
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 3;
+`
+export const GridItemRightLarge = styled.div`
+  ${ItemBase}
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 3;
+`
+
 type timeLineProps = {
   isStart?: boolean
   isSingle?: boolean
@@ -91,7 +118,7 @@ export const TimeLine = styled.div`
   height: ${(props: timeLineProps) =>
     props.isStart ? 'calc(100% - 10px)' : '100%'};
   width: 12px;
-  background-color: ${expColor2};
+  background-color: ${expColor1Light};
 
   &:before {
     top: ${(props: timeLineProps) => (props.isStart ? '-5px' : '5px')};
