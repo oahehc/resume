@@ -5,6 +5,7 @@
   "homepage": "https://oahehc.github.io/resume",
   "scripts": {
     "start": "PORT=3002 react-scripts start",
+    "prebuild": "echo $(git log --pretty=format:'{%n  \"date\": \"%at\"%n}' -1) > src/Assets/release.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -52,6 +53,8 @@
     "grommet-icons": "^4.1.0",
     "grommet-styles": "^0.2.0",
     "idx": "^2.5.2",
+    "logrocket": "^0.6.19",
+    "logrocket-react": "^3.0.0",
     "normalize.css": "^8.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

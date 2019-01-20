@@ -1,77 +1,10 @@
 import React, { Component } from 'react'
 import cx from 'classnames'
-import styled from 'styled-components/macro'
 import { infoColor1, expColor1, workColor1 } from '../../styles/vars'
 import { Code, Tree, User } from 'grommet-icons'
 import { I18nContext } from '../../Context/Context'
 import I18nToggle from '../I18nToggle/I18nToggle'
-
-type LinkProps = {
-  indicatorColor?: string
-}
-const HeaderWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 50px;
-`
-const Link = styled.a`
-  display: flex;
-  align-items: center;
-  margin: 0 8px;
-  cursor: pointer;
-  text-decoration: none;
-  position: relative;
-
-  & > svg {
-    margin-right: 5px;
-    width: 15px;
-    height: 15px;
-    background: ${(props: LinkProps) => props.indicatorColor || 'black'};
-    padding: 5px;
-    border-radius: 50%;
-    fill: white;
-    stroke: white;
-  }
-
-  & > div:after {
-    content: ' ';
-    position: absolute;
-    bottom: -3px;
-    left: 30px;
-    height: 3px;
-    width: 0;
-    background: ${(props: LinkProps) => props.indicatorColor || 'transparent'};
-    transition: width 0.4s ease;
-  }
-
-  &:hover,
-  &.active {
-    & > div {
-      color: ${(props: LinkProps) => props.indicatorColor || 'inherit'};
-    }
-
-    & > div:after {
-      width: calc(100% - 30px);
-    }
-  }
-`
-// const Aside = styled.div`
-//   position: fixed;
-//   top: 200px;
-//   right: 5px;
-//   display: flex;
-//   flex-direction: column;
-
-//   & > a {
-//     cursor: pointer;
-//     padding: 5px;
-//   }
-
-//   & > a:nth-child(1) {
-//     background-color: red;
-//   }
-// `
+import { HeaderWrapper, Link } from './Header.style'
 
 const links = [
   {
