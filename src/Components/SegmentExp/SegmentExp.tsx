@@ -42,13 +42,11 @@ export default class SegmentExp extends React.Component<{}, any> {
             <div>{getContent('anueJobTitle')}</div>
             <div>
               <div>
-                <label>Nextjs</label>
-                <label>React</label>
-                <label>Redux</label>
-                <label>Webpack</label>
-                <label>Styled-jsx</label>
-                <label>Jest</label>
-                <label>Enzyme</label>
+                {getContent('anueJobStack').map(
+                  (stack: string, index: number) => (
+                    <label key={index}>{stack}</label>
+                  ),
+                )}
                 {getContent('anueJobContent').map(
                   (detail: string, index: number) => (
                     <div key={index}>{detail}</div>
@@ -67,14 +65,11 @@ export default class SegmentExp extends React.Component<{}, any> {
             <div>{getContent('pebblarJobTitle')}</div>
             <div>
               <div>
-                <label>React</label>
-                <label>Redux-Saga</label>
-                <label>Styled-Component</label>
-                <label>Webpack</label>
-                <label>Jest</label>
-                <label>Enzyme</label>
-                <label>Firebase</label>
-                <label>GoogleMap API</label>
+                {getContent('pebblarJobStack').map(
+                  (stack: string, index: number) => (
+                    <label key={index}>{stack}</label>
+                  ),
+                )}
                 {getContent('pebblarJobContent').map(
                   (detail: string, index: number) => (
                     <div key={index}>{detail}</div>
@@ -96,12 +91,11 @@ export default class SegmentExp extends React.Component<{}, any> {
             <div>{getContent('deepbluJobTitle')}</div>
             <div>
               <div>
-                <label>React(SSR)</label>
-                <label>Redux</label>
-                <label>Webpack</label>
-                <label>SCSS</label>
-                <label>CSS module</label>
-                <label>NodeJS</label>
+                {getContent('deepbluJobStack1').map(
+                  (stack: string, index: number) => (
+                    <label key={index}>{stack}</label>
+                  ),
+                )}
                 {getContent('deepbluJobContent1').map(
                   (detail: string, index: number) => (
                     <div key={index}>{detail}</div>
@@ -109,7 +103,11 @@ export default class SegmentExp extends React.Component<{}, any> {
                 )}
               </div>
               <div>
-                <label>RoR</label>
+                {getContent('deepbluJobStack2').map(
+                  (stack: string, index: number) => (
+                    <label key={index}>{stack}</label>
+                  ),
+                )}
                 {getContent('deepbluJobContent2').map(
                   (detail: string, index: number) => (
                     <div key={index}>{detail}</div>
@@ -138,10 +136,11 @@ export default class SegmentExp extends React.Component<{}, any> {
             <div>{getContent('flowJobTitle')}</div>
             <div>
               <div>
-                <label>VueJS</label>
-                <label>Nightwatch</label>
-                <label>Webpack</label>
-                <label>AWS</label>
+                {getContent('flowJobStack1').map(
+                  (stack: string, index: number) => (
+                    <label key={index}>{stack}</label>
+                  ),
+                )}
                 {getContent('flowJobContent1').map(
                   (detail: string, index: number) => (
                     <div key={index}>{detail}</div>
@@ -149,11 +148,11 @@ export default class SegmentExp extends React.Component<{}, any> {
                 )}
               </div>
               <div>
-                <label>jQuery</label>
-                <label>ChartJS</label>
-                <label>SCSS</label>
-                <label>Gulp</label>
-                <label>AWS</label>
+                {getContent('flowJobStack2').map(
+                  (stack: string, index: number) => (
+                    <label key={index}>{stack}</label>
+                  ),
+                )}
                 {getContent('flowJobContent2').map(
                   (detail: string, index: number) => (
                     <div key={index}>{detail}</div>
@@ -161,10 +160,11 @@ export default class SegmentExp extends React.Component<{}, any> {
                 )}
               </div>
               <div>
-                <label>jQuery</label>
-                <label>Boostrap</label>
-                <label>SCSS</label>
-                <label>Gulp</label>
+                {getContent('flowJobStack3').map(
+                  (stack: string, index: number) => (
+                    <label key={index}>{stack}</label>
+                  ),
+                )}
                 {getContent('flowJobContent3').map(
                   (detail: string, index: number) => (
                     <div key={index}>{detail}</div>

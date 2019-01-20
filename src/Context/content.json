@@ -71,6 +71,26 @@
     "en": "Front-End Team Leader",
     "zh": "前端部門經理"
   },
+  "anueJobStack": {
+    "en": [
+      "Nextjs",
+      "React",
+      "Redux",
+      "Webpack",
+      "Styled-jsx",
+      "Jest",
+      "Enzyme"
+    ],
+    "zh": [
+      "Nextjs",
+      "React",
+      "Redux",
+      "Webpack",
+      "Styled-jsx",
+      "Jest",
+      "Enzyme"
+    ]
+  },
   "anueJobContent": {
     "en": [
       "online news",
@@ -89,6 +109,28 @@
     "en": "Senior Front-End Developer",
     "zh": "資深前端工程師"
   },
+  "pebblarJobStack": {
+    "en": [
+      "React",
+      "Redux-Sag",
+      "Styled-Component",
+      "Webpack",
+      "Jest",
+      "Enzyme",
+      "Firebase",
+      "GoogleMap API"
+    ],
+    "zh": [
+      "React",
+      "Redux-Sag",
+      "Styled-Component",
+      "Webpack",
+      "Jest",
+      "Enzyme",
+      "Firebase",
+      "GoogleMap API"
+    ]
+  },
   "pebblarJobContent": {
     "en": ["Travel Planning Application"],
     "zh": ["行程規劃系統"]
@@ -97,9 +139,17 @@
     "en": "Senior Front-End Developer",
     "zh": "資深前端工程師"
   },
+  "deepbluJobStack1": {
+    "en": ["React(SSR)", "Redux", "Webpack", "SCSS", "CSS module", "NodeJS"],
+    "zh": ["React(SSR)", "Redux", "Webpack", "SCSS", "CSS module", "NodeJS"]
+  },
   "deepbluJobContent1": {
     "en": ["Social Platform", "Online Shop"],
     "zh": ["潛水社交平台", "潛水錶線上購物網站"]
+  },
+  "deepbluJobStack2": {
+    "en": ["RoR"],
+    "zh": ["RoR"]
   },
   "deepbluJobContent2": {
     "en": ["Internal SCM system"],
@@ -113,13 +163,25 @@
     "en": "Front-End Developer & ERP Consultant",
     "zh": "前端工程師暨ERP導入顧問"
   },
+  "flowJobStack1": {
+    "en": ["VueJS", "Nightwatch", "Webpack", "AWS"],
+    "zh": ["VueJS", "Nightwatch", "Webpack", "AWS"]
+  },
   "flowJobContent1": {
     "en": ["Human Resource System"],
     "zh": ["人力資源管理系統"]
   },
+  "flowJobStack2": {
+    "en": ["jQuery", "ChartJS", "SCSS", "Gulp", "AWS"],
+    "zh": ["jQuery", "ChartJS", "SCSS", "Gulp", "AWS"]
+  },
   "flowJobContent2": {
     "en": ["Cloud ERP system", "Data virtualization"],
     "zh": ["雲端 ERP 系統", "資料視覺化報表"]
+  },
+  "flowJobStack3": {
+    "en": ["jQuery", "Boostrap", "SCSS", "Gulp"],
+    "zh": ["jQuery", "Boostrap", "SCSS", "Gulp"]
   },
   "flowJobContent3": {
     "en": ["Company Website"],
