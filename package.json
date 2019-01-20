@@ -5,6 +5,7 @@
   "homepage": "https://oahehc.github.io/resume",
   "scripts": {
     "start": "PORT=3002 react-scripts start",
+    "prebuild": "echo $(git log --pretty=format:'{%n  \"date\": \"%at\"%n}' -1) > src/Assets/release.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

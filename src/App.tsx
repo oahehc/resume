@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { I18nContext } from './Context/Context'
 import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
 import SegmentInfo from './Components/SegmentInfo/SegmentInfo'
 import SegmentExp from './Components/SegmentExp/SegmentExp'
 import SegmentWork from './Components/SegmentWork/SegmentWork'
@@ -24,6 +25,7 @@ class App extends Component {
         <SegmentInfo />
         <SegmentExp />
         <SegmentWork />
+        <Footer />
       </div>
     )
   }
