@@ -64,10 +64,6 @@ const TimeLinePointBase = css`
   position: absolute;
 `
 
-export const Title = styled.div`
-  font-weight: 800;
-`
-
 export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 2fr 80px 3fr;

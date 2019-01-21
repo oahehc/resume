@@ -1,33 +1,113 @@
 import React from 'react'
 import { workColor1 } from '../../styles/vars'
 import { SegmentWrapper } from '../../Elements/Wrapper'
+import { Title } from '../../Elements/Title'
+import IconLink from '../../Elements/IconLink'
+import { Card } from './SegmentWork.style'
+import { I18nContext } from '../../Context/Context'
 
 export default class SegmentWork extends React.Component<{}, any> {
+  static contextType = I18nContext
+
   render() {
+    const { getContent } = this.context
+
     return (
       <SegmentWrapper id="work" topBorderColor={workColor1}>
-        SegmentWork
+        <Title>{getContent('anchorWork')}</Title>
+        <Card>
+          {getContent('workDLStack').map((str: string, index: number) => (
+            <label key={index}>{str}</label>
+          ))}
+          <h4>
+            {getContent('workDL')}
+            <IconLink
+              type="github"
+              link="https://github.com/oahehc/tensorflow_example"
+            />
+          </h4>
+          <p>{getContent('workDLContent')}</p>
+        </Card>
+        <Card>
+          {getContent('workTemplateStack').map((str: string, index: number) => (
+            <label key={index}>{str}</label>
+          ))}
+          {getContent('workTemplate').map((template: any, index: number) => (
+            <h4 key={index}>
+              {template.name}
+              <IconLink type="github" link={template.link} />
+            </h4>
+          ))}
+          <p>{getContent('workTemplateContent')}</p>
+        </Card>
+
+        <Card>
+          {getContent('workOnboardStack').map((str: string, index: number) => (
+            <label key={index}>{str}</label>
+          ))}
+          <h4>
+            {getContent('workOnboard')}
+            <IconLink
+              type="github"
+              link="https://github.com/oahehc/onboarding-template"
+            />
+            <IconLink
+              type="preview"
+              link="http://onboarding-template.s3-website-us-east-1.amazonaws.com/"
+            />
+          </h4>
+          <p>{getContent('workOnboardContent')}</p>
+        </Card>
+        <Card>
+          {getContent('workLotteryStack').map((str: string, index: number) => (
+            <label key={index}>{str}</label>
+          ))}
+          <h4>
+            {getContent('workLottery')}
+            <IconLink
+              type="github"
+              link="https://github.com/oahehc/linebot-lottery"
+            />
+          </h4>
+          <p>{getContent('workLotteryContent')}</p>
+        </Card>
+        <Card>
+          {getContent('workServerlessStack').map(
+            (str: string, index: number) => (
+              <label key={index}>{str}</label>
+            ),
+          )}
+          <h4>
+            {getContent('workServerless')}
+            <IconLink
+              type="github"
+              link="https://github.com/oahehc/AWS-serverless"
+            />
+          </h4>
+          <p>{getContent('workServerlessContent')}</p>
+        </Card>
+        <Card>
+          {getContent('workShortenStack').map((str: string, index: number) => (
+            <label key={index}>{str}</label>
+          ))}
+          <h4>
+            {getContent('workShorten')}
+            <IconLink
+              type="github"
+              link="https://github.com/oahehc/openinghour-shorten"
+            />
+            <IconLink
+              type="npm"
+              link="https://www.npmjs.com/package/openinghour-shorten"
+            />
+          </h4>
+          <p>{getContent('workShortenContent')}</p>
+        </Card>
       </SegmentWrapper>
     )
   }
 }
 /*
-  <div class="container-fluid page" id="work" data-role="page">
-    <dl class="dl-horizontal">
-      <dt class="subtitleIcon"><i class="fa fa-file-code-o" aria-hidden="true"></i></dt>
-      <dd class="subtitle">Projects</dd>
-
-      <!--git repository-->
-      <dt><a href="https://github.com/oahehc/tensorflow_example">DL Model</a></dt>
-      <dd><span class="skill">Python, TensorFlow</span>DNN, CNN, RNN, VAN, GAN, autoencoder</dd>
-      <dt><a href="https://github.com/oahehc/vue-template">Vue-template</a></dt>
-      <dd><span class="skill">Vue.js</span> Vue project template modify from official template</dd>
-      <dt><a href="https://github.com/oahehc/linebot-lottery">linebot-lottery</a></dt>
-      <dd><span class="skill">LineBot, AWS lambda, Heroku</span> Auto collect lottery information and push by line message</dd>
-      <dt><a href="https://github.com/oahehc/AWS-serverless">AWS-serverless</a></dt>
-      <dd><span class="skill">AWS cognito, api gateway, S3, lambda, dynamoDB</span> An basic signUp/signIn app example create
-        by AWS serverless structure</dd>
-
       <!--Website application-->
       <dt><a href="https://music-sheet-20e93.firebaseapp.com/">MusicBook</a></dt>
       <dd><span class="skill">firebase, Vue.js</span> Sheet music with auto play and collect function</dd>

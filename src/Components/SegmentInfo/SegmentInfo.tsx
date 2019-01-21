@@ -1,45 +1,10 @@
 import React from 'react'
-import styled from 'styled-components/macro'
-import { Github, LinkedinOption, MailOption, Terminal } from 'grommet-icons'
-import { infoColor1, infoColor2, infoColor2Light } from '../../styles/vars'
+import { Github, LinkedinOption, MailOption, Code } from 'grommet-icons'
 import { SegmentWrapper } from '../../Elements/Wrapper'
+import { Title } from '../../Elements/Title'
 import { I18nContext } from '../../Context/Context'
-
-const List = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-
-  &.title {
-    font-weight: 800;
-    margin-bottom: 8px;
-  }
-
-  .space {
-    margin: 0 5px;
-  }
-
-  svg {
-    margin-right: 8px;
-  }
-`
-const Set = styled.div`
-  margin-left: 30px;
-  font-size: 16px;
-
-  & > div {
-    margin-bottom: 5px;
-  }
-
-  label {
-    background-color: ${infoColor2};
-    color: ${infoColor2Light};
-    padding: 5px 10px;
-    border-radius: 2px;
-    margin-right: 5px;
-    font-weight: 600;
-  }
-`
+import { infoColor1 } from '../../styles/vars'
+import { List, Set } from './SegmentInfo.style'
 
 export default class SegmentInfo extends React.Component<{}, any> {
   static contextType = I18nContext
@@ -48,7 +13,7 @@ export default class SegmentInfo extends React.Component<{}, any> {
 
     return (
       <SegmentWrapper id="info" topBorderColor={infoColor1}>
-        <List className="title">{getContent('name')}</List>
+        <Title>{getContent('name')}</Title>
         <List>
           <MailOption />
           <a href="mailto:chehao@ntu.edu.tw">chehao@ntu.edu.tw</a>
@@ -57,18 +22,18 @@ export default class SegmentInfo extends React.Component<{}, any> {
         </List>
         <List>
           <Github />
-          <a target="blank" href="https://github.com/oahehc">
+          <a target="_blank" href="https://github.com/oahehc">
             GitHub
           </a>
         </List>
         <List>
           <LinkedinOption />
-          <a target="blank" href="https://tw.linkedin.com/in/oahehc">
+          <a target="_blank" href="https://tw.linkedin.com/in/oahehc">
             Linkedin
           </a>
         </List>
         <List>
-          <Terminal />
+          <Code />
           {getContent('skill')}
         </List>
         <Set>
@@ -100,7 +65,7 @@ export default class SegmentInfo extends React.Component<{}, any> {
           </div>
           <div>
             <label>{getContent('skillOthers')}</label>
-            google map API, youtube API, DFP, LineBot
+            google map API, youtube API, DFP, LineBot, GA, GTM
             {
               // RoR, Phonegap, Unity, Java, Meteor, Ionic
             }

@@ -76,16 +76,7 @@
     "zh": "前端部門經理"
   },
   "anueJobStack": {
-    "en": [
-      "Nextjs",
-      "React",
-      "Redux",
-      "Webpack",
-      "Styled-jsx",
-      "Jest",
-      "Enzyme"
-    ],
-    "zh": [
+    "all": [
       "Nextjs",
       "React",
       "Redux",
@@ -114,17 +105,7 @@
     "zh": "資深前端工程師"
   },
   "pebblarJobStack": {
-    "en": [
-      "React",
-      "Redux-Sag",
-      "Styled-Component",
-      "Webpack",
-      "Jest",
-      "Enzyme",
-      "Firebase",
-      "GoogleMap API"
-    ],
-    "zh": [
+    "all": [
       "React",
       "Redux-Sag",
       "Styled-Component",
@@ -144,16 +125,14 @@
     "zh": "資深前端工程師"
   },
   "deepbluJobStack1": {
-    "en": ["React(SSR)", "Redux", "Webpack", "SCSS", "CSS module", "NodeJS"],
-    "zh": ["React(SSR)", "Redux", "Webpack", "SCSS", "CSS module", "NodeJS"]
+    "all": ["React(SSR)", "Redux", "Webpack", "SCSS", "CSS module", "NodeJS"]
   },
   "deepbluJobContent1": {
     "en": ["Social Platform", "Online Shop"],
     "zh": ["潛水社交平台", "潛水錶線上購物網站"]
   },
   "deepbluJobStack2": {
-    "en": ["RoR"],
-    "zh": ["RoR"]
+    "all": ["RoR"]
   },
   "deepbluJobContent2": {
     "en": ["Internal SCM system"],
@@ -168,24 +147,21 @@
     "zh": "前端工程師暨ERP導入顧問"
   },
   "flowJobStack1": {
-    "en": ["VueJS", "Nightwatch", "Webpack", "AWS"],
-    "zh": ["VueJS", "Nightwatch", "Webpack", "AWS"]
+    "all": ["VueJS", "Nightwatch", "Webpack", "AWS"]
   },
   "flowJobContent1": {
     "en": ["Human Resource System"],
     "zh": ["人力資源管理系統"]
   },
   "flowJobStack2": {
-    "en": ["jQuery", "ChartJS", "SCSS", "Gulp", "AWS"],
-    "zh": ["jQuery", "ChartJS", "SCSS", "Gulp", "AWS"]
+    "all": ["jQuery", "ChartJS", "SCSS", "Gulp", "AWS"]
   },
   "flowJobContent2": {
     "en": ["Cloud ERP system", "Data virtualization"],
     "zh": ["雲端 ERP 系統", "資料視覺化報表"]
   },
   "flowJobStack3": {
-    "en": ["jQuery", "Boostrap", "SCSS", "Gulp"],
-    "zh": ["jQuery", "Boostrap", "SCSS", "Gulp"]
+    "all": ["jQuery", "Boostrap", "SCSS", "Gulp"]
   },
   "flowJobContent3": {
     "en": ["Company Website"],
@@ -265,22 +241,10 @@
     "zh": "線上課程"
   },
   "onlineCoursePlatform": {
-    "en": "Coursera, Udemy, Udacity",
-    "zh": "Coursera, Udemy, Udacity"
+    "all": "Coursera, Udemy, Udacity"
   },
   "onlineCourseContent": {
-    "en": [
-      "Algorithmic Thinking, Rice University",
-      "Game Development for Modern Platforms, MSU",
-      "Build Software Applications, Duke",
-      "Build Complete Web Solutions, HKUST",
-      "Make Compelling Design, CalArts",
-      "Web Application Development, UNM",
-      "Create a Web Experience, University Of London",
-      "Deep Learning by Google - Take machine learning to the next level",
-      "Machine Learning / MLDS course - Hung-yi Lee, NTU"
-    ],
-    "zh": [
+    "all": [
       "Algorithmic Thinking, Rice University",
       "Game Development for Modern Platforms, MSU",
       "Build Software Applications, Duke",
@@ -291,6 +255,87 @@
       "Deep Learning by Google - Take machine learning to the next level",
       "Machine Learning / MLDS course - Hung-yi Lee, NTU"
     ]
+  },
+  "workDL": {
+    "en": "Deep learning model",
+    "zh": "深度學習模型"
+  },
+  "workDLStack": {
+    "all": ["Tensorflow", "Python"]
+  },
+  "workDLContent": {
+    "en": "different types of deep learning model implement by Tensorflow: DNN, CNN, RNN, GAN, DCGAN, Autoencoder...",
+    "zh": "Tensorflow 實作各類深度學習模型: DNN, CNN, RNN, GAN, DCGAN, Autoencoder..."
+  },
+  "workTemplate": {
+    "all": [
+      {
+        "link": "https://github.com/oahehc/gulp-webapp-template",
+        "name": "gulp-webapp-template"
+      },
+      {
+        "link": "https://github.com/oahehc/react-template",
+        "name": "react-template"
+      },
+      {
+        "link": "https://github.com/oahehc/vue-template",
+        "name": "vue-template"
+      },
+      {
+        "link": "https://github.com/oahehc/nuxt-template",
+        "name": "nuxt-template"
+      }
+    ]
+  },
+  "workTemplateStack": {
+    "all": ["Gulp", "React", "Vue", "Nuxt"]
+  },
+  "workTemplateContent": {
+    "en": "template create by different stack",
+    "zh": "各類技術的基本模板"
+  },
+  "workOnboard": {
+    "en": "Landing page template",
+    "zh": "Landing page 樣板"
+  },
+  "workOnboardStack": {
+    "all": ["Javascript", "SCSS", "Gulp", "Bower", "GA"]
+  },
+  "workOnboardContent": {
+    "en": "add json file and images to create landing page within 10 minutes",
+    "zh": "建立 json 設定檔與圖片即可快速建立 landing page"
+  },
+  "workLottery": {
+    "en": "Linebot for lottery",
+    "zh": "line 樂透機器人"
+  },
+  "workLotteryStack": {
+    "all": ["linebot", "NodeJS", "Heroku", "AWS lambda", "AWS cloudwatch"]
+  },
+  "workLotteryContent": {
+    "en": "Auto collect lottery information and sent message by linebot",
+    "zh": "自動收集樂透資料並透過 line 機器人傳送訊息"
+  },
+  "workServerless": {
+    "en": "AWS Serverless structure",
+    "zh": "AWS 無伺服器架構"
+  },
+  "workServerlessStack": {
+    "all": ["AWS cognito", "api gateway", "S3", "lambda", "dynamoDB"]
+  },
+  "workServerlessContent": {
+    "en": "An basic sign up/sign in application apply AWS serverless",
+    "zh": "透過 AWS 無伺服器架構建立註冊登入功能"
+  },
+  "workShorten": {
+    "all": "openinghour-shorten"
+  },
+  "workShortenStack": {
+    "all": ["Javascript", "npm"]
+  },
+  "workShortenContent": {
+    "en": "An npm package to format google map opening information to human readable string",
+    "zh": "npm 套件將 google map 營業時間轉為容易閱讀的格式"
   },
   "_temp": {
     "en": "",

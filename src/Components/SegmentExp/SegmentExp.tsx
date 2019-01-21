@@ -1,7 +1,6 @@
 import React from 'react'
-import { expColor1, eduColor1, eduColor2, eduColor3 } from '../../styles/vars'
+import { expColor1, eduColor2 } from '../../styles/vars'
 import {
-  Title,
   GridContainer,
   GridItemLeft,
   GridItemRight,
@@ -12,6 +11,7 @@ import {
   TimeLine,
 } from './SegmentExp.style'
 import { SegmentWrapper } from '../../Elements/Wrapper'
+import { Title } from '../../Elements/Title'
 import { I18nContext } from '../../Context/Context'
 import { getDuration } from '../../Utils/date'
 
@@ -35,7 +35,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           <GridItemRight>
             <div>
               {this.generateDateString('2018/8', 'now')}
-              <a href="https://www.cnyes.com" target="blank">
+              <a href="https://www.cnyes.com" target="_blank">
                 {getContent('anue')}
               </a>
             </div>
@@ -58,7 +58,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           <GridItemLeft>
             <div>
               {this.generateDateString('2018/4', '2018/7')}
-              <a href="https://pebblar.com/" target="blank">
+              <a href="https://pebblar.com/" target="_blank">
                 pebblar
               </a>
             </div>
@@ -84,7 +84,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           <GridItemRight>
             <div>
               {this.generateDateString('2017/11', '2018/3')}
-              <a href="https://www.deepblu.com/discover/live" target="blank">
+              <a href="https://www.deepblu.com/discover/live" target="_blank">
                 deepblu
               </a>
             </div>
@@ -129,7 +129,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           <GridItemRight>
             <div>
               {this.generateDateString('2016/6', '2017/10')}
-              <a href="http://www.flow.tw/" target="blank">
+              <a href="http://www.flow.tw/" target="_blank">
                 {getContent('flow')}
               </a>
             </div>

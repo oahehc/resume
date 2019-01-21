@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import cx from 'classnames'
 import { infoColor1, expColor1, workColor1 } from '../../styles/vars'
-import { Code, Tree, User } from 'grommet-icons'
+import { Iteration, Tree, User } from 'grommet-icons'
 import { I18nContext } from '../../Context/Context'
 import I18nToggle from '../I18nToggle/I18nToggle'
 import { HeaderWrapper, Link } from './Header.style'
@@ -24,7 +24,7 @@ const links = [
   {
     anchor: '#work',
     textKey: 'anchorWork',
-    icon: <Code />,
+    icon: <Iteration />,
     indicatorColor: workColor1,
     activeColor: workColor1,
   },
