@@ -6,6 +6,17 @@ import IconLink from '../../Elements/IconLink'
 import { Card } from './SegmentPortfolio.style'
 import { I18nContext } from '../../Context/Context'
 
+const projectList = [
+  'DL',
+  'Onboard',
+  'Lottery',
+  'Serverless',
+  'Shorten',
+  'MusicBook',
+  'SpeakTrainer',
+  'RestaurantLineBot',
+]
+
 export default class SegmentPortfolio extends React.Component<{}, any> {
   static contextType = I18nContext
 
@@ -15,19 +26,24 @@ export default class SegmentPortfolio extends React.Component<{}, any> {
     return (
       <SegmentWrapper id="portfolio" topBorderColor={portfolioColor1}>
         <Title>{getContent('anchorPortfolio')}</Title>
-        <Card>
-          {getContent('portfolioDLStack').map((str: string, index: number) => (
-            <label key={index}>{str}</label>
-          ))}
-          <h4>
-            {getContent('portfolioDL')}
-            <IconLink
-              type="github"
-              link="https://github.com/oahehc/tensorflow_example"
-            />
-          </h4>
-          <p>{getContent('portfolioDLContent')}</p>
-        </Card>
+        {projectList.map(project => (
+          <Card key={project}>
+            {getContent(`portfolio${project}Stack`).map(
+              (str: string, index: number) => (
+                <label key={index}>{str}</label>
+              ),
+            )}
+            <h4>
+              {getContent(`portfolio${project}`)}
+              {getContent(`portfolio${project}Link`).map(
+                ({ type, link }: any) => (
+                  <IconLink key={type} type={type} link={link} />
+                ),
+              )}
+            </h4>
+            <p>{getContent(`portfolio${project}Content`)}</p>
+          </Card>
+        ))}
         <Card>
           {getContent('portfolioTemplateStack').map(
             (str: string, index: number) => (
@@ -44,97 +60,19 @@ export default class SegmentPortfolio extends React.Component<{}, any> {
           )}
           <p>{getContent('portfolioTemplateContent')}</p>
         </Card>
-
-        <Card>
-          {getContent('portfolioOnboardStack').map(
-            (str: string, index: number) => (
-              <label key={index}>{str}</label>
-            ),
-          )}
-          <h4>
-            {getContent('portfolioOnboard')}
-            <IconLink
-              type="github"
-              link="https://github.com/oahehc/onboarding-template"
-            />
-            <IconLink
-              type="preview"
-              link="http://onboarding-template.s3-website-us-east-1.amazonaws.com/"
-            />
-          </h4>
-          <p>{getContent('portfolioOnboardContent')}</p>
-        </Card>
-        <Card>
-          {getContent('portfolioLotteryStack').map(
-            (str: string, index: number) => (
-              <label key={index}>{str}</label>
-            ),
-          )}
-          <h4>
-            {getContent('portfolioLottery')}
-            <IconLink
-              type="github"
-              link="https://github.com/oahehc/linebot-lottery"
-            />
-          </h4>
-          <p>{getContent('portfolioLotteryContent')}</p>
-        </Card>
-        <Card>
-          {getContent('portfolioServerlessStack').map(
-            (str: string, index: number) => (
-              <label key={index}>{str}</label>
-            ),
-          )}
-          <h4>
-            {getContent('portfolioServerless')}
-            <IconLink
-              type="github"
-              link="https://github.com/oahehc/AWS-serverless"
-            />
-          </h4>
-          <p>{getContent('portfolioServerlessContent')}</p>
-        </Card>
-        <Card>
-          {getContent('portfolioShortenStack').map(
-            (str: string, index: number) => (
-              <label key={index}>{str}</label>
-            ),
-          )}
-          <h4>
-            {getContent('portfolioShorten')}
-            <IconLink
-              type="github"
-              link="https://github.com/oahehc/openinghour-shorten"
-            />
-            <IconLink
-              type="npm"
-              link="https://www.npmjs.com/package/openinghour-shorten"
-            />
-          </h4>
-          <p>{getContent('portfolioShortenContent')}</p>
-        </Card>
       </SegmentWrapper>
     )
   }
 }
+
 /*
-      <!--Website application-->
-      <dt><a href="https://music-sheet-20e93.firebaseapp.com/">MusicBook</a></dt>
-      <dd><span class="skill">firebase, Vue.js</span> Sheet music with auto play and collect function</dd>
-      <dt><a href="https://test-2a77b.firebaseapp.com/">SpeakTrainer</a></dt>
-      <dd><span class="skill">recognition api, firebase, scss</span> English speak training tool</dd>
-      <dt><a href="https://line-bot-oahehc.herokuapp.com/">LineBot</a></dt>
-      <dd><span class="skill">LineBot, google map/drive api, Heroku, node.js</span> LineBot for search restaurant information.</dd>
       <dt><a href="https://s3-ap-northeast-1.amazonaws.com/oahehc/webClock/index.html">WebClock</a></dt>
       <dd><span class="skill">Meteor</span> Online clock</dd>
-
       <!--android APP-->
       <dt><a href="https://play.google.com/store/apps/details?id=com.ionicframework.oahehc.HoldemDashboard">Holdem</a></dt>
       <dd><span class="skill">Ionic</span> App for showing big/small blind for Texas hold'em poker.</dd>
       <dt><a href="https://play.google.com/store/apps/details?id=com.ionicframework.oahehc.mahjong">Mahjong</a></dt>
       <dd><span class="skill">Ionic</span> App for record status and score when playing Mahjong.</dd>
-
-
       <!--
       <dt><a href="http://movieranking-movieranking.rhcloud.com/">MovieRanking</a></dt>
       <dd><span class="skill">php, mysql</span> Web crawler for search multiple movie ranking data</dd>
@@ -150,7 +88,6 @@ export default class SegmentPortfolio extends React.Component<{}, any> {
       <dd><span class="label label-default small">* Test account: id=pw=test</span></dd>
       <dt><a href="http://oahehc.comoj.com/">Blog</a></dt>
       <dd>Personal blog created by wordpress with self-designed theme.</dd>
-
       <dt><a href="http://oahehc.comoj.com/travel_data.php">TravelData</a></dt>
       <dd>Database for travel inforamtion(restaurant,landscape,hotel, etc..).</dd>
       <dt><a href="http://oahehc.comoj.com/wordpress/854">Exercise</a></dt>
@@ -159,7 +96,7 @@ export default class SegmentPortfolio extends React.Component<{}, any> {
       <dd>Drawing App.</dd>
       <dt><a href="http://oahehc.comoj.com/wordpress/859">Scoreboard</a></dt>
       <dd>App for recording game score.</dd>
-        <dt><a href="http://oahehc.comoj.com/wordpress/865">Blind</a></dt>
-        <dd>App for showing big/small blind for Texas hold'em poker.</dd>
+      <dt><a href="http://oahehc.comoj.com/wordpress/865">Blind</a></dt>
+      <dd>App for showing big/small blind for Texas hold'em poker.</dd>
 -->
 */

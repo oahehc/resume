@@ -64,7 +64,7 @@
     "zh": "國語, 台語, 英文(多益 830)"
   },
   "expTitle": {
-    "en": "My Experience",
+    "en": "Work Experience & Education",
     "zh": "學經歷"
   },
   "anue": {
@@ -263,6 +263,14 @@
   "portfolioDLStack": {
     "all": ["Tensorflow", "Python"]
   },
+  "portfolioDLLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/tensorflow_example"
+      }
+    ]
+  },
   "portfolioDLContent": {
     "en": "different types of deep learning model implement by Tensorflow: DNN, CNN, RNN, GAN, DCGAN, Autoencoder...",
     "zh": "Tensorflow 實作各類深度學習模型: DNN, CNN, RNN, GAN, DCGAN, Autoencoder..."
@@ -301,6 +309,18 @@
   "portfolioOnboardStack": {
     "all": ["Javascript", "SCSS", "Gulp", "Bower", "GA"]
   },
+  "portfolioOnboardLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/onboarding-template"
+      },
+      {
+        "type": "preview",
+        "link": "http://onboarding-template.s3-website-us-east-1.amazonaws.com"
+      }
+    ]
+  },
   "portfolioOnboardContent": {
     "en": "add json file and images to create landing page within 10 minutes",
     "zh": "建立 json 設定檔與圖片即可快速建立 landing page"
@@ -311,6 +331,14 @@
   },
   "portfolioLotteryStack": {
     "all": ["linebot", "NodeJS", "Heroku", "AWS lambda", "AWS cloudwatch"]
+  },
+  "portfolioLotteryLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/linebot-lottery"
+      }
+    ]
   },
   "portfolioLotteryContent": {
     "en": "Auto collect lottery information and sent message by linebot",
@@ -323,6 +351,14 @@
   "portfolioServerlessStack": {
     "all": ["AWS cognito", "api gateway", "S3", "lambda", "dynamoDB"]
   },
+  "portfolioServerlessLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/AWS-serverless"
+      }
+    ]
+  },
   "portfolioServerlessContent": {
     "en": "An basic sign up/sign in application apply AWS serverless",
     "zh": "透過 AWS 無伺服器架構建立註冊登入功能"
@@ -333,9 +369,78 @@
   "portfolioShortenStack": {
     "all": ["Javascript", "npm"]
   },
+  "portfolioShortenLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/openinghour-shorten"
+      },
+      {
+        "type": "npm",
+        "link": "https://www.npmjs.com/package/openinghour-shorten"
+      }
+    ]
+  },
   "portfolioShortenContent": {
     "en": "An npm package to format google map opening information to human readable string",
     "zh": "npm 套件將 google map 營業時間轉為容易閱讀的格式"
+  },
+  "portfolioMusicBook": {
+    "en": "Online MusicBook",
+    "zh": "線上樂譜"
+  },
+  "portfolioMusicBookStack": {
+    "all": ["Vue.js", "scss", "NightWatch", "firebase"]
+  },
+  "portfolioMusicBookLink": {
+    "all": [
+      {
+        "type": "preview",
+        "link": "https://music-sheet-20e93.firebaseapp.com"
+      }
+    ]
+  },
+  "portfolioMusicBookContent": {
+    "en": "Online music sheet with auto play function to practice musical instrument and collect your practice time",
+    "zh": "可自動播放的線上樂譜，並紀錄練習次數"
+  },
+  "portfolioSpeakTrainer": {
+    "en": "SpeakTrainer",
+    "zh": "英語口說練習"
+  },
+  "portfolioSpeakTrainerStack": {
+    "all": ["Javascript", "recognition api", "scss", "firebase"]
+  },
+  "portfolioSpeakTrainerLink": {
+    "all": [
+      {
+        "type": "preview",
+        "link": "https://test-2a77b.firebaseapp.com"
+      }
+    ]
+  },
+  "portfolioSpeakTrainerContent": {
+    "en": "apply recognition api to identity user's English speaking, and record the match number",
+    "zh": "透過 recognition api 辨識使用者英語口說內容，並記錄成功辨識的單字數"
+  },
+  "portfolioRestaurantLineBot": {
+    "en": "RestaurantLineBot",
+    "zh": "餐廳搜尋 line 機器人"
+  },
+  "portfolioRestaurantLineBotStack": {
+    "all": ["LineBot", " google map/drive api", "node.js", "Heroku"]
+  },
+  "portfolioRestaurantLineBotLink": {
+    "all": [
+      {
+        "type": "preview",
+        "link": "https://line-bot-oahehc.herokuapp.com"
+      }
+    ]
+  },
+  "portfolioRestaurantLineBotContent": {
+    "en": "Integrate google map and line bot api to create a restaurant search service",
+    "zh": "透過整合 google map / line bot api 建立餐廳搜尋機器人"
   },
   "_temp": {
     "en": "",

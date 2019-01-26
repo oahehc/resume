@@ -42,7 +42,7 @@ export default class IconLink extends Component<iconLinkPropType> {
       case 'npm':
         return NPMIcon
       default:
-        return null
+        return ''
     }
   }
 
