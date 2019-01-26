@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import cx from 'classnames'
-import { infoColor1, expColor1, workColor1 } from '../../styles/vars'
+import { infoColor1, expColor1, portfolioColor1 } from '../../styles/vars'
 import { Iteration, Tree, User } from 'grommet-icons'
 import { I18nContext } from '../../Context/Context'
 import I18nToggle from '../I18nToggle/I18nToggle'
@@ -22,11 +22,11 @@ const links = [
     activeColor: expColor1,
   },
   {
-    anchor: '#work',
-    textKey: 'anchorWork',
+    anchor: '#portfolio',
+    textKey: 'anchorPortfolio',
     icon: <Iteration />,
-    indicatorColor: workColor1,
-    activeColor: workColor1,
+    indicatorColor: portfolioColor1,
+    activeColor: portfolioColor1,
   },
 ]
 

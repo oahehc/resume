@@ -19,8 +19,8 @@
     "en": "Experience",
     "zh": "學經歷"
   },
-  "anchorWork": {
-    "en": "Works",
+  "anchorPortfolio": {
+    "en": "Portfolio",
     "zh": "作品"
   },
   "skill": {
@@ -256,18 +256,18 @@
       "Machine Learning / MLDS course - Hung-yi Lee, NTU"
     ]
   },
-  "workDL": {
+  "portfolioDL": {
     "en": "Deep learning model",
     "zh": "深度學習模型"
   },
-  "workDLStack": {
+  "portfolioDLStack": {
     "all": ["Tensorflow", "Python"]
   },
-  "workDLContent": {
+  "portfolioDLContent": {
     "en": "different types of deep learning model implement by Tensorflow: DNN, CNN, RNN, GAN, DCGAN, Autoencoder...",
     "zh": "Tensorflow 實作各類深度學習模型: DNN, CNN, RNN, GAN, DCGAN, Autoencoder..."
   },
-  "workTemplate": {
+  "portfolioTemplate": {
     "all": [
       {
         "link": "https://github.com/oahehc/gulp-webapp-template",
@@ -287,53 +287,53 @@
       }
     ]
   },
-  "workTemplateStack": {
+  "portfolioTemplateStack": {
     "all": ["Gulp", "React", "Vue", "Nuxt"]
   },
-  "workTemplateContent": {
+  "portfolioTemplateContent": {
     "en": "template create by different stack",
     "zh": "各類技術的基本模板"
   },
-  "workOnboard": {
+  "portfolioOnboard": {
     "en": "Landing page template",
     "zh": "Landing page 樣板"
   },
-  "workOnboardStack": {
+  "portfolioOnboardStack": {
     "all": ["Javascript", "SCSS", "Gulp", "Bower", "GA"]
   },
-  "workOnboardContent": {
+  "portfolioOnboardContent": {
     "en": "add json file and images to create landing page within 10 minutes",
     "zh": "建立 json 設定檔與圖片即可快速建立 landing page"
   },
-  "workLottery": {
+  "portfolioLottery": {
     "en": "Linebot for lottery",
     "zh": "line 樂透機器人"
   },
-  "workLotteryStack": {
+  "portfolioLotteryStack": {
     "all": ["linebot", "NodeJS", "Heroku", "AWS lambda", "AWS cloudwatch"]
   },
-  "workLotteryContent": {
+  "portfolioLotteryContent": {
     "en": "Auto collect lottery information and sent message by linebot",
     "zh": "自動收集樂透資料並透過 line 機器人傳送訊息"
   },
-  "workServerless": {
+  "portfolioServerless": {
     "en": "AWS Serverless structure",
     "zh": "AWS 無伺服器架構"
   },
-  "workServerlessStack": {
+  "portfolioServerlessStack": {
     "all": ["AWS cognito", "api gateway", "S3", "lambda", "dynamoDB"]
   },
-  "workServerlessContent": {
+  "portfolioServerlessContent": {
     "en": "An basic sign up/sign in application apply AWS serverless",
     "zh": "透過 AWS 無伺服器架構建立註冊登入功能"
   },
-  "workShorten": {
+  "portfolioShorten": {
     "all": "openinghour-shorten"
   },
-  "workShortenStack": {
+  "portfolioShortenStack": {
     "all": ["Javascript", "npm"]
   },
-  "workShortenContent": {
+  "portfolioShortenContent": {
     "en": "An npm package to format google map opening information to human readable string",
     "zh": "npm 套件將 google map 營業時間轉為容易閱讀的格式"
   },

@@ -1,52 +1,58 @@
 import React from 'react'
-import { workColor1 } from '../../styles/vars'
+import { portfolioColor1 } from '../../styles/vars'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { Title } from '../../Elements/Title'
 import IconLink from '../../Elements/IconLink'
-import { Card } from './SegmentWork.style'
+import { Card } from './SegmentPortfolio.style'
 import { I18nContext } from '../../Context/Context'
 
-export default class SegmentWork extends React.Component<{}, any> {
+export default class SegmentPortfolio extends React.Component<{}, any> {
   static contextType = I18nContext
 
   render() {
     const { getContent } = this.context
 
     return (
-      <SegmentWrapper id="work" topBorderColor={workColor1}>
-        <Title>{getContent('anchorWork')}</Title>
+      <SegmentWrapper id="portfolio" topBorderColor={portfolioColor1}>
+        <Title>{getContent('anchorPortfolio')}</Title>
         <Card>
-          {getContent('workDLStack').map((str: string, index: number) => (
+          {getContent('portfolioDLStack').map((str: string, index: number) => (
             <label key={index}>{str}</label>
           ))}
           <h4>
-            {getContent('workDL')}
+            {getContent('portfolioDL')}
             <IconLink
               type="github"
               link="https://github.com/oahehc/tensorflow_example"
             />
           </h4>
-          <p>{getContent('workDLContent')}</p>
+          <p>{getContent('portfolioDLContent')}</p>
         </Card>
         <Card>
-          {getContent('workTemplateStack').map((str: string, index: number) => (
-            <label key={index}>{str}</label>
-          ))}
-          {getContent('workTemplate').map((template: any, index: number) => (
-            <h4 key={index}>
-              {template.name}
-              <IconLink type="github" link={template.link} />
-            </h4>
-          ))}
-          <p>{getContent('workTemplateContent')}</p>
+          {getContent('portfolioTemplateStack').map(
+            (str: string, index: number) => (
+              <label key={index}>{str}</label>
+            ),
+          )}
+          {getContent('portfolioTemplate').map(
+            (template: any, index: number) => (
+              <h4 key={index}>
+                {template.name}
+                <IconLink type="github" link={template.link} />
+              </h4>
+            ),
+          )}
+          <p>{getContent('portfolioTemplateContent')}</p>
         </Card>
 
         <Card>
-          {getContent('workOnboardStack').map((str: string, index: number) => (
-            <label key={index}>{str}</label>
-          ))}
+          {getContent('portfolioOnboardStack').map(
+            (str: string, index: number) => (
+              <label key={index}>{str}</label>
+            ),
+          )}
           <h4>
-            {getContent('workOnboard')}
+            {getContent('portfolioOnboard')}
             <IconLink
               type="github"
               link="https://github.com/oahehc/onboarding-template"
@@ -56,42 +62,46 @@ export default class SegmentWork extends React.Component<{}, any> {
               link="http://onboarding-template.s3-website-us-east-1.amazonaws.com/"
             />
           </h4>
-          <p>{getContent('workOnboardContent')}</p>
+          <p>{getContent('portfolioOnboardContent')}</p>
         </Card>
         <Card>
-          {getContent('workLotteryStack').map((str: string, index: number) => (
-            <label key={index}>{str}</label>
-          ))}
-          <h4>
-            {getContent('workLottery')}
-            <IconLink
-              type="github"
-              link="https://github.com/oahehc/linebot-lottery"
-            />
-          </h4>
-          <p>{getContent('workLotteryContent')}</p>
-        </Card>
-        <Card>
-          {getContent('workServerlessStack').map(
+          {getContent('portfolioLotteryStack').map(
             (str: string, index: number) => (
               <label key={index}>{str}</label>
             ),
           )}
           <h4>
-            {getContent('workServerless')}
+            {getContent('portfolioLottery')}
+            <IconLink
+              type="github"
+              link="https://github.com/oahehc/linebot-lottery"
+            />
+          </h4>
+          <p>{getContent('portfolioLotteryContent')}</p>
+        </Card>
+        <Card>
+          {getContent('portfolioServerlessStack').map(
+            (str: string, index: number) => (
+              <label key={index}>{str}</label>
+            ),
+          )}
+          <h4>
+            {getContent('portfolioServerless')}
             <IconLink
               type="github"
               link="https://github.com/oahehc/AWS-serverless"
             />
           </h4>
-          <p>{getContent('workServerlessContent')}</p>
+          <p>{getContent('portfolioServerlessContent')}</p>
         </Card>
         <Card>
-          {getContent('workShortenStack').map((str: string, index: number) => (
-            <label key={index}>{str}</label>
-          ))}
+          {getContent('portfolioShortenStack').map(
+            (str: string, index: number) => (
+              <label key={index}>{str}</label>
+            ),
+          )}
           <h4>
-            {getContent('workShorten')}
+            {getContent('portfolioShorten')}
             <IconLink
               type="github"
               link="https://github.com/oahehc/openinghour-shorten"
@@ -101,7 +111,7 @@ export default class SegmentWork extends React.Component<{}, any> {
               link="https://www.npmjs.com/package/openinghour-shorten"
             />
           </h4>
-          <p>{getContent('workShortenContent')}</p>
+          <p>{getContent('portfolioShortenContent')}</p>
         </Card>
       </SegmentWrapper>
     )
