@@ -3,8 +3,8 @@ import { portfolioColor1 } from '../../styles/vars'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { Title } from '../../Elements/Title'
 import IconLink from '../../Elements/IconLink'
-import { Card } from './SegmentPortfolio.style'
 import { I18nContext } from '../../Context/Context'
+import { Card } from './SegmentPortfolio.style'
 
 const projectList = [
   'DL',

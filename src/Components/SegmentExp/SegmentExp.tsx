@@ -10,6 +10,7 @@ import {
   GridItemRightLarge,
   TimeLine,
 } from './SegmentExp.style'
+import { lightRed } from '../../styles/vars'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { Title } from '../../Elements/Title'
 import { I18nContext } from '../../Context/Context'
@@ -116,7 +117,7 @@ export default class SegmentExp extends React.Component<{}, any> {
               </div>
             </div>
           </GridItemRight>
-          <GridItemLeft borderColor={eduColor2}>
+          <GridItemLeft borderColor={eduColor2} bgColor={lightRed}>
             <div>{this.generateDateString('2017/4', '2017/7')}</div>
             <div>{getContent('uxCourse')}</div>
             <div>
@@ -218,7 +219,7 @@ export default class SegmentExp extends React.Component<{}, any> {
             </div>
             <div>{getContent('militaryJobTitle')}</div>
           </GridItemRightShort>
-          <GridItemLeftShort borderColor={eduColor2}>
+          <GridItemLeftShort borderColor={eduColor2} bgColor={lightRed}>
             <div>
               {this.generateDateString('2006/9', '2008/6')}
               {getContent('ntu')}
@@ -233,14 +234,14 @@ export default class SegmentExp extends React.Component<{}, any> {
         </GridContainer>
         <GridContainer>
           <TimeLine />
-          <GridItemRightShort borderColor={eduColor2}>
+          <GridItemRightShort borderColor={eduColor2} bgColor={lightRed}>
             <div>
               {this.generateDateString('2002/9', '2006/6')}
               {getContent('ntu')}
             </div>
             <div>{getContent('math')}</div>
           </GridItemRightShort>
-          <GridItemLeft borderColor={eduColor2}>
+          <GridItemLeft borderColor={eduColor2} bgColor={lightRed}>
             <div>{getContent('onlineCourse')}</div>
             <div>{getContent('onlineCoursePlatform')}</div>
             <div>
