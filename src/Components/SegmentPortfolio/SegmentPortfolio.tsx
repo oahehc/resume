@@ -7,14 +7,14 @@ import { I18nContext } from '../../Context/Context'
 import { Card } from './SegmentPortfolio.style'
 
 const projectList = [
-  'DL',
-  'Onboard',
-  'Lottery',
-  'Serverless',
   'Shorten',
   'MusicBook',
   'SpeakTrainer',
+  'Onboard',
   'RestaurantLineBot',
+  'Lottery',
+  'Serverless',
+  'DL',
 ]
 
 export default class SegmentPortfolio extends React.Component<{}, any> {
@@ -28,37 +28,50 @@ export default class SegmentPortfolio extends React.Component<{}, any> {
         <Title>{getContent('anchorPortfolio')}</Title>
         {projectList.map(project => (
           <Card key={project}>
-            {getContent(`portfolio${project}Stack`).map(
+            <div>
+              {getContent(`portfolio${project}Stack`).map(
+                (str: string, index: number) => (
+                  <label key={index}>{str}</label>
+                ),
+              )}
+              <h4>
+                {getContent(`portfolio${project}`)}
+                {getContent(`portfolio${project}Link`).map(
+                  ({ type, link }: any) => (
+                    <IconLink key={type} type={type} link={link} />
+                  ),
+                )}
+              </h4>
+              <p>{getContent(`portfolio${project}Content`)}</p>
+            </div>
+            {getContent(`portfolio${project}Images`) && (
+              <div>
+                {getContent(`portfolio${project}Images`).map(
+                  ({ src, alt }: any, index: number) => (
+                    <img key={index} src={src} alt={alt} />
+                  ),
+                )}
+              </div>
+            )}
+          </Card>
+        ))}
+        <Card>
+          <div>
+            {getContent('portfolioTemplateStack').map(
               (str: string, index: number) => (
                 <label key={index}>{str}</label>
               ),
             )}
-            <h4>
-              {getContent(`portfolio${project}`)}
-              {getContent(`portfolio${project}Link`).map(
-                ({ type, link }: any) => (
-                  <IconLink key={type} type={type} link={link} />
-                ),
-              )}
-            </h4>
-            <p>{getContent(`portfolio${project}Content`)}</p>
-          </Card>
-        ))}
-        <Card>
-          {getContent('portfolioTemplateStack').map(
-            (str: string, index: number) => (
-              <label key={index}>{str}</label>
-            ),
-          )}
-          {getContent('portfolioTemplate').map(
-            (template: any, index: number) => (
-              <h4 key={index}>
-                {template.name}
-                <IconLink type="github" link={template.link} />
-              </h4>
-            ),
-          )}
-          <p>{getContent('portfolioTemplateContent')}</p>
+            {getContent('portfolioTemplate').map(
+              (template: any, index: number) => (
+                <h4 key={index}>
+                  {template.name}
+                  <IconLink type="github" link={template.link} />
+                </h4>
+              ),
+            )}
+            <p>{getContent('portfolioTemplateContent')}</p>
+          </div>
         </Card>
       </SegmentWrapper>
     )
