@@ -29,6 +29,7 @@ export default createGlobalStyle`
 
     &:active {
       color: ${vars.linkColor};
+      transform: translateY(5%);
     }
   }
 `

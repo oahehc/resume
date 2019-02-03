@@ -19,8 +19,8 @@
     "en": "Experience",
     "zh": "學經歷"
   },
-  "anchorWork": {
-    "en": "Works",
+  "anchorPortfolio": {
+    "en": "Portfolio",
     "zh": "作品"
   },
   "skill": {
@@ -64,7 +64,7 @@
     "zh": "國語, 台語, 英文(多益 830)"
   },
   "expTitle": {
-    "en": "My Experience",
+    "en": "Work Experience & Education",
     "zh": "學經歷"
   },
   "anue": {
@@ -76,16 +76,7 @@
     "zh": "前端部門經理"
   },
   "anueJobStack": {
-    "en": [
-      "Nextjs",
-      "React",
-      "Redux",
-      "Webpack",
-      "Styled-jsx",
-      "Jest",
-      "Enzyme"
-    ],
-    "zh": [
+    "all": [
       "Nextjs",
       "React",
       "Redux",
@@ -114,17 +105,7 @@
     "zh": "資深前端工程師"
   },
   "pebblarJobStack": {
-    "en": [
-      "React",
-      "Redux-Sag",
-      "Styled-Component",
-      "Webpack",
-      "Jest",
-      "Enzyme",
-      "Firebase",
-      "GoogleMap API"
-    ],
-    "zh": [
+    "all": [
       "React",
       "Redux-Sag",
       "Styled-Component",
@@ -144,16 +125,14 @@
     "zh": "資深前端工程師"
   },
   "deepbluJobStack1": {
-    "en": ["React(SSR)", "Redux", "Webpack", "SCSS", "CSS module", "NodeJS"],
-    "zh": ["React(SSR)", "Redux", "Webpack", "SCSS", "CSS module", "NodeJS"]
+    "all": ["React(SSR)", "Redux", "Webpack", "SCSS", "CSS module", "NodeJS"]
   },
   "deepbluJobContent1": {
     "en": ["Social Platform", "Online Shop"],
     "zh": ["潛水社交平台", "潛水錶線上購物網站"]
   },
   "deepbluJobStack2": {
-    "en": ["RoR"],
-    "zh": ["RoR"]
+    "all": ["RoR"]
   },
   "deepbluJobContent2": {
     "en": ["Internal SCM system"],
@@ -168,24 +147,21 @@
     "zh": "前端工程師暨ERP導入顧問"
   },
   "flowJobStack1": {
-    "en": ["VueJS", "Nightwatch", "Webpack", "AWS"],
-    "zh": ["VueJS", "Nightwatch", "Webpack", "AWS"]
+    "all": ["VueJS", "Nightwatch", "Webpack", "AWS"]
   },
   "flowJobContent1": {
     "en": ["Human Resource System"],
     "zh": ["人力資源管理系統"]
   },
   "flowJobStack2": {
-    "en": ["jQuery", "ChartJS", "SCSS", "Gulp", "AWS"],
-    "zh": ["jQuery", "ChartJS", "SCSS", "Gulp", "AWS"]
+    "all": ["jQuery", "ChartJS", "SCSS", "Gulp", "AWS"]
   },
   "flowJobContent2": {
     "en": ["Cloud ERP system", "Data virtualization"],
     "zh": ["雲端 ERP 系統", "資料視覺化報表"]
   },
   "flowJobStack3": {
-    "en": ["jQuery", "Boostrap", "SCSS", "Gulp"],
-    "zh": ["jQuery", "Boostrap", "SCSS", "Gulp"]
+    "all": ["jQuery", "Boostrap", "SCSS", "Gulp"]
   },
   "flowJobContent3": {
     "en": ["Company Website"],
@@ -265,11 +241,10 @@
     "zh": "線上課程"
   },
   "onlineCoursePlatform": {
-    "en": "Coursera, Udemy, Udacity",
-    "zh": "Coursera, Udemy, Udacity"
+    "all": "Coursera, Udemy, Udacity"
   },
   "onlineCourseContent": {
-    "en": [
+    "all": [
       "Algorithmic Thinking, Rice University",
       "Game Development for Modern Platforms, MSU",
       "Build Software Applications, Duke",
@@ -279,17 +254,288 @@
       "Create a Web Experience, University Of London",
       "Deep Learning by Google - Take machine learning to the next level",
       "Machine Learning / MLDS course - Hung-yi Lee, NTU"
-    ],
-    "zh": [
-      "Algorithmic Thinking, Rice University",
-      "Game Development for Modern Platforms, MSU",
-      "Build Software Applications, Duke",
-      "Build Complete Web Solutions, HKUST",
-      "Make Compelling Design, CalArts",
-      "Web Application Development, UNM",
-      "Create a Web Experience, University Of London",
-      "Deep Learning by Google - Take machine learning to the next level",
-      "Machine Learning / MLDS course - Hung-yi Lee, NTU"
+    ]
+  },
+  "portfolioDL": {
+    "en": "Deep learning model",
+    "zh": "深度學習模型"
+  },
+  "portfolioDLStack": {
+    "all": ["Tensorflow", "Python"]
+  },
+  "portfolioDLLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/tensorflow_example"
+      }
+    ]
+  },
+  "portfolioDLContent": {
+    "en": "different types of deep learning model implement by Tensorflow: DNN, CNN, RNN, GAN, DCGAN, Autoencoder...",
+    "zh": "Tensorflow 實作各類深度學習模型: DNN, CNN, RNN, GAN, DCGAN, Autoencoder..."
+  },
+  "portfolioTemplate": {
+    "all": [
+      {
+        "link": "https://github.com/oahehc/gulp-webapp-template",
+        "name": "gulp-webapp-template"
+      },
+      {
+        "link": "https://github.com/oahehc/react-template",
+        "name": "react-template"
+      },
+      {
+        "link": "https://github.com/oahehc/vue-template",
+        "name": "vue-template"
+      },
+      {
+        "link": "https://github.com/oahehc/nuxt-template",
+        "name": "nuxt-template"
+      }
+    ]
+  },
+  "portfolioTemplateStack": {
+    "all": ["Gulp", "React", "Vue", "Nuxt"]
+  },
+  "portfolioTemplateContent": {
+    "en": "custom template create by different stack",
+    "zh": "各類技術的客製模板"
+  },
+  "portfolioOnboard": {
+    "en": "Landing page template",
+    "zh": "Landing page 樣板"
+  },
+  "portfolioOnboardStack": {
+    "all": ["Javascript", "SCSS", "Gulp", "Bower", "GA"]
+  },
+  "portfolioOnboardLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/onboarding-template"
+      },
+      {
+        "type": "preview",
+        "link": "http://onboarding-template.s3-website-us-east-1.amazonaws.com"
+      }
+    ]
+  },
+  "portfolioOnboardContent": {
+    "en": "add json file and images to create landing page within 10 minutes",
+    "zh": "建立 json 設定檔與圖片即可快速建立 landing page"
+  },
+  "portfolioOnboardImages": {
+    "all": [
+      {
+        "src": "Onboard/1.png",
+        "alt": "onboarding preview"
+      },
+      {
+        "src": "Onboard/2.png",
+        "alt": "onboarding preview"
+      },
+      {
+        "src": "Onboard/3.png",
+        "alt": "onboarding intro"
+      }
+    ]
+  },
+  "portfolioLottery": {
+    "en": "Linebot for lottery",
+    "zh": "line 樂透機器人"
+  },
+  "portfolioLotteryStack": {
+    "all": ["linebot", "NodeJS", "Heroku", "AWS lambda", "AWS cloudwatch"]
+  },
+  "portfolioLotteryLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/linebot-lottery"
+      }
+    ]
+  },
+  "portfolioLotteryContent": {
+    "en": "Auto collect lottery information and sent message by linebot",
+    "zh": "自動收集樂透資料並透過 line 機器人傳送訊息"
+  },
+  "portfolioLotteryImages": {
+    "all": [
+      {
+        "src": "Lottery/1.png",
+        "alt": "Lottery message"
+      }
+    ]
+  },
+  "portfolioServerless": {
+    "en": "AWS Serverless structure",
+    "zh": "AWS 無伺服器架構"
+  },
+  "portfolioServerlessStack": {
+    "all": ["AWS cognito", "api gateway", "S3", "lambda", "dynamoDB"]
+  },
+  "portfolioServerlessLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/AWS-serverless"
+      }
+    ]
+  },
+  "portfolioServerlessContent": {
+    "en": "An basic sign up/sign in application apply AWS serverless",
+    "zh": "透過 AWS 無伺服器架構建立註冊登入功能"
+  },
+  "portfolioShorten": {
+    "all": "openinghour-shorten"
+  },
+  "portfolioShortenStack": {
+    "all": ["Javascript", "npm"]
+  },
+  "portfolioShortenLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/openinghour-shorten"
+      },
+      {
+        "type": "npm",
+        "link": "https://www.npmjs.com/package/openinghour-shorten"
+      }
+    ]
+  },
+  "portfolioShortenImages": {
+    "all": [
+      {
+        "src": "Shorten/1.png",
+        "alt": "openinghour-shorten usage"
+      }
+    ]
+  },
+  "portfolioShortenContent": {
+    "en": "An npm package to format google map opening information to human readable string",
+    "zh": "npm 套件將 google map 營業時間轉為容易閱讀的格式"
+  },
+  "portfolioMusicBook": {
+    "en": "Online MusicBook",
+    "zh": "線上樂譜"
+  },
+  "portfolioMusicBookStack": {
+    "all": ["Vue.js", "scss", "NightWatch", "firebase"]
+  },
+  "portfolioMusicBookLink": {
+    "all": [
+      {
+        "type": "preview",
+        "link": "https://music-sheet-20e93.firebaseapp.com"
+      }
+    ]
+  },
+  "portfolioMusicBookContent": {
+    "en": "Online music sheet with auto play function to practice musical instrument and collect your practice time",
+    "zh": "可自動播放的線上樂譜，並紀錄練習次數"
+  },
+  "portfolioMusicBookImages": {
+    "all": [
+      {
+        "src": "MusicBook/1.png",
+        "alt": "MusicBook login"
+      },
+      {
+        "src": "MusicBook/2.png",
+        "alt": "MusicBook list"
+      },
+      {
+        "src": "MusicBook/3.png",
+        "alt": "MusicBook content"
+      },
+      {
+        "src": "MusicBook/4.png",
+        "alt": "MusicBook hotkey"
+      },
+      {
+        "src": "MusicBook/5.png",
+        "alt": "MusicBook upload"
+      },
+      {
+        "src": "MusicBook/6.png",
+        "alt": "MusicBook edit"
+      }
+    ]
+  },
+  "portfolioSpeakTrainer": {
+    "en": "SpeakTrainer",
+    "zh": "英語口說練習"
+  },
+  "portfolioSpeakTrainerStack": {
+    "all": ["Javascript", "recognition api", "scss", "firebase"]
+  },
+  "portfolioSpeakTrainerLink": {
+    "all": [
+      {
+        "type": "preview",
+        "link": "https://test-2a77b.firebaseapp.com"
+      }
+    ]
+  },
+  "portfolioSpeakTrainerContent": {
+    "en": "apply recognition api to identity user's English speaking, and record the match number",
+    "zh": "透過 recognition api 辨識使用者英語口說內容，並記錄成功辨識的單字數"
+  },
+  "portfolioSpeakTrainerImages": {
+    "all": [
+      {
+        "src": "SpeakTrainer/1.png",
+        "alt": "SpeakTrainer login"
+      },
+      {
+        "src": "SpeakTrainer/2.png",
+        "alt": "SpeakTrainer testing"
+      },
+      {
+        "src": "SpeakTrainer/3.png",
+        "alt": "SpeakTrainer result"
+      }
+    ]
+  },
+  "portfolioRestaurantLineBot": {
+    "en": "RestaurantLineBot",
+    "zh": "餐廳搜尋 line 機器人"
+  },
+  "portfolioRestaurantLineBotStack": {
+    "all": ["LineBot", " google map/drive api", "node.js", "Heroku"]
+  },
+  "portfolioRestaurantLineBotLink": {
+    "all": [
+      {
+        "type": "preview",
+        "link": "https://line-bot-oahehc.herokuapp.com"
+      }
+    ]
+  },
+  "portfolioRestaurantLineBotContent": {
+    "en": "Integrate google map and line bot api to create a restaurant search service, and create personal restaurant list",
+    "zh": "透過整合 google map / line bot api 建立餐廳搜尋機器人，並可儲存個人口袋名單"
+  },
+  "portfolioRestaurantLineBotImages": {
+    "all": [
+      {
+        "src": "RestaurantLineBot/1.png",
+        "alt": "RestaurantLineBot search"
+      },
+      {
+        "src": "RestaurantLineBot/2.png",
+        "alt": "RestaurantLineBot search by location"
+      },
+      {
+        "src": "RestaurantLineBot/3.png",
+        "alt": "RestaurantLineBot list"
+      },
+      {
+        "src": "RestaurantLineBot/4.png",
+        "alt": "RestaurantLineBot remove"
+      }
     ]
   },
   "_temp": {

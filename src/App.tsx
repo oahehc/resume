@@ -4,7 +4,7 @@ import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 import SegmentInfo from './Components/SegmentInfo/SegmentInfo'
 import SegmentExp from './Components/SegmentExp/SegmentExp'
-import SegmentWork from './Components/SegmentWork/SegmentWork'
+import SegmentPortfolio from './Components/SegmentPortfolio/SegmentPortfolio'
 
 class App extends Component {
   static contextType = I18nContext
@@ -22,9 +22,10 @@ class App extends Component {
     return (
       <div>
         <Header />
+        {/* FIXME:
         <SegmentInfo />
-        <SegmentExp />
-        <SegmentWork />
+        <SegmentExp /> */}
+        <SegmentPortfolio />
         <Footer />
       </div>
     )

@@ -35,6 +35,7 @@ export default class Context extends React.Component<ContextProps, any> {
     return (
       idx(cont, _ => _[key][lang]) ||
       idx(cont, _ => _[key][defaultLang]) ||
+      idx(cont, _ => _[key].all) ||
       null
     )
   }

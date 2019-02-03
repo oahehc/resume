@@ -1,12 +1,20 @@
 import styled, { css } from 'styled-components/macro'
-import { expColor1Light, expColor2, expColor3, grey3 } from '../../styles/vars'
+import {
+  expColor1Light,
+  expColor2,
+  expColor3,
+  grey3,
+  white,
+} from '../../styles/vars'
 
 type itemProps = {
   borderColor?: string
+  bgColor?: string
 }
 const ItemBase = css`
   border-top: 5px solid ${expColor2};
   border-top-color: ${(props: itemProps) => props.borderColor || expColor2};
+  background-color: ${(props: itemProps) => props.bgColor || white};
   box-shadow: 0 0 2px 0 ${grey3};
   padding: 10px;
 
@@ -62,10 +70,6 @@ const TimeLinePointBase = css`
   width: 20px;
   height: 20px;
   position: absolute;
-`
-
-export const Title = styled.div`
-  font-weight: 800;
 `
 
 export const GridContainer = styled.div`
