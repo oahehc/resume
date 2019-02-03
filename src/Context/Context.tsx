@@ -1,12 +1,13 @@
 import React from 'react'
 import idx from 'idx'
 import content from './content.json'
+import { getLangFromUrlSearch } from '../Utils/regex'
 
 interface contentType {
   [key: string]: any
 }
 
-export const defaultLang: string = 'zh'
+export const defaultLang: string = 'en'
 export const I18nContext = React.createContext({
   lang: defaultLang,
   content: {},
@@ -21,6 +22,21 @@ export default class Context extends React.Component<ContextProps, any> {
     super(props)
     this.state = {
       lang: defaultLang,
+    }
+  }
+
+  componentDidMount() {
+    this.getDefaultLangFromUrl()
+  }
+
+  getDefaultLangFromUrl = () => {
+    console.log('----- getDefaultLangFromUrl')
+    const { search } = window.location
+    const lang = getLangFromUrlSearch(search)
+    console.log('----- getDefaultLangFromUrl lang:', lang)
+
+    if (lang) {
+      this.changeLang(lang)
     }
   }
 

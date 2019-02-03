@@ -22,9 +22,8 @@ class App extends Component {
     return (
       <div>
         <Header />
-        {/* FIXME:
         <SegmentInfo />
-        <SegmentExp /> */}
+        <SegmentExp />
         <SegmentPortfolio />
         <Footer />
       </div>
