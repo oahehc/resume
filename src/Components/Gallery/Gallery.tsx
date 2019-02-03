@@ -48,6 +48,7 @@ export default class Gallery extends Component<galleryProps, galleryState> {
             key={index}
             src={src}
             alt={alt}
+            title={alt}
             onClick={() => this.handleToggleLightbox(index)}
           />
         ))}
@@ -56,7 +57,11 @@ export default class Gallery extends Component<galleryProps, galleryState> {
             <Control onClick={this.handleToPreviousImage}>
               <CaretPrevious />
             </Control>
-            <img src={playingImage.src} alt={playingImage.alt} />
+            <img
+              src={playingImage.src}
+              alt={playingImage.alt}
+              title={playingImage.alt}
+            />
             <Control onClick={this.handleToNextImage}>
               <CaretNext />
             </Control>

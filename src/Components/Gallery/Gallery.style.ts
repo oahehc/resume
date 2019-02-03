@@ -7,13 +7,13 @@ export const Img = styled.img`
   transition: transform 0.5s ease;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 `
 
 export const Lightbox = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: ${transparentGrey};
   width: 100%;
@@ -32,6 +32,7 @@ export const Lightbox = styled.div`
 export const Control = styled.div`
   width: 100px;
   height: 200px;
+  max-width: 10%;
   max-height: 80%;
   display: flex;
   justify-content: center;
