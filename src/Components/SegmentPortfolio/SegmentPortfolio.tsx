@@ -3,8 +3,9 @@ import { portfolioColor1 } from '../../styles/vars'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { Title } from '../../Elements/Title'
 import IconLink from '../../Elements/IconLink'
+import Gallery from '../Gallery/Gallery'
 import { I18nContext } from '../../Context/Context'
-import { Card } from './SegmentPortfolio.style'
+import { Card, CardInfo, CardImgs } from './SegmentPortfolio.style'
 
 const projectList = [
   'Shorten',
@@ -28,7 +29,7 @@ export default class SegmentPortfolio extends React.Component<{}, any> {
         <Title>{getContent('anchorPortfolio')}</Title>
         {projectList.map(project => (
           <Card key={project}>
-            <div>
+            <CardInfo>
               {getContent(`portfolio${project}Stack`).map(
                 (str: string, index: number) => (
                   <label key={index}>{str}</label>
@@ -43,15 +44,11 @@ export default class SegmentPortfolio extends React.Component<{}, any> {
                 )}
               </h4>
               <p>{getContent(`portfolio${project}Content`)}</p>
-            </div>
+            </CardInfo>
             {getContent(`portfolio${project}Images`) && (
-              <div>
-                {getContent(`portfolio${project}Images`).map(
-                  ({ src, alt }: any, index: number) => (
-                    <img key={index} src={src} alt={alt} />
-                  ),
-                )}
-              </div>
+              <CardImgs>
+                <Gallery images={getContent(`portfolio${project}Images`)} />
+              </CardImgs>
             )}
           </Card>
         ))}

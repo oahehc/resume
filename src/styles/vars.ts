@@ -6,6 +6,7 @@ export const dtWidth = '1440px'
 
 // z-index
 export const backgroundIndex = 0
+export const modalIndex = 8000
 export const loadingIndex = 10000
 
 // grey
@@ -37,3 +38,4 @@ export const linkColor = '#5899E2'
 export const linkColorHover = '#65AFFF'
 export const white = '#fff'
 export const lightRed = 'rgb(255, 243, 243, .3)'
+export const transparentGrey = 'rgba(40, 40, 40, 0.9)'

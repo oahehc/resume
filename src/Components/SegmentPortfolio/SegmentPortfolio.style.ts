@@ -1,29 +1,11 @@
-import styled, { css } from 'styled-components/macro'
+import styled from 'styled-components/macro'
 import { grey2, portfolioColor2 } from '../../styles/vars'
 
-// type componentProps = {
-//   color?: string
-// }
-// const base = css`
-//   color: ${(props: componentProps) => props.color || vars.defaultColor};
-// `
 export const Card = styled.div`
   margin: 10px;
   padding: 5px;
   box-shadow: 0 0 2px 0 ${grey2};
   display: flex;
-
-  & > div:nth-child(1) {
-    width: 620px;
-    min-width: 620px;
-    max-width: 100%;
-  }
-
-  & > div:nth-child(2) {
-    flex: 1;
-    display: flex;
-    overflow: hidden;
-  }
 
   label {
     background-color: ${portfolioColor2};
@@ -53,14 +35,16 @@ export const Card = styled.div`
     font-size: 14px;
     font-style: italic;
   }
+`
 
-  img {
-    height: 120px;
-    cursor: pointer;
-    transition: transform 0.5s ease;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
+export const CardInfo = styled.div`
+  width: 620px;
+  min-width: 620px;
+  max-width: 100%;
+`
+export const CardImgs = styled.div`
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 `
