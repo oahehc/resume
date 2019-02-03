@@ -20,13 +20,13 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Header />
         <SegmentInfo />
         <SegmentExp />
         <SegmentPortfolio />
         <Footer />
-      </div>
+      </React.Fragment>
     )
   }
 }
