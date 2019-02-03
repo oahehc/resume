@@ -275,6 +275,42 @@
     "en": "different types of deep learning model implement by Tensorflow: DNN, CNN, RNN, GAN, DCGAN, Autoencoder...",
     "zh": "Tensorflow 實作各類深度學習模型: DNN, CNN, RNN, GAN, DCGAN, Autoencoder..."
   },
+  "portfolioDLImages": {
+    "all": [
+      {
+        "src": "DL/1.png",
+        "alt": "DL active function"
+      },
+      {
+        "src": "DL/2.png",
+        "alt": "DL TensorBoard"
+      },
+      {
+        "src": "DL/3.png",
+        "alt": "DL Autoencoder"
+      },
+      {
+        "src": "DL/4.png",
+        "alt": "DL t-SNE and PCA"
+      },
+      {
+        "src": "DL/5.png",
+        "alt": "DL VAE"
+      },
+      {
+        "src": "DL/6.png",
+        "alt": "DL VAE"
+      },
+      {
+        "src": "DL/7.png",
+        "alt": "DL RNN"
+      },
+      {
+        "src": "DL/8.png",
+        "alt": "DL Skip-Gram"
+      }
+    ]
+  },
   "portfolioTemplate": {
     "all": [
       {
