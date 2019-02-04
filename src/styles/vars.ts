@@ -1,6 +1,6 @@
 // size
 export const mobileWidth = '600px'
-export const padWidth = '980px'
+export const padWidth = '900px'
 export const nbWidth = '1200px'
 export const dtWidth = '1440px'
 
@@ -36,6 +36,6 @@ export const portfolioColor3 = '#EFF7F6'
 // common color
 export const linkColor = '#5899E2'
 export const linkColorHover = '#65AFFF'
-export const white = 'rgba(250, 250, 250, .6)'
+export const white = 'rgba(250, 250, 250, .9)'
 export const lightRed = 'rgb(255, 243, 243, .3)'
 export const transparentGrey = 'rgba(40, 40, 40, 0.9)'

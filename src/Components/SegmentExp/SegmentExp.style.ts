@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components/macro'
 import {
-  mobileWidth,
+  padWidth,
   expColor1Light,
   expColor2,
   grey3,
@@ -52,9 +52,9 @@ const ItemBase = css`
   }
 `
 const TimeLinePointBase = css`
-  left: -14px;
+  left: -11px;
   border-radius: 50%;
-  border: 10px solid ${expColor1Light};
+  border: 5px solid ${expColor1Light};
   background-color: white;
   content: '';
   width: 20px;
@@ -68,7 +68,7 @@ export const GridContainer = styled.div`
   /* grid-template-rows: auto auto auto; */
   grid-auto-rows: minmax(10px, auto);
 
-  @media only screen and (max-width: ${mobileWidth}) {
+  @media only screen and (max-width: ${padWidth}) {
     display: block;
 
     & > div {
@@ -119,7 +119,7 @@ export const TimeLine = styled.div`
   position: relative;
   height: ${(props: timeLineProps) =>
     props.isStart ? 'calc(100% - 10px)' : '100%'};
-  width: 12px;
+  width: 8px;
   background-color: ${expColor1Light};
 
   &:before {
@@ -133,7 +133,7 @@ export const TimeLine = styled.div`
     display: ${(props: timeLineProps) => (props.isSingle ? 'none' : 'block')};
   }
 
-  @media only screen and (max-width: ${mobileWidth}) {
+  @media only screen and (max-width: ${padWidth}) {
     display: none;
   }
 `

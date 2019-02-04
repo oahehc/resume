@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro'
-import { grey2, portfolioColor2 } from '../../styles/vars'
+import { padWidth, grey2 } from '../../styles/vars'
 
 export const Card = styled.div`
   margin: 10px;
@@ -26,12 +26,20 @@ export const Card = styled.div`
     font-size: 14px;
     font-style: italic;
   }
+
+  @media only screen and (max-width: ${padWidth}) {
+    flex-direction: column;
+  }
 `
 
 export const CardInfo = styled.div`
   width: 520px;
   min-width: 520px;
   max-width: 100%;
+
+  @media only screen and (max-width: ${padWidth}) {
+    min-width: 100%;
+  }
 `
 export const CardImgs = styled.div`
   flex: 1;
