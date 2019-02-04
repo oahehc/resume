@@ -11,6 +11,14 @@
     "en": "Last Update",
     "zh": "最近更新"
   },
+  "browserSupportNotice": {
+    "en": "I will try newest stack on this project, so suggest you to use latest version of Chrome for better browse experience",
+    "zh": "此專案將嘗試各種新的技術，因此建議您改用最新版本的 Chrome 享有更好的瀏覽體驗"
+  },
+  "close": {
+    "en": "CLOSE",
+    "zh": "關閉"
+  },
   "anchorInfo": {
     "en": "Information",
     "zh": "個人資料"
