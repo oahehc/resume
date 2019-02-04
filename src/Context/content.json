@@ -31,29 +31,50 @@
     "en": "Front-end",
     "zh": "前端"
   },
+  "skillFrontEndContent": {
+    "all": "NextJS / ReactJS / VueJS / Typescript / jQuery / vanilla JavaScript, styled-component / style-jsx / SASS / CSS module / BEM / CSS, HTML5"
+  },
   "skillTest": {
     "en": "Test",
     "zh": "測試"
+  },
+  "skillTestContent": {
+    "all": "Jest / Enzyme, Cypress / testCafe / Nightwatch, eslint"
   },
   "skillBackEnd": {
     "en": "Back-end",
     "zh": "後端"
   },
+  "skillBackEndContent": {
+    "all": "Node.js, AWS, firebase, PHP, MySql"
+  },
   "skillTool": {
     "en": "Tools",
     "zh": "開發工具"
+  },
+  "skillToolContent": {
+    "all": "Git, Webpack, Yarn / NPM, Gulp, VSCode, Slack, Jira, Confluence, Sentry"
   },
   "skillCICD": {
     "en": "CI/CD",
     "zh": "CI/CD"
   },
+  "skillCICDContent": {
+    "all": "Travis CI, Codecov, Heroku, Netlify"
+  },
   "skillData": {
     "en": "Data-analysis",
     "zh": "資料分析"
   },
+  "skillDataContent": {
+    "zh": "TensorFlow, Python, GTM, GA"
+  },
   "skillOthers": {
     "en": "Others",
     "zh": "其他"
+  },
+  "skillOthersContent": {
+    "all": "google map API, youtube API, DFP, LineBot, GA, GTM"
   },
   "skillLang": {
     "en": "Language",
@@ -107,13 +128,14 @@
   "pebblarJobStack": {
     "all": [
       "React",
-      "Redux-Sag",
+      "Redux-Saga",
       "Styled-Component",
       "Webpack",
       "Jest",
       "Enzyme",
-      "Firebase",
-      "GoogleMap API"
+      "firebase",
+      "GoogleMap API",
+      "websockets"
     ]
   },
   "pebblarJobContent": {
