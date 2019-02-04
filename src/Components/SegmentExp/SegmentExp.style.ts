@@ -40,16 +40,6 @@ const ItemBase = css`
       margin: 0;
     }
 
-    & > label {
-      background-color: ${expColor3};
-      padding: 2px 5px;
-      margin: 2px;
-      font-size: 13px;
-      font-weight: 600;
-      display: inline-block;
-      border-radius: 2px;
-    }
-
     & > div {
       padding-top: 3px;
       font-size: 16px;

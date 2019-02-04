@@ -26,13 +26,4 @@ export const Set = styled.div`
   & > div {
     margin-bottom: 5px;
   }
-
-  label {
-    background-color: ${infoColor2};
-    color: ${infoColor2Light};
-    padding: 5px 10px;
-    border-radius: 2px;
-    margin-right: 5px;
-    font-weight: 600;
-  }
 `

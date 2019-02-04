@@ -13,8 +13,10 @@ import {
 import { lightRed } from '../../styles/vars'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { Title } from '../../Elements/Title'
+import Label from '../../Elements/Label'
 import { I18nContext } from '../../Context/Context'
 import { getDuration } from '../../Utils/date'
+import { expColor3 } from '../../styles/vars'
 
 export default class SegmentExp extends React.Component<{}, any> {
   static contextType = I18nContext
@@ -45,7 +47,9 @@ export default class SegmentExp extends React.Component<{}, any> {
               <div>
                 {getContent('anueJobStack').map(
                   (stack: string, index: number) => (
-                    <label key={index}>{stack}</label>
+                    <Label key={index} bgColor={expColor3}>
+                      {stack}
+                    </Label>
                   ),
                 )}
                 {getContent('anueJobContent').map(
@@ -68,7 +72,9 @@ export default class SegmentExp extends React.Component<{}, any> {
               <div>
                 {getContent('pebblarJobStack').map(
                   (stack: string, index: number) => (
-                    <label key={index}>{stack}</label>
+                    <Label key={index} bgColor={expColor3}>
+                      {stack}
+                    </Label>
                   ),
                 )}
                 {getContent('pebblarJobContent').map(

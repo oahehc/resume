@@ -1,5 +1,5 @@
 // size
-export const mobileWidth = '480px'
+export const mobileWidth = '600px'
 export const padWidth = '980px'
 export const nbWidth = '1200px'
 export const dtWidth = '1440px'

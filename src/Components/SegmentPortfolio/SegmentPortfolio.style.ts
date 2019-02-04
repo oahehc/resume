@@ -7,15 +7,6 @@ export const Card = styled.div`
   box-shadow: 0 0 2px 0 ${grey2};
   display: flex;
 
-  label {
-    background-color: ${portfolioColor2};
-    font-size: 12px;
-    font-weight: 600;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 10px;
-  }
-
   h4 {
     margin: 10px;
     display: flex;
@@ -38,8 +29,8 @@ export const Card = styled.div`
 `
 
 export const CardInfo = styled.div`
-  width: 620px;
-  min-width: 620px;
+  width: 520px;
+  min-width: 520px;
   max-width: 100%;
 `
 export const CardImgs = styled.div`

@@ -2,9 +2,11 @@ import React from 'react'
 import { Github, LinkedinOption, MailOption, Code } from 'grommet-icons'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { Title } from '../../Elements/Title'
+import Label from '../../Elements/Label'
 import { I18nContext } from '../../Context/Context'
 import { infoColor1 } from '../../styles/vars'
 import { List, Set } from './SegmentInfo.style'
+import { infoColor2 } from '../../styles/vars'
 
 const skills = [
   'FrontEnd',
@@ -50,7 +52,7 @@ export default class SegmentInfo extends React.Component<{}, any> {
         <Set>
           {skills.map((skill: string, index: number) => (
             <div key={index}>
-              <label>{getContent(`skill${skill}`)}</label>
+              <Label bgColor={infoColor2}>{getContent(`skill${skill}`)}</Label>
               {getContent(`skill${skill}Content`)}
             </div>
           ))}
