@@ -30,7 +30,9 @@ export default class SegmentInfo extends React.Component<{}, any> {
         <List>
           <MailOption />
           <a href="mailto:chehao@ntu.edu.tw">chehao@ntu.edu.tw</a>
-          <span className="space">|</span>
+        </List>
+        <List>
+          <MailOption />
           <a href="mailto:chehao@ntu.edu.tw">oahehc@gmail.com</a>
         </List>
         <List>

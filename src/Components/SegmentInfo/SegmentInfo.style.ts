@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro'
-import { infoColor2, infoColor2Light } from '../../styles/vars'
 
 export const List = styled.div`
   display: flex;
@@ -9,10 +8,6 @@ export const List = styled.div`
   &.title {
     font-weight: 800;
     margin-bottom: 8px;
-  }
-
-  .space {
-    margin: 0 5px;
   }
 
   svg {

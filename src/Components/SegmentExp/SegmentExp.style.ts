@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components/macro'
 import {
+  mobileWidth,
   expColor1Light,
   expColor2,
-  expColor3,
   grey3,
   white,
 } from '../../styles/vars'
@@ -67,6 +67,14 @@ export const GridContainer = styled.div`
   grid-template-columns: 2fr 80px 3fr;
   /* grid-template-rows: auto auto auto; */
   grid-auto-rows: minmax(10px, auto);
+
+  @media only screen and (max-width: ${mobileWidth}) {
+    display: block;
+
+    & > div {
+      margin-bottom: 10px;
+    }
+  }
 `
 export const GridItemLeft = styled.div`
   ${ItemBase}
@@ -123,5 +131,9 @@ export const TimeLine = styled.div`
     top: 35%;
     ${TimeLinePointBase}
     display: ${(props: timeLineProps) => (props.isSingle ? 'none' : 'block')};
+  }
+
+  @media only screen and (max-width: ${mobileWidth}) {
+    display: none;
   }
 `
