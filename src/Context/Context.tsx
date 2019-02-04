@@ -30,10 +30,8 @@ export default class Context extends React.Component<ContextProps, any> {
   }
 
   getDefaultLangFromUrl = () => {
-    console.log('----- getDefaultLangFromUrl')
     const { search } = window.location
     const lang = getLangFromUrlSearch(search)
-    console.log('----- getDefaultLangFromUrl lang:', lang)
 
     if (lang) {
       this.changeLang(lang)

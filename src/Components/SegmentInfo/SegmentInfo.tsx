@@ -6,6 +6,17 @@ import { I18nContext } from '../../Context/Context'
 import { infoColor1 } from '../../styles/vars'
 import { List, Set } from './SegmentInfo.style'
 
+const skills = [
+  'FrontEnd',
+  'Test',
+  'Tool',
+  'BackEnd',
+  'CICD',
+  'Data',
+  'Others',
+  'Lang',
+]
+
 export default class SegmentInfo extends React.Component<{}, any> {
   static contextType = I18nContext
   render() {
@@ -37,43 +48,15 @@ export default class SegmentInfo extends React.Component<{}, any> {
           {getContent('skill')}
         </List>
         <Set>
-          <div>
-            <label>{getContent('skillFrontEnd')}</label>
-            ReactJS / VueJS / JavaScript / Typescript / jQuery, Styled-component
-            / SASS / CSS / CSS module, HTML5
-          </div>
-          <div>
-            <label>{getContent('skillTest')}</label>
-            Jest / Enzyme, Cypress / testCafe / Nightwatch, eslint
-          </div>
-          <div>
-            <label>{getContent('skillTool')}</label>
-            Git, Webpack, Yarn / NPM, Gulp, vsCode, Slack, Jira, Confluence,
-            Sentry
-          </div>
-          <div>
-            <label>{getContent('skillBackEnd')}</label>
-            Node.js, AWS, firebase, PHP, MySql
-          </div>
-          <div>
-            <label>{getContent('skillCICD')}</label>
-            Travis CI, Codecov, Heroku, Netlify
-          </div>
-          <div>
-            <label>{getContent('skillData')}</label>
-            TensorFlow, Python, GA, GTM
-          </div>
-          <div>
-            <label>{getContent('skillOthers')}</label>
-            google map API, youtube API, DFP, LineBot, GA, GTM
-            {
-              // RoR, Phonegap, Unity, Java, Meteor, Ionic
-            }
-          </div>
-          <div>
-            <label>{getContent('skillLang')}</label>
-            {`${getContent('skillLangContent')}`}
-          </div>
+          {skills.map((skill: string, index: number) => (
+            <div key={index}>
+              <label>{getContent(`skill${skill}`)}</label>
+              {getContent(`skill${skill}Content`)}
+            </div>
+          ))}
+          {
+            // RoR, Phonegap, Unity, Java, Meteor, Ionic
+          }
         </Set>
       </SegmentWrapper>
     )
