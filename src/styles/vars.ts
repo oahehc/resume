@@ -34,7 +34,7 @@ export const portfolioColor2 = '#F7D6E0'
 export const portfolioColor3 = '#EFF7F6'
 
 // common color
-export const linkColor = '#5899E2'
+export const linkColor = '#0954a9'
 export const linkColorHover = '#65AFFF'
 export const white = 'rgba(250, 250, 250, .9)'
 export const lightRed = 'rgb(255, 243, 243, .3)'
