@@ -609,7 +609,7 @@
     "zh": "個人履歷"
   },
   "portfolioResumeStack": {
-    "all": ["Typescript", "CSS grid"]
+    "all": ["Typescript", "CSS grid", "GitHub pages", "Netlify", "Slack bot"]
   },
   "portfolioResumeLink": {
     "all": [
