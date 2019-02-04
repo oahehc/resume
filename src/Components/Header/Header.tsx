@@ -1,10 +1,17 @@
 import React, { Component } from 'react'
 import cx from 'classnames'
 import { infoColor1, expColor1, portfolioColor1 } from '../../styles/vars'
-import { Iteration, Tree, User } from 'grommet-icons'
+import { Iteration, Tree, User, UnorderedList } from 'grommet-icons'
 import { I18nContext } from '../../Context/Context'
 import I18nToggle from '../I18nToggle/I18nToggle'
-import { HeaderWrapper, Link } from './Header.style'
+import {
+  HeaderWrapper,
+  Link,
+  Dividend,
+  MobileToggle,
+  MobileHeader,
+  MobileLink,
+} from './Header.style'
 
 const links = [
   {
@@ -30,23 +37,53 @@ const links = [
   },
 ]
 
-class Header extends Component {
+type HeaderState = {
+  currentAnchor?: string
+  showMobileHeader: boolean
+}
+
+class Header extends Component<{}, HeaderState> {
   static contextType = I18nContext
   state = {
     currentAnchor: window.location.hash,
+    showMobileHeader: false,
   }
 
   changeAnchor = (currentAnchor: string): void => {
     this.setState({ currentAnchor })
   }
 
+  handleToggleMobileHeader = () => {
+    this.setState(prevState => ({
+      showMobileHeader: !prevState.showMobileHeader,
+    }))
+  }
+
   render() {
     const { getContent } = this.context
-    const { currentAnchor } = this.state
+    const { currentAnchor, showMobileHeader } = this.state
 
     return (
       <React.Fragment>
+        <MobileHeader
+          className={showMobileHeader ? 'open' : ''}
+          onClick={this.handleToggleMobileHeader}
+        >
+          {links.map(({ anchor, textKey, indicatorColor }) => (
+            <MobileLink
+              key={textKey}
+              onClick={() => this.changeAnchor(anchor)}
+              href={anchor}
+              indicatorColor={indicatorColor}
+            >
+              {getContent(textKey)}
+            </MobileLink>
+          ))}
+        </MobileHeader>
         <HeaderWrapper>
+          <MobileToggle onClick={this.handleToggleMobileHeader}>
+            <UnorderedList />
+          </MobileToggle>
           {links.map(({ anchor, textKey, icon, indicatorColor }) => (
             <Link
               key={textKey}
@@ -59,21 +96,9 @@ class Header extends Component {
               <div>{getContent(textKey)}</div>
             </Link>
           ))}
-          |
+          <Dividend />
           <I18nToggle />
         </HeaderWrapper>
-        {/* <Aside>
-          {links.map(({ anchor, textKey, icon }) => (
-            <Link
-              className={cx({ active: anchor === currentAnchor })}
-              onClick={() => this.changeAnchor(anchor)}
-              href={anchor}
-              title={getContent(textKey)}
-            >
-              {icon}
-            </Link>
-          ))}
-        </Aside> */}
       </React.Fragment>
     )
   }

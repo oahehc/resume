@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components/macro'
 import {
+  padWidth,
   expColor1Light,
   expColor2,
-  expColor3,
   grey3,
   white,
 } from '../../styles/vars'
@@ -40,31 +40,21 @@ const ItemBase = css`
       margin: 0;
     }
 
-    & > label {
-      background-color: ${expColor3};
-      padding: 2px 5px;
-      margin: 2px;
-      font-size: 13px;
-      font-weight: 600;
-      display: inline-block;
-      border-radius: 2px;
-    }
-
     & > div {
       padding-top: 3px;
       font-size: 16px;
 
       :before {
         content: '➥';
-        margin-right: 5px;
+        margin: 0 5px;
       }
     }
   }
 `
 const TimeLinePointBase = css`
-  left: -14px;
+  left: -11px;
   border-radius: 50%;
-  border: 10px solid ${expColor1Light};
+  border: 5px solid ${expColor1Light};
   background-color: white;
   content: '';
   width: 20px;
@@ -77,6 +67,14 @@ export const GridContainer = styled.div`
   grid-template-columns: 2fr 80px 3fr;
   /* grid-template-rows: auto auto auto; */
   grid-auto-rows: minmax(10px, auto);
+
+  @media only screen and (max-width: ${padWidth}) {
+    display: block;
+
+    & > div {
+      margin-bottom: 10px;
+    }
+  }
 `
 export const GridItemLeft = styled.div`
   ${ItemBase}
@@ -121,7 +119,7 @@ export const TimeLine = styled.div`
   position: relative;
   height: ${(props: timeLineProps) =>
     props.isStart ? 'calc(100% - 10px)' : '100%'};
-  width: 12px;
+  width: 8px;
   background-color: ${expColor1Light};
 
   &:before {
@@ -133,5 +131,9 @@ export const TimeLine = styled.div`
     top: 35%;
     ${TimeLinePointBase}
     display: ${(props: timeLineProps) => (props.isSingle ? 'none' : 'block')};
+  }
+
+  @media only screen and (max-width: ${padWidth}) {
+    display: none;
   }
 `

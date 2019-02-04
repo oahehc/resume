@@ -1,20 +1,11 @@
 import styled from 'styled-components/macro'
-import { grey2, portfolioColor2 } from '../../styles/vars'
+import { padWidth, grey2 } from '../../styles/vars'
 
 export const Card = styled.div`
   margin: 10px;
   padding: 5px;
   box-shadow: 0 0 2px 0 ${grey2};
   display: flex;
-
-  label {
-    background-color: ${portfolioColor2};
-    font-size: 12px;
-    font-weight: 600;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 10px;
-  }
 
   h4 {
     margin: 10px;
@@ -35,12 +26,20 @@ export const Card = styled.div`
     font-size: 14px;
     font-style: italic;
   }
+
+  @media only screen and (max-width: ${padWidth}) {
+    flex-direction: column;
+  }
 `
 
 export const CardInfo = styled.div`
-  width: 620px;
-  min-width: 620px;
+  width: 520px;
+  min-width: 520px;
   max-width: 100%;
+
+  @media only screen and (max-width: ${padWidth}) {
+    min-width: 100%;
+  }
 `
 export const CardImgs = styled.div`
   flex: 1;

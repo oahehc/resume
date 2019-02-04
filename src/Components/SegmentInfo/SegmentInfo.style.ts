@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro'
-import { infoColor2, infoColor2Light } from '../../styles/vars'
 
 export const List = styled.div`
   display: flex;
@@ -9,10 +8,6 @@ export const List = styled.div`
   &.title {
     font-weight: 800;
     margin-bottom: 8px;
-  }
-
-  .space {
-    margin: 0 5px;
   }
 
   svg {
@@ -28,11 +23,6 @@ export const Set = styled.div`
   }
 
   label {
-    background-color: ${infoColor2};
-    color: ${infoColor2Light};
-    padding: 5px 10px;
-    border-radius: 2px;
-    margin-right: 5px;
-    font-weight: 600;
+    margin-right: 10px;
   }
 `

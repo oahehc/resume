@@ -3,9 +3,11 @@ import { portfolioColor1 } from '../../styles/vars'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { Title } from '../../Elements/Title'
 import IconLink from '../../Elements/IconLink'
+import Label from '../../Elements/Label'
 import Gallery from '../Gallery/Gallery'
 import { I18nContext } from '../../Context/Context'
 import { Card, CardInfo, CardImgs } from './SegmentPortfolio.style'
+import { portfolioColor2 } from '../../styles/vars'
 
 const projectList = [
   'Shorten',
@@ -32,7 +34,9 @@ export default class SegmentPortfolio extends React.Component<{}, any> {
             <CardInfo>
               {getContent(`portfolio${project}Stack`).map(
                 (str: string, index: number) => (
-                  <label key={index}>{str}</label>
+                  <Label key={index} bgColor={portfolioColor2}>
+                    {str}
+                  </Label>
                 ),
               )}
               <h4>
@@ -56,7 +60,9 @@ export default class SegmentPortfolio extends React.Component<{}, any> {
           <div>
             {getContent('portfolioTemplateStack').map(
               (str: string, index: number) => (
-                <label key={index}>{str}</label>
+                <Label key={index} bgColor={portfolioColor2}>
+                  {str}
+                </Label>
               ),
             )}
             {getContent('portfolioTemplate').map(
