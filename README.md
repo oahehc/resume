@@ -1,6 +1,6 @@
 # Resume
 
-project for practice some new skill like typescript and css grid, and some cool service like Netlify, LogRocket, GitHub pages...
+project for practice some new skill like typescript and css grid, and some cool service like LogRocket, GitHub pages...
 
 ---
 
@@ -10,6 +10,5 @@ project for practice some new skill like typescript and css grid, and some cool 
 
 ---
 
-[Netlify](https://www.netlify.com/)
 [LogRocket](https://app.logrocket.com/#)
 [GitHub pages](https://pages.github.com/)
