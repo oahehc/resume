@@ -51,7 +51,7 @@ export default class IconLink extends Component<iconLinkPropType> {
     const Icon = this.getIconComponent()
 
     return (
-      <A target="_blank" href={link}>
+      <A target="_blank" href={link} rel="noopener">
         <Icon />
       </A>
     )

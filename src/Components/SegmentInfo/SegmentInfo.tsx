@@ -29,21 +29,29 @@ export default class SegmentInfo extends React.Component<{}, any> {
         <Title>{getContent('name')}</Title>
         <List>
           <MailOption />
-          <a href="mailto:chehao@ntu.edu.tw">chehao@ntu.edu.tw</a>
+          <a href="mailto:chehao@ntu.edu.tw" rel="noopener">
+            chehao@ntu.edu.tw
+          </a>
         </List>
         <List>
           <MailOption />
-          <a href="mailto:chehao@ntu.edu.tw">oahehc@gmail.com</a>
+          <a href="mailto:chehao@ntu.edu.tw" rel="noopener">
+            oahehc@gmail.com
+          </a>
         </List>
         <List>
           <Github />
-          <a target="_blank" href="https://github.com/oahehc">
+          <a target="_blank" href="https://github.com/oahehc" rel="noopener">
             GitHub
           </a>
         </List>
         <List>
           <LinkedinOption />
-          <a target="_blank" href="https://tw.linkedin.com/in/oahehc">
+          <a
+            target="_blank"
+            href="https://tw.linkedin.com/in/oahehc"
+            rel="noopener"
+          >
             Linkedin
           </a>
         </List>

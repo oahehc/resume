@@ -308,35 +308,35 @@
   "portfolioDLImages": {
     "all": [
       {
-        "src": "DL/1.png",
+        "src": "DL/1.webp",
         "alt": "DL active function"
       },
       {
-        "src": "DL/2.png",
+        "src": "DL/2.webp",
         "alt": "DL TensorBoard"
       },
       {
-        "src": "DL/3.png",
+        "src": "DL/3.webp",
         "alt": "DL Autoencoder"
       },
       {
-        "src": "DL/4.png",
+        "src": "DL/4.webp",
         "alt": "DL t-SNE and PCA"
       },
       {
-        "src": "DL/5.png",
+        "src": "DL/5.webp",
         "alt": "DL VAE"
       },
       {
-        "src": "DL/6.png",
+        "src": "DL/6.webp",
         "alt": "DL VAE"
       },
       {
-        "src": "DL/7.png",
+        "src": "DL/7.webp",
         "alt": "DL RNN"
       },
       {
-        "src": "DL/8.png",
+        "src": "DL/8.webp",
         "alt": "DL Skip-Gram"
       }
     ]
@@ -394,15 +394,15 @@
   "portfolioOnboardImages": {
     "all": [
       {
-        "src": "Onboard/1.png",
+        "src": "Onboard/1.webp",
         "alt": "onboarding preview"
       },
       {
-        "src": "Onboard/2.png",
+        "src": "Onboard/2.webp",
         "alt": "onboarding preview"
       },
       {
-        "src": "Onboard/3.png",
+        "src": "Onboard/3.webp",
         "alt": "onboarding intro"
       }
     ]
@@ -429,7 +429,7 @@
   "portfolioLotteryImages": {
     "all": [
       {
-        "src": "Lottery/1.png",
+        "src": "Lottery/1.webp",
         "alt": "Lottery message"
       }
     ]
@@ -474,7 +474,7 @@
   "portfolioShortenImages": {
     "all": [
       {
-        "src": "Shorten/1.png",
+        "src": "Shorten/1.webp",
         "alt": "openinghour-shorten usage"
       }
     ]
@@ -505,27 +505,27 @@
   "portfolioMusicBookImages": {
     "all": [
       {
-        "src": "MusicBook/1.png",
+        "src": "MusicBook/1.webp",
         "alt": "MusicBook login"
       },
       {
-        "src": "MusicBook/2.png",
+        "src": "MusicBook/2.webp",
         "alt": "MusicBook list"
       },
       {
-        "src": "MusicBook/3.png",
+        "src": "MusicBook/3.webp",
         "alt": "MusicBook content"
       },
       {
-        "src": "MusicBook/4.png",
+        "src": "MusicBook/4.webp",
         "alt": "MusicBook hotkey"
       },
       {
-        "src": "MusicBook/5.png",
+        "src": "MusicBook/5.webp",
         "alt": "MusicBook upload"
       },
       {
-        "src": "MusicBook/6.png",
+        "src": "MusicBook/6.webp",
         "alt": "MusicBook edit"
       }
     ]
@@ -552,15 +552,15 @@
   "portfolioSpeakTrainerImages": {
     "all": [
       {
-        "src": "SpeakTrainer/1.png",
+        "src": "SpeakTrainer/1.webp",
         "alt": "SpeakTrainer login"
       },
       {
-        "src": "SpeakTrainer/2.png",
+        "src": "SpeakTrainer/2.webp",
         "alt": "SpeakTrainer testing"
       },
       {
-        "src": "SpeakTrainer/3.png",
+        "src": "SpeakTrainer/3.webp",
         "alt": "SpeakTrainer result"
       }
     ]
@@ -587,19 +587,19 @@
   "portfolioRestaurantLineBotImages": {
     "all": [
       {
-        "src": "RestaurantLineBot/1.png",
+        "src": "RestaurantLineBot/1.webp",
         "alt": "RestaurantLineBot search"
       },
       {
-        "src": "RestaurantLineBot/2.png",
+        "src": "RestaurantLineBot/2.webp",
         "alt": "RestaurantLineBot search by location"
       },
       {
-        "src": "RestaurantLineBot/3.png",
+        "src": "RestaurantLineBot/3.webp",
         "alt": "RestaurantLineBot list"
       },
       {
-        "src": "RestaurantLineBot/4.png",
+        "src": "RestaurantLineBot/4.webp",
         "alt": "RestaurantLineBot remove"
       }
     ]

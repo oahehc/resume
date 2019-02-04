@@ -38,7 +38,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           <GridItemRight>
             <div>
               {this.generateDateString('2018/8', 'now')}
-              <a href="https://www.cnyes.com" target="_blank">
+              <a href="https://www.cnyes.com" target="_blank" rel="noopener">
                 {getContent('anue')}
               </a>
             </div>
@@ -63,7 +63,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           <GridItemLeft>
             <div>
               {this.generateDateString('2018/4', '2018/7')}
-              <a href="https://pebblar.com/" target="_blank">
+              <a href="https://pebblar.com/" target="_blank" rel="noopener">
                 pebblar
               </a>
             </div>
@@ -91,7 +91,11 @@ export default class SegmentExp extends React.Component<{}, any> {
           <GridItemRight>
             <div>
               {this.generateDateString('2017/11', '2018/3')}
-              <a href="https://www.deepblu.com/discover/live" target="_blank">
+              <a
+                href="https://www.deepblu.com/discover/live"
+                target="_blank"
+                rel="noopener"
+              >
                 deepblu
               </a>
             </div>
@@ -136,7 +140,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           <GridItemRight>
             <div>
               {this.generateDateString('2016/6', '2017/10')}
-              <a href="http://www.flow.tw/" target="_blank">
+              <a href="http://www.flow.tw/" target="_blank" rel="noopener">
                 {getContent('flow')}
               </a>
             </div>
@@ -183,7 +187,7 @@ export default class SegmentExp extends React.Component<{}, any> {
           <GridItemLeft>
             <div>
               {this.generateDateString('2009/12', '2016/5')}
-              <a href="https://www.asus.com/tw/" target="_blank">
+              <a href="https://www.asus.com/tw/" target="_blank" rel="noopener">
                 {getContent('asus')}
               </a>
             </div>
