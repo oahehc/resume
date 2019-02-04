@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { I18nContext } from './Context/Context'
 import BrowserNotification from './Components/BrowserNotification/BrowserNotification'
+import ErrorBoundary from './Components/ErrorBoundary/ErrorBoundary'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 import SegmentInfo from './Components/SegmentInfo/SegmentInfo'
@@ -21,14 +22,14 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <ErrorBoundary>
         <BrowserNotification />
         <Header />
         <SegmentInfo />
         <SegmentExp />
         <SegmentPortfolio />
         <Footer />
-      </React.Fragment>
+      </ErrorBoundary>
     )
   }
 }
