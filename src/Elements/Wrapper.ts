@@ -16,6 +16,6 @@ export const SegmentWrapper = styled.div`
   margin: 10px auto;
   margin-bottom: 50px;
   box-shadow: 0 1px 2px 0 ${vars.grey1};
-  border-top: 5px solid
+  border-top: 8px solid
     ${(props: WrapperProps) => props.topBorderColor || 'transparent'};
 `

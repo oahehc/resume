@@ -18,6 +18,7 @@ const projectList = [
   'Lottery',
   'Serverless',
   'DL',
+  'Resume',
 ]
 
 export default class SegmentPortfolio extends React.Component<{}, any> {

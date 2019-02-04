@@ -570,7 +570,7 @@
     "zh": "餐廳搜尋 line 機器人"
   },
   "portfolioRestaurantLineBotStack": {
-    "all": ["LineBot", " google map/drive api", "node.js", "Heroku"]
+    "all": ["LineBot", "google map/drive api", "node.js", "Heroku"]
   },
   "portfolioRestaurantLineBotLink": {
     "all": [
@@ -603,6 +603,25 @@
         "alt": "RestaurantLineBot remove"
       }
     ]
+  },
+  "portfolioResume": {
+    "en": "Personal Resume",
+    "zh": "個人履歷"
+  },
+  "portfolioResumeStack": {
+    "all": ["Typescript", "CSS grid"]
+  },
+  "portfolioResumeLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/resume"
+      }
+    ]
+  },
+  "portfolioResumeContent": {
+    "en": "personal resume which use for try some new stack like typescript, css grid..",
+    "zh": "個人履歷，用於練習各類新技術如 typescript, css grid.."
   },
   "_temp": {
     "en": "",
