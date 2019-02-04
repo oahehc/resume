@@ -21,7 +21,6 @@ export default class Footer extends Component<{}, footerState> {
 
     return (
       <Wrapper>
-        <span />
         <span>&copy; {currentYear} Oahehc</span>
         <span>
           {getContent('lastUpdate')}: {releaseDate.toLocaleDateString()}

@@ -75,7 +75,7 @@
     "zh": "資料分析"
   },
   "skillDataContent": {
-    "zh": "TensorFlow, Python, GTM, GA"
+    "all": "TensorFlow, Python, GTM, GA"
   },
   "skillOthers": {
     "en": "Others",

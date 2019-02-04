@@ -17,6 +17,7 @@ export default createGlobalStyle`
     -ms-overflow-style: scrollbar;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: ${vars.white};
   }
 
   a {

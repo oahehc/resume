@@ -26,4 +26,8 @@ export const Set = styled.div`
   & > div {
     margin-bottom: 5px;
   }
+
+  label {
+    margin-right: 10px;
+  }
 `

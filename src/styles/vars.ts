@@ -36,6 +36,6 @@ export const portfolioColor3 = '#EFF7F6'
 // common color
 export const linkColor = '#5899E2'
 export const linkColorHover = '#65AFFF'
-export const white = '#f5f5f5'
+export const white = 'rgba(250, 250, 250, .6)'
 export const lightRed = 'rgb(255, 243, 243, .3)'
 export const transparentGrey = 'rgba(40, 40, 40, 0.9)'

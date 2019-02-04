@@ -46,7 +46,7 @@ const ItemBase = css`
 
       :before {
         content: '➥';
-        margin-right: 5px;
+        margin: 0 5px;
       }
     }
   }
