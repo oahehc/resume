@@ -46,7 +46,7 @@ export default class Gallery extends Component<galleryProps, galleryState> {
         {images.map(({ src, alt }: any, index: number) => (
           <Img
             key={index}
-            src={src}
+            src={`https://s3-ap-northeast-1.amazonaws.com/oahehc/cdn/${src}`}
             alt={alt}
             title={alt}
             onClick={() => this.handleToggleLightbox(index)}
@@ -58,7 +58,9 @@ export default class Gallery extends Component<galleryProps, galleryState> {
               <CaretPrevious />
             </Control>
             <img
-              src={playingImage.src}
+              src={`https://s3-ap-northeast-1.amazonaws.com/oahehc/cdn/${
+                playingImage.src
+              }`}
               alt={playingImage.alt}
               title={playingImage.alt}
             />
