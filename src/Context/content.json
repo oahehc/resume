@@ -348,10 +348,6 @@
         "name": "gulp-webapp-template"
       },
       {
-        "link": "https://github.com/oahehc/react-template",
-        "name": "react-template"
-      },
-      {
         "link": "https://github.com/oahehc/vue-template",
         "name": "vue-template"
       },
@@ -362,7 +358,7 @@
     ]
   },
   "portfolioTemplateStack": {
-    "all": ["Gulp", "React", "Vue", "Nuxt"]
+    "all": ["Gulp", "Vue", "Nuxt"]
   },
   "portfolioTemplateContent": {
     "en": "custom template create by different stack",
