@@ -4,11 +4,14 @@ project for practice some new skill like typescript and css grid, and some cool 
 
 ---
 
-[Preview](https://oahehc.github.io/resume/)
-[中文](https://oahehc.github.io/resume/?lang=zh)
+#### Preview
+
+[中文](https://oahehc.github.io/resume/?lang=zh)  
 [English](https://oahehc.github.io/resume/?lang=en)
 
 ---
 
-[LogRocket](https://app.logrocket.com/#)
+#### Reference
+
+[LogRocket](https://app.logrocket.com/#)  
 [GitHub pages](https://pages.github.com/)
