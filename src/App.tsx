@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { I18nContext } from './Context/Context'
 import BrowserNotification from './Components/BrowserNotification/BrowserNotification'
 import ErrorBoundary from './Components/ErrorBoundary/ErrorBoundary'
@@ -8,30 +8,30 @@ import SegmentInfo from './Components/SegmentInfo/SegmentInfo'
 import SegmentExp from './Components/SegmentExp/SegmentExp'
 import SegmentPortfolio from './Components/SegmentPortfolio/SegmentPortfolio'
 
-class App extends Component {
-  static contextType = I18nContext
+const App: React.SFC = () => {
+  const { getContent } = useContext(I18nContext)
 
-  componentDidUpdate() {
-    const { getContent } = this.context
-    const title = `${getContent('name')} | ${getContent('resume')}`
+  useEffect(
+    () => {
+      const title = `${getContent('name')} | ${getContent('resume')}`
 
-    if (document.title !== title) {
-      document.title = title
-    }
-  }
+      if (document.title !== title) {
+        document.title = title
+      }
+    },
+    [getContent('name')],
+  )
 
-  render() {
-    return (
-      <ErrorBoundary>
-        <BrowserNotification />
-        <Header />
-        <SegmentInfo />
-        <SegmentExp />
-        <SegmentPortfolio />
-        <Footer />
-      </ErrorBoundary>
-    )
-  }
+  return (
+    <ErrorBoundary>
+      <BrowserNotification />
+      <Header />
+      <SegmentInfo />
+      <SegmentExp />
+      <SegmentPortfolio />
+      <Footer />
+    </ErrorBoundary>
+  )
 }
 
 export default App

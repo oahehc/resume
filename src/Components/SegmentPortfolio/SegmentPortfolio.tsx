@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { portfolioColor1 } from '../../styles/vars'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { Title } from '../../Elements/Title'
@@ -21,67 +21,64 @@ const projectList = [
   'Resume',
 ]
 
-export default class SegmentPortfolio extends React.Component<{}, any> {
-  static contextType = I18nContext
+const SegmentPortfolio: React.SFC = () => {
+  const { getContent } = useContext(I18nContext)
 
-  render() {
-    const { getContent } = this.context
-
-    return (
-      <SegmentWrapper id="portfolio" topBorderColor={portfolioColor1}>
-        <Title>{getContent('anchorPortfolio')}</Title>
-        {projectList.map(project => (
-          <Card key={project}>
-            <CardInfo>
-              {getContent(`portfolio${project}Stack`).map(
-                (str: string, index: number) => (
-                  <Label key={index} bgColor={portfolioColor2}>
-                    {str}
-                  </Label>
-                ),
-              )}
-              <h4>
-                {getContent(`portfolio${project}`)}
-                {getContent(`portfolio${project}Link`).map(
-                  ({ type, link }: any) => (
-                    <IconLink key={type} type={type} link={link} />
-                  ),
-                )}
-              </h4>
-              <p>{getContent(`portfolio${project}Content`)}</p>
-            </CardInfo>
-            {getContent(`portfolio${project}Images`) && (
-              <CardImgs>
-                <Gallery images={getContent(`portfolio${project}Images`)} />
-              </CardImgs>
-            )}
-          </Card>
-        ))}
-        <Card>
-          <div>
-            {getContent('portfolioTemplateStack').map(
+  return (
+    <SegmentWrapper id="portfolio" topBorderColor={portfolioColor1}>
+      <Title>{getContent('anchorPortfolio')}</Title>
+      {projectList.map(project => (
+        <Card key={project}>
+          <CardInfo>
+            {getContent(`portfolio${project}Stack`).map(
               (str: string, index: number) => (
                 <Label key={index} bgColor={portfolioColor2}>
                   {str}
                 </Label>
               ),
             )}
-            {getContent('portfolioTemplate').map(
-              (template: any, index: number) => (
-                <h4 key={index}>
-                  {template.name}
-                  <IconLink type="github" link={template.link} />
-                </h4>
-              ),
-            )}
-            <p>{getContent('portfolioTemplateContent')}</p>
-          </div>
+            <h4>
+              {getContent(`portfolio${project}`)}
+              {getContent(`portfolio${project}Link`).map(
+                ({ type, link }: any) => (
+                  <IconLink key={type} type={type} link={link} />
+                ),
+              )}
+            </h4>
+            <p>{getContent(`portfolio${project}Content`)}</p>
+          </CardInfo>
+          {getContent(`portfolio${project}Images`) && (
+            <CardImgs>
+              <Gallery images={getContent(`portfolio${project}Images`)} />
+            </CardImgs>
+          )}
         </Card>
-      </SegmentWrapper>
-    )
-  }
+      ))}
+      <Card>
+        <div>
+          {getContent('portfolioTemplateStack').map(
+            (str: string, index: number) => (
+              <Label key={index} bgColor={portfolioColor2}>
+                {str}
+              </Label>
+            ),
+          )}
+          {getContent('portfolioTemplate').map(
+            (template: any, index: number) => (
+              <h4 key={index}>
+                {template.name}
+                <IconLink type="github" link={template.link} />
+              </h4>
+            ),
+          )}
+          <p>{getContent('portfolioTemplateContent')}</p>
+        </div>
+      </Card>
+    </SegmentWrapper>
+  )
 }
 
+export default SegmentPortfolio
 /*
       <dt><a href="https://s3-ap-northeast-1.amazonaws.com/oahehc/webClock/index.html">WebClock</a></dt>
       <dd><span class="skill">Meteor</span> Online clock</dd>

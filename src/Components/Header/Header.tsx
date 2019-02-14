@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useContext, useState } from 'react'
 import cx from 'classnames'
 import { infoColor1, expColor1, portfolioColor1 } from '../../styles/vars'
 import { Iteration, Tree, User, UnorderedList } from 'grommet-icons'
@@ -37,71 +37,73 @@ const links = [
   },
 ]
 
-type HeaderState = {
+type stateType = {
   currentAnchor?: string
   showMobileHeader: boolean
 }
 
-class Header extends Component<{}, HeaderState> {
-  static contextType = I18nContext
-  state = {
-    currentAnchor: window.location.hash,
-    showMobileHeader: false,
+const defaultState: stateType = {
+  currentAnchor: window.location.hash,
+  showMobileHeader: false,
+}
+
+const Header: React.SFC = () => {
+  const { getContent } = useContext(I18nContext)
+  const [state, setState] = useState(defaultState)
+
+  const changeAnchor = (currentAnchor: string): void => {
+    setState({
+      ...state,
+      currentAnchor,
+    })
   }
 
-  changeAnchor = (currentAnchor: string): void => {
-    this.setState({ currentAnchor })
+  const handleToggleMobileHeader = () => {
+    setState({
+      ...state,
+      showMobileHeader: !state.showMobileHeader,
+    })
   }
+  const { currentAnchor, showMobileHeader } = state
 
-  handleToggleMobileHeader = () => {
-    this.setState(prevState => ({
-      showMobileHeader: !prevState.showMobileHeader,
-    }))
-  }
-
-  render() {
-    const { getContent } = this.context
-    const { currentAnchor, showMobileHeader } = this.state
-
-    return (
-      <React.Fragment>
-        <MobileHeader
-          className={showMobileHeader ? 'open' : ''}
-          onClick={this.handleToggleMobileHeader}
-        >
-          {links.map(({ anchor, textKey, indicatorColor }) => (
-            <MobileLink
-              key={textKey}
-              onClick={() => this.changeAnchor(anchor)}
-              href={anchor}
-              indicatorColor={indicatorColor}
-            >
-              {getContent(textKey)}
-            </MobileLink>
-          ))}
-        </MobileHeader>
-        <HeaderWrapper>
-          <MobileToggle onClick={this.handleToggleMobileHeader}>
-            <UnorderedList />
-          </MobileToggle>
-          {links.map(({ anchor, textKey, icon, indicatorColor }) => (
-            <Link
-              key={textKey}
-              className={cx({ active: anchor === currentAnchor })}
-              onClick={() => this.changeAnchor(anchor)}
-              href={anchor}
-              indicatorColor={indicatorColor}
-            >
-              {icon}
-              <div>{getContent(textKey)}</div>
-            </Link>
-          ))}
-          <Dividend />
-          <I18nToggle />
-        </HeaderWrapper>
-      </React.Fragment>
-    )
-  }
+  return (
+    <React.Fragment>
+      <MobileHeader
+        className={showMobileHeader ? 'open' : ''}
+        onClick={handleToggleMobileHeader}
+      >
+        {links.map(({ anchor, textKey, indicatorColor }) => (
+          <MobileLink
+            key={textKey}
+            onClick={() => changeAnchor(anchor)}
+            href={anchor}
+            indicatorColor={indicatorColor}
+          >
+            {getContent(textKey)}
+          </MobileLink>
+        ))}
+      </MobileHeader>
+      <HeaderWrapper>
+        <MobileToggle onClick={handleToggleMobileHeader}>
+          <UnorderedList />
+        </MobileToggle>
+        {links.map(({ anchor, textKey, icon, indicatorColor }) => (
+          <Link
+            key={textKey}
+            className={cx({ active: anchor === currentAnchor })}
+            onClick={() => changeAnchor(anchor)}
+            href={anchor}
+            indicatorColor={indicatorColor}
+          >
+            {icon}
+            <div>{getContent(textKey)}</div>
+          </Link>
+        ))}
+        <Dividend />
+        <I18nToggle />
+      </HeaderWrapper>
+    </React.Fragment>
+  )
 }
 
 export default Header

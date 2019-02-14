@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 import idx from 'idx'
 import content from './content.json'
 import { getLangFromUrlSearch } from '../Utils/regex'
@@ -8,43 +8,18 @@ interface contentType {
 }
 
 export const defaultLang: string = 'en'
-export const I18nContext = React.createContext({
+export const I18nContext = createContext({
   lang: defaultLang,
   content: {},
   changeLang: (x: string): void => {},
-  getContent: (x: string): string => x,
+  getContent: (x: string): any => x,
 })
 
-export interface ContextProps {}
+const ContextProvider: React.SFC = props => {
+  const [lang, changeLang] = useState(defaultLang)
 
-export default class Context extends React.Component<ContextProps, any> {
-  constructor(props: ContextProps) {
-    super(props)
-    this.state = {
-      lang: defaultLang,
-    }
-  }
-
-  componentDidMount() {
-    this.getDefaultLangFromUrl()
-  }
-
-  getDefaultLangFromUrl = () => {
-    const { search } = window.location
-    const lang = getLangFromUrlSearch(search)
-
-    if (lang) {
-      this.changeLang(lang)
-    }
-  }
-
-  changeLang = (lang: string): void => {
-    this.setState({ lang })
-  }
-
-  getContent = (key: string): string => {
+  function getContent(key: string): string {
     const cont: contentType = content
-    const { lang } = this.state
 
     return (
       idx(cont, _ => _[key][lang]) ||
@@ -54,20 +29,27 @@ export default class Context extends React.Component<ContextProps, any> {
     )
   }
 
-  public render() {
-    const { lang } = this.state
+  useEffect(() => {
+    const { search } = window.location
+    const lang = getLangFromUrlSearch(search)
 
-    return (
-      <I18nContext.Provider
-        value={{
-          lang,
-          content,
-          changeLang: this.changeLang,
-          getContent: this.getContent,
-        }}
-      >
-        {this.props.children}
-      </I18nContext.Provider>
-    )
-  }
+    if (lang) {
+      changeLang(lang)
+    }
+  }, [])
+
+  return (
+    <I18nContext.Provider
+      value={{
+        lang,
+        content,
+        changeLang,
+        getContent,
+      }}
+    >
+      {props.children}
+    </I18nContext.Provider>
+  )
 }
+
+export default ContextProvider
