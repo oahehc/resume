@@ -1,72 +1,64 @@
-import React, { Component } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { I18nContext } from '../../Context/Context'
 import is from 'is_js'
 import { NotificationWrapper, Notification } from './BrowserNotification.style'
 
-type browserNotificationState = {
+type stateType = {
   isBrowserSupport: boolean
   closeNotification: boolean
 }
+const defaultState: stateType = {
+  isBrowserSupport: false,
+  closeNotification: false,
+}
 
-export default class BrowserNotification extends Component<
-  {},
-  browserNotificationState
-> {
-  static contextType = I18nContext
+const BrowserNotification: React.SFC = () => {
+  const { getContent } = useContext(I18nContext)
+  const [state, setState] = useState(defaultState)
 
-  state = {
-    isBrowserSupport: false,
-    closeNotification: false,
-  }
-
-  componentDidMount() {
-    this.checkBrowser()
-  }
-
-  checkBrowser = () => {
+  const checkBrowser = () => {
     let isBrowserSupport = false
 
     if (is.chrome('>=69')) {
       isBrowserSupport = true
     }
 
-    this.setState({
+    setState({
+      ...state,
       isBrowserSupport,
     })
   }
+  useEffect(() => {
+    checkBrowser()
+  }, [])
 
-  handleCloseNotification = () => {
-    this.setState(
-      {
-        closeNotification: true,
-      },
-      () => {
-        setTimeout(() => {
-          this.setState({
-            isBrowserSupport: true,
-          })
-        }, 300)
-      },
-    )
+  const handleCloseNotification = () => {
+    setState({
+      ...state,
+      closeNotification: true,
+    })
+    setTimeout(() => {
+      setState({
+        ...state,
+        isBrowserSupport: true,
+      })
+    }, 300)
   }
 
-  render() {
-    const { isBrowserSupport, closeNotification } = this.state
-    const { getContent } = this.context
+  const { isBrowserSupport, closeNotification } = state
 
-    if (isBrowserSupport) {
-      return null
-    }
-
-    return (
-      <NotificationWrapper>
-        <Notification className={closeNotification ? 'close' : ''}>
-          <p>{getContent('browserSupportNotice')}</p>
-          <button onClick={this.handleCloseNotification}>
-            {getContent('close')}
-          </button>
-        </Notification>
-      </NotificationWrapper>
-    )
+  if (isBrowserSupport) {
+    return null
   }
+
+  return (
+    <NotificationWrapper>
+      <Notification className={closeNotification ? 'close' : ''}>
+        <p>{getContent('browserSupportNotice')}</p>
+        <button onClick={handleCloseNotification}>{getContent('close')}</button>
+      </Notification>
+    </NotificationWrapper>
+  )
 }
+
+export default BrowserNotification
