@@ -99,7 +99,9 @@ const SegmentExp: React.SFC = () => {
             <div>
               {getContent('deepbluJobStack1').map(
                 (stack: string, index: number) => (
-                  <label key={index}>{stack}</label>
+                  <Label key={index} bgColor={expColor3}>
+                    {stack}
+                  </Label>
                 ),
               )}
               {getContent('deepbluJobContent1').map(
@@ -111,7 +113,9 @@ const SegmentExp: React.SFC = () => {
             <div>
               {getContent('deepbluJobStack2').map(
                 (stack: string, index: number) => (
-                  <label key={index}>{stack}</label>
+                  <Label key={index} bgColor={expColor3}>
+                    {stack}
+                  </Label>
                 ),
               )}
               {getContent('deepbluJobContent2').map(
@@ -144,7 +148,9 @@ const SegmentExp: React.SFC = () => {
             <div>
               {getContent('flowJobStack1').map(
                 (stack: string, index: number) => (
-                  <label key={index}>{stack}</label>
+                  <Label key={index} bgColor={expColor3}>
+                    {stack}
+                  </Label>
                 ),
               )}
               {getContent('flowJobContent1').map(
@@ -156,7 +162,9 @@ const SegmentExp: React.SFC = () => {
             <div>
               {getContent('flowJobStack2').map(
                 (stack: string, index: number) => (
-                  <label key={index}>{stack}</label>
+                  <Label key={index} bgColor={expColor3}>
+                    {stack}
+                  </Label>
                 ),
               )}
               {getContent('flowJobContent2').map(
@@ -168,7 +176,9 @@ const SegmentExp: React.SFC = () => {
             <div>
               {getContent('flowJobStack3').map(
                 (stack: string, index: number) => (
-                  <label key={index}>{stack}</label>
+                  <Label key={index} bgColor={expColor3}>
+                    {stack}
+                  </Label>
                 ),
               )}
               {getContent('flowJobContent3').map(
