@@ -501,16 +501,8 @@
   "portfolioMusicBookImages": {
     "all": [
       {
-        "src": "MusicBook/1.webp",
-        "alt": "MusicBook login"
-      },
-      {
         "src": "MusicBook/2.webp",
         "alt": "MusicBook list"
-      },
-      {
-        "src": "MusicBook/3.webp",
-        "alt": "MusicBook content"
       },
       {
         "src": "MusicBook/4.webp",
