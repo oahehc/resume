@@ -56,7 +56,7 @@ export const Set = styled.div`
 export const ExpDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 5px 0 20px 0;
+  margin: 5px 0 25px 0;
 `
 
 export const ExpTitle = styled.div`
