@@ -20,6 +20,15 @@ export default createGlobalStyle`
     background-color: ${vars.white};
   }
 
+  @media print {
+    html,
+    body {
+      height: auto;
+      width: 100vw;
+      overflow: auto;
+    }
+  }
+
   a {
     text-decoration: none;
     color: ${vars.linkColor};

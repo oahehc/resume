@@ -3,15 +3,16 @@ import PrintInfo from '../Components/PrintInfo/PrintInfo'
 import PrintExp from '../Components/PrintExp/PrintExp'
 import PrintEduction from '../Components/PrintEduction/PrintEduction'
 import PrintPortfolio from '../Components/PrintPortfolio/PrintPortfolio'
+import { Page } from '../Elements/Print'
 
 const Print: React.SFC = () => {
   return (
-    <React.Fragment>
+    <Page>
       <PrintInfo />
       <PrintExp />
       <PrintEduction />
       <PrintPortfolio />
-    </React.Fragment>
+    </Page>
   )
 }
 

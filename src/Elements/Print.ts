@@ -1,6 +1,21 @@
 import styled from 'styled-components/macro'
 import { grey1 } from '../styles/vars'
 
+export const Page = styled.div`
+  @media print {
+    @page {
+      size: A4 portrait;
+      margin: 0.5cm;
+      orphans: 4;
+      widows: 2;
+    }
+  }
+`
+
+export const PageBreak = styled.div`
+  page-break-before: always;
+`
+
 export const SegmentWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,6 +25,7 @@ export const SegmentWrapper = styled.div`
   box-sizing: border-box;
   padding: 10px;
   margin: 10px auto;
+  page-break-before: always;
 `
 
 export const Title = styled.h2`

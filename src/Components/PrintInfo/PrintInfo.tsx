@@ -21,14 +21,8 @@ const PrintInfo: React.SFC = () => {
     <SegmentWrapper>
       <Title>{getContent('anchorInfo')}</Title>
       <Item>
-        {lang !== 'en' ? (
-          <React.Fragment>
-            <span>{getContent('name')}</span>
-            <span>({getContent('name', 'en')})</span>
-          </React.Fragment>
-        ) : (
-          <span>{getContent('name')}</span>
-        )}
+        {getContent('name')}
+        {lang !== 'en' && <span>({getContent('name', 'en')})</span>}
       </Item>
       <Item>
         <MailOption />
