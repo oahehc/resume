@@ -6,8 +6,8 @@ import Print from './Pages/Print'
 const AppRouter: React.SFC = () => {
   return (
     <Router>
-      <Route path="/" exact component={Root} />
-      <Route path="/print" component={Print} />
+      <Route path={process.env.PUBLIC_URL + '/'} exact component={Root} />
+      <Route path={process.env.PUBLIC_URL + '/print'} component={Print} />
     </Router>
   )
 }
