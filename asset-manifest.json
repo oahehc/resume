@@ -1,13 +1,13 @@
 {
-  "main.js": "https://oahehc.github.io/resume/static/js/main.a920aca4.chunk.js",
-  "main.js.map": "https://oahehc.github.io/resume/static/js/main.a920aca4.chunk.js.map",
-  "static/css/1.780ed7df.chunk.css": "https://oahehc.github.io/resume/static/css/1.780ed7df.chunk.css",
-  "static/js/1.8c625d39.chunk.js": "https://oahehc.github.io/resume/static/js/1.8c625d39.chunk.js",
-  "static/js/1.8c625d39.chunk.js.map": "https://oahehc.github.io/resume/static/js/1.8c625d39.chunk.js.map",
-  "runtime~main.js": "https://oahehc.github.io/resume/static/js/runtime~main.c10779c8.js",
-  "runtime~main.js.map": "https://oahehc.github.io/resume/static/js/runtime~main.c10779c8.js.map",
-  "static/css/1.780ed7df.chunk.css.map": "https://oahehc.github.io/resume/static/css/1.780ed7df.chunk.css.map",
-  "index.html": "https://oahehc.github.io/resume/index.html",
-  "precache-manifest.0dbb1cdfe5541c0cb6341a09e9c443fd.js": "https://oahehc.github.io/resume/precache-manifest.0dbb1cdfe5541c0cb6341a09e9c443fd.js",
-  "service-worker.js": "https://oahehc.github.io/resume/service-worker.js"
+  "main.js": "/resume/static/js/main.a23a590f.chunk.js",
+  "main.js.map": "/resume/static/js/main.a23a590f.chunk.js.map",
+  "static/css/1.780ed7df.chunk.css": "/resume/static/css/1.780ed7df.chunk.css",
+  "static/js/1.4ace510c.chunk.js": "/resume/static/js/1.4ace510c.chunk.js",
+  "static/js/1.4ace510c.chunk.js.map": "/resume/static/js/1.4ace510c.chunk.js.map",
+  "runtime~main.js": "/resume/static/js/runtime~main.18bea22a.js",
+  "runtime~main.js.map": "/resume/static/js/runtime~main.18bea22a.js.map",
+  "static/css/1.780ed7df.chunk.css.map": "/resume/static/css/1.780ed7df.chunk.css.map",
+  "index.html": "/resume/index.html",
+  "precache-manifest.f4762a4004d1ae3ad3b72e1d774eb0a8.js": "/resume/precache-manifest.f4762a4004d1ae3ad3b72e1d774eb0a8.js",
+  "service-worker.js": "/resume/service-worker.js"
 }
