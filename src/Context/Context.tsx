@@ -12,14 +12,18 @@ export const I18nContext = createContext({
   lang: defaultLang,
   content: {},
   changeLang: (x: string): void => {},
-  getContent: (x: string): any => x,
+  getContent: (x: string, y?: string): any => x,
 })
 
 const ContextProvider: React.SFC = props => {
   const [lang, changeLang] = useState(defaultLang)
 
-  function getContent(key: string): string {
+  function getContent(key: string, selectLang?: string): string {
     const cont: contentType = content
+
+    if (selectLang && idx(cont, _ => _[key][selectLang])) {
+      return idx(cont, _ => _[key][selectLang])
+    }
 
     return (
       idx(cont, _ => _[key][lang]) ||

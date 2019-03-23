@@ -27,6 +27,14 @@
     "en": "Experience",
     "zh": "學經歷"
   },
+  "anchorWork": {
+    "en": "Work Experience",
+    "zh": "工作經歷"
+  },
+  "anchorEdu": {
+    "en": "Education",
+    "zh": "學歷"
+  },
   "anchorPortfolio": {
     "en": "Portfolio",
     "zh": "作品"
@@ -100,6 +108,9 @@
     "en": "Anue",
     "zh": "鉅亨網"
   },
+  "anueLink": {
+    "all": "https://www.cnyes.com/"
+  },
   "anueJobTitle": {
     "en": "Front-End Team Leader",
     "zh": "前端部門經理"
@@ -129,6 +140,12 @@
       "投資社群平台"
     ]
   },
+  "pebblar": {
+    "all": "Pebblar"
+  },
+  "pebblarLink": {
+    "all": "https://pebblar.com/"
+  },
   "pebblarJobTitle": {
     "en": "Senior Front-End Developer",
     "zh": "資深前端工程師"
@@ -149,6 +166,12 @@
   "pebblarJobContent": {
     "en": ["Travel Planning Application"],
     "zh": ["行程規劃系統"]
+  },
+  "deepblu": {
+    "all": "deepblu"
+  },
+  "deepbluLink": {
+    "all": "https://www.deepblu.com/discover/live"
   },
   "deepbluJobTitle": {
     "en": "Senior Front-End Developer",
@@ -171,6 +194,9 @@
   "flow": {
     "en": "Flow INC.",
     "zh": "若水國際"
+  },
+  "flowLink": {
+    "all": "http://www.flow.tw/"
   },
   "flowJobTitle": {
     "en": "Front-End Developer & ERP Consultant",
@@ -200,6 +226,9 @@
   "asus": {
     "en": "ASUSTek COMPUTER INC.",
     "zh": "華碩電腦"
+  },
+  "asusLink": {
+    "all": "https://www.asus.com/tw/"
   },
   "asusJobTitle": {
     "en": "Senior Project Manager",
@@ -271,19 +300,22 @@
     "zh": "線上課程"
   },
   "onlineCoursePlatform": {
-    "all": "Coursera, Udemy, Udacity"
+    "all": "Coursera, Udemy, Udacity, Egghead"
   },
   "onlineCourseContent": {
     "all": [
+      "Advance React Design Pattern, Kent C. Dodds",
+      "Testing Javascript, Kent C. Dodds",
+      "Machine Learning / MLDS course - Hung-yi Lee, NTU",
+      "Deep Learning by Google - Take machine learning to the next level",
+      "Create a Web Experience, University Of London",
       "Algorithmic Thinking, Rice University",
       "Game Development for Modern Platforms, MSU",
       "Build Software Applications, Duke",
       "Build Complete Web Solutions, HKUST",
       "Make Compelling Design, CalArts",
       "Web Application Development, UNM",
-      "Create a Web Experience, University Of London",
-      "Deep Learning by Google - Take machine learning to the next level",
-      "Machine Learning / MLDS course - Hung-yi Lee, NTU"
+      "..."
     ]
   },
   "portfolioDL": {
@@ -529,7 +561,7 @@
     "all": [
       {
         "type": "preview",
-        "link": "https://test-2a77b.firebaseapp.com"
+        "link": "https://speaktrainer.ml/"
       }
     ]
   },
@@ -550,6 +582,45 @@
       {
         "src": "SpeakTrainer/3.webp",
         "alt": "SpeakTrainer result"
+      }
+    ]
+  },
+  "portfolioCalendarLineBot": {
+    "en": "Basketball Club LineBot",
+    "zh": "籃球社團 line 機器人"
+  },
+  "portfolioCalendarLineBotStack": {
+    "all": ["LineBot", "node.js", "Heroku", "AWS lambda", "AWS dynamoDB"]
+  },
+  "portfolioCalendarLineBotLink": {
+    "all": [
+      {
+        "type": "preview",
+        "link": "https://linebot-calendar.herokuapp.com/home"
+      }
+    ]
+  },
+  "portfolioCalendarLineBotContent": {
+    "en": "Apply line message to collect the games information for our basketball club",
+    "zh": "透過 line 機器人統整籃球社團比賽紀錄"
+  },
+  "portfolioCalendarLineBotImages": {
+    "all": [
+      {
+        "src": "CalendarLineBot/1.webp",
+        "alt": "sign up the game"
+      },
+      {
+        "src": "CalendarLineBot/2.webp",
+        "alt": "game alert message"
+      },
+      {
+        "src": "CalendarLineBot/3.webp",
+        "alt": "weather forecast"
+      },
+      {
+        "src": "CalendarLineBot/4.webp",
+        "alt": "games summary"
       }
     ]
   },

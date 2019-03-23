@@ -33,7 +33,7 @@ const SegmentExp: React.SFC = () => {
         <GridItemRight>
           <div>
             {generateDateString('2018/8', 'now')}
-            <a href="https://www.cnyes.com" target="_blank" rel="noopener">
+            <a href={getContent('anueLink')} target="_blank" rel="noopener">
               {getContent('anue')}
             </a>
           </div>
@@ -58,8 +58,8 @@ const SegmentExp: React.SFC = () => {
         <GridItemLeft>
           <div>
             {generateDateString('2018/4', '2018/7')}
-            <a href="https://pebblar.com/" target="_blank" rel="noopener">
-              pebblar
+            <a href={getContent('pebblarLink')} target="_blank" rel="noopener">
+              {getContent('pebblar')}
             </a>
           </div>
           <div>{getContent('pebblarJobTitle')}</div>
@@ -86,12 +86,8 @@ const SegmentExp: React.SFC = () => {
         <GridItemRight>
           <div>
             {generateDateString('2017/11', '2018/3')}
-            <a
-              href="https://www.deepblu.com/discover/live"
-              target="_blank"
-              rel="noopener"
-            >
-              deepblu
+            <a href={getContent('deepbluLink')} target="_blank" rel="noopener">
+              {getContent('deepblu')}
             </a>
           </div>
           <div>{getContent('deepbluJobTitle')}</div>
@@ -139,7 +135,7 @@ const SegmentExp: React.SFC = () => {
         <GridItemRight>
           <div>
             {generateDateString('2016/6', '2017/10')}
-            <a href="http://www.flow.tw/" target="_blank" rel="noopener">
+            <a href={getContent('flowLink')} target="_blank" rel="noopener">
               {getContent('flow')}
             </a>
           </div>
@@ -192,7 +188,7 @@ const SegmentExp: React.SFC = () => {
         <GridItemLeft>
           <div>
             {generateDateString('2009/12', '2016/5')}
-            <a href="https://www.asus.com/tw/" target="_blank" rel="noopener">
+            <a href={getContent('asusLink')} target="_blank" rel="noopener">
               {getContent('asus')}
             </a>
           </div>
