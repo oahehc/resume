@@ -14,6 +14,7 @@ const projectList = [
   'MusicBook',
   'SpeakTrainer',
   'Onboard',
+  'CalendarLineBot',
   'RestaurantLineBot',
   'Lottery',
   'Serverless',
