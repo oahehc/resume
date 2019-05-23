@@ -10,6 +10,7 @@ import { Card, CardInfo, CardImgs } from './SegmentPortfolio.style'
 import { portfolioColor2 } from '../../styles/vars'
 
 const projectList = [
+  'AmpExample',
   'Shorten',
   'MusicBook',
   'SpeakTrainer',

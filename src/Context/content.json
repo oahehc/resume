@@ -48,7 +48,7 @@
     "zh": "前端"
   },
   "skillFrontEndContent": {
-    "all": "NextJS / ReactJS / VueJS / Typescript / jQuery / vanilla JavaScript, styled-component / style-jsx / SASS / CSS module / BEM / CSS, HTML5"
+    "all": "NextJS / ReactJS / VueJS / Typescript / AMP / jQuery, styled-component / style-jsx / SASS / CSS module / BEM / CSS, HTML5"
   },
   "skillTest": {
     "en": "Test",
@@ -680,6 +680,28 @@
   "portfolioResumeContent": {
     "en": "personal resume which use for try some new stack like typescript, react hook, css grid..",
     "zh": "個人履歷，用於練習各類新技術如 typescript, react hook, css grid.."
+  },
+  "portfolioAmpExample": {
+    "en": "AMP examples",
+    "zh": "AMP 範例"
+  },
+  "portfolioAmpExampleStack": {
+    "all": ["AMP", "Gulp"]
+  },
+  "portfolioAmpExampleLink": {
+    "all": [
+      {
+        "type": "github",
+        "link": "https://github.com/oahehc/amp-example"
+      }
+    ]
+  },
+  "portfolioAmpExampleContent": {
+    "en": "Some examples to handle tricky scenario when developing web application with AMP",
+    "zh": "整理一些開發 AMP 時使用的應用範例"
+  },
+  "portfolioAmpExampleImages": {
+    "all": []
   },
   "_temp": {
     "en": "",
