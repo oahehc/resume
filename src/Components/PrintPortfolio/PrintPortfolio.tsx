@@ -45,8 +45,8 @@ const PrintPortfolio: React.SFC = () => {
             )}
           </ExpSkill>
           {getContent(`portfolio${project}Link`).map(({ type, link }: any) => (
-            <Item>
-              <IconLink key={type} type={type} link={link} />
+            <Item key={type}>
+              <IconLink type={type} link={link} />
               <span>{link}</span>
             </Item>
           ))}

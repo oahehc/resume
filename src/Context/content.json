@@ -589,7 +589,7 @@
     "zh": "籃球社團 line 機器人"
   },
   "portfolioCalendarLineBotStack": {
-    "all": ["LineBot", "node.js", "Heroku", "AWS lambda", "AWS dynamoDB"]
+    "all": ["LineBot", "AMP", "node.js", "Heroku", "AWS lambda", "AWS dynamoDB"]
   },
   "portfolioCalendarLineBotLink": {
     "all": [
