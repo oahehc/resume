@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { I18nContext } from '../../Context/Context'
 import { grey5 } from '../../styles/vars'
+import Link from '../PrintLink/PrintLink'
 import {
   SegmentWrapper,
   Title,
@@ -26,7 +27,7 @@ const projectList = [
 ]
 
 const PrintPortfolio: React.SFC = () => {
-  const { lang, getContent } = useContext(I18nContext)
+  const { getContent } = useContext(I18nContext)
   return (
     <SegmentWrapper>
       <Title>{getContent('anchorPortfolio')}</Title>
@@ -47,7 +48,9 @@ const PrintPortfolio: React.SFC = () => {
           {getContent(`portfolio${project}Link`).map(({ type, link }: any) => (
             <Item key={type}>
               <IconLink type={type} link={link} />
-              <span>{link}</span>
+              <span>
+                <Link src={link} />
+              </span>
             </Item>
           ))}
           <div>▶ {getContent(`portfolio${project}Content`)}</div>

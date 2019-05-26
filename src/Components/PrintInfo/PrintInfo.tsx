@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Github, LinkedinOption, MailOption, Code, Globe } from 'grommet-icons'
 import { I18nContext } from '../../Context/Context'
+import Link from '../PrintLink/PrintLink'
 import { SegmentWrapper, Title, Item, Set } from '../../Elements/Print'
 
 const skills = [
@@ -26,23 +27,33 @@ const PrintInfo: React.SFC = () => {
       </Item>
       <Item>
         <MailOption />
-        <span>oahehc@gmail.com</span>
+        <span>
+          <Link src="oahehc@gmail.com" />
+        </span>
       </Item>
       <Item>
         <MailOption />
-        <span>chehao@ntu.edu.tw</span>
+        <span>
+          <Link src="chehao@ntu.edu.tw" />
+        </span>
       </Item>
       <Item>
         <Github />
-        <span>{'https://github.com/oahehc'}</span>
+        <span>
+          <Link src="https://github.com/oahehc" />
+        </span>
       </Item>
       <Item>
         <Globe />
-        <span>{'https://github.com/oahehc/resume'}</span>
+        <span>
+          <Link src="https://github.com/oahehc/resume" />
+        </span>
       </Item>
       <Item>
         <LinkedinOption />
-        <span>{'https://tw.linkedin.com/in/oahehc'}</span>
+        <span>
+          <Link src="https://tw.linkedin.com/in/oahehc" />
+        </span>
       </Item>
       <Item>
         <Code />

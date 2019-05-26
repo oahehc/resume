@@ -5,7 +5,7 @@ export const Page = styled.div`
   @media print {
     @page {
       size: A4 portrait;
-      margin: 0.5cm;
+      margin: 1cm;
       orphans: 4;
       widows: 2;
     }
@@ -20,11 +20,11 @@ export const SegmentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  width: calc(100% - 20px);
+  width: calc(100% - 40px);
   max-width: 1240px;
   box-sizing: border-box;
-  padding: 10px;
-  margin: 10px auto;
+  padding: 20px;
+  margin: 20px auto;
   page-break-before: always;
 `
 

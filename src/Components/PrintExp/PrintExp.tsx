@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { I18nContext } from '../../Context/Context'
 import { grey5 } from '../../styles/vars'
+import Link from '../PrintLink/PrintLink'
 import {
   SegmentWrapper,
   Title,
@@ -28,7 +29,9 @@ const PrintExp: React.SFC = () => {
           <span>{getContent('anueJobTitle')}</span>
           <span>{generateDateString('2018/8', 'now')}</span>
         </ExpTitle>
-        <div>{getContent('anueLink')}</div>
+        <div>
+          <Link src={getContent('anueLink')} />
+        </div>
         <ExpSkill>
           {getContent('anueJobStack').map((stack: string, index: number) => (
             <Label key={index} bgColor={grey5}>
@@ -48,7 +51,9 @@ const PrintExp: React.SFC = () => {
           <span>{getContent('pebblarJobTitle')}</span>
           <span>{generateDateString('2018/4', '2018/7')}</span>
         </ExpTitle>
-        <div>{getContent('pebblarLink')}</div>
+        <div>
+          <Link src={getContent('pebblarLink')} />
+        </div>
         <ExpSkill>
           {getContent('pebblarJobStack').map((stack: string, index: number) => (
             <Label key={index} bgColor={grey5}>
@@ -70,7 +75,9 @@ const PrintExp: React.SFC = () => {
           <span>{getContent('deepbluJobTitle')}</span>
           <span>{generateDateString('2017/11', '2018/3')}</span>
         </ExpTitle>
-        <div>{getContent('deepbluLink')}</div>
+        <div>
+          <Link src={getContent('deepbluLink')} />
+        </div>
         <ExpSkill>
           {getContent('deepbluJobStack1').map(
             (stack: string, index: number) => (
@@ -110,7 +117,9 @@ const PrintExp: React.SFC = () => {
           <span>{getContent('flowJobTitle')}</span>
           <span>{generateDateString('2016/6', '2017/10')}</span>
         </ExpTitle>
-        <div>{getContent('flowLink')}</div>
+        <div>
+          <Link src={getContent('flowLink')} />
+        </div>
         <ExpSkill>
           {getContent('flowJobStack1').map((stack: string, index: number) => (
             <Label key={index} bgColor={grey5}>
@@ -146,7 +155,9 @@ const PrintExp: React.SFC = () => {
           <span>{getContent('asusJobTitle')}</span>
           <span>{generateDateString('2009/12', '2016/5')}</span>
         </ExpTitle>
-        <div>{getContent('asusLink')}</div>
+        <div>
+          <Link src={getContent('asusLink')} />
+        </div>
         <div>▶ {getContent('asusJobItem1')}</div>
         <ExpDetail>
           {getContent('asusJobContent1').map(
