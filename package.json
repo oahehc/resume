@@ -63,7 +63,7 @@
     "logrocket": "^0.6.19",
     "logrocket-react": "^3.0.0",
     "normalize.css": "^8.0.1",
-    "react": "^16.8.0",
+    "react": "^16.8.6",
     "react-dom": "^16.8.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.3",
