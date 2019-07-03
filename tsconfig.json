@@ -8,6 +8,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
+    "types": ["react", "jest"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,

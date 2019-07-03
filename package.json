@@ -14,9 +14,12 @@
     "tsc": "tsc",
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
     "lint": "eslint src --ext .js,.ts,.tsx",
-    "validate": "npm run lint && npm run prettier -- --list-different",
-    "precommit": "npm run tsc && lint-staged",
-    "postinstall": "patch-package"
+    "validate": "npm run lint && npm run prettier -- --list-different"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run tsc && lint-staged"
+    }
   },
   "lint-staged": {
     "*.+(js|ts|tsx)": [
@@ -64,19 +67,19 @@
     "logrocket-react": "^3.0.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.0",
-    "react-router-dom": "^5.0.0",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "styled-components": "^4.3.2",
     "typescript": "^3.5.2"
   },
   "devDependencies": {
-    "@types/classnames": "^2.2.7",
+    "@types/classnames": "^2.2.9",
     "@types/react-router-dom": "^4.3.4",
     "eslint-plugin-react-hooks": "^1.6.1",
     "gh-pages": "^2.0.1",
     "husky": "^3.0.0",
-    "lint-staged": "^9.0.2",
+    "lint-staged": "8.1.5",
     "patch-package": "^5.1.1",
     "postinstall-postinstall": "^2.0.0",
     "prettier": "^1.18.2",
