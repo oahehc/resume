@@ -4526,10 +4526,10 @@ grommet-styles@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/grommet-styles/-/grommet-styles-0.2.0.tgz#b2eac2b7e2747cb523434d21728ce5234f8ce4f4"
 
-grommet@^2.7.2:
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/grommet/-/grommet-2.7.2.tgz#2fad3ff8bf4f5519ca4e38254868079160646b8f"
-  integrity sha512-MpNnI0U12dB+vlsOwWklWsyj4f+3o1dRcwPhWrmo7k2iNZIlzNhukcpAEryoN6mAswlGCB0EmkGqVZd1PQFziQ==
+grommet@^2.7.4:
+  version "2.7.4"
+  resolved "https://registry.yarnpkg.com/grommet/-/grommet-2.7.4.tgz#17c12106f9f75a229f4fd4d5726ae1d5adba0b59"
+  integrity sha512-/6XGi9zEpFHCyOg5lFitUIqabqpygrPa2689eKRWTBfes7kRIa5UwmUqfZUDllI/WoT6ZIksST/YiQqun5Gm/w==
   dependencies:
     css "^2.2.3"
     grommet-icons "^4.2.0"

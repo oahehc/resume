@@ -58,7 +58,7 @@
     "@types/react-dom": "^16.8.4",
     "@types/styled-components": "^4.1.16",
     "classnames": "^2.2.6",
-    "grommet": "^2.7.2",
+    "grommet": "^2.7.4",
     "grommet-icons": "^4.2.0",
     "grommet-styles": "^0.2.0",
     "idx": "^2.5.6",
