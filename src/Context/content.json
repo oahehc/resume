@@ -48,7 +48,7 @@
     "zh": "前端"
   },
   "skillFrontEndContent": {
-    "all": "NextJS / ReactJS / VueJS / Typescript / AMP / jQuery, styled-component / style-jsx / SASS / CSS module / BEM / CSS, HTML5"
+    "all": "Next.js / React.js / Vue.js / Typescript / AMP / jQuery, styled-component / style-jsx / SASS / CSS module / BEM, HTML5"
   },
   "skillTest": {
     "en": "Test",
@@ -72,8 +72,7 @@
     "all": "Git, Webpack, Yarn / NPM, Gulp, VSCode, Slack, Jira, Confluence, Sentry"
   },
   "skillCICD": {
-    "en": "CI/CD",
-    "zh": "CI/CD"
+    "all": "CI/CD"
   },
   "skillCICDContent": {
     "all": "Travis CI, Codecov, Heroku, Netlify"
@@ -106,7 +105,7 @@
   },
   "anue": {
     "en": "Anue",
-    "zh": "鉅亨網"
+    "zh": "鉅亨"
   },
   "anueLink": {
     "all": "https://www.cnyes.com/"
@@ -128,16 +127,20 @@
   },
   "anueJobContent": {
     "en": [
-      "online news",
-      "internal CMS system for reporters",
-      "stock, forex, index data integrate and virtualization",
-      "Social platform for investor"
+      "implement AMP for news channel",
+      "website refactoring, from .NET to React.js with SSR",
+      "stock, forex, index data integrate and virtualization: hightChart, tradingView, custom SVG chart",
+      "Social platform for investor",
+      "auto screenshot tool by AWS lambda and puppeteer",
+      "team management: schedule tracking, PR review, develop process improvement..."
     ],
     "zh": [
-      "理財網路新聞平台",
-      "記者發稿後台",
-      "國內外股市、外匯、指數等投資資訊源串接與視覺化呈現",
-      "投資社群平台"
+      "新聞頻道導入 AMP",
+      "網站改版，從 .NET 轉為 React.js (SSR) 架構",
+      "國內外股市、外匯、指數等投資資訊源串接與視覺化呈現：hightChart, tradingView, 客制 SVG chart",
+      "投資社群平台開發",
+      "使用 AWS lambda, puppeteer 開發網站自動截圖工具",
+      "部門管理：掌握專案開發進度, PR review, 開發流程改善..."
     ]
   },
   "pebblar": {
@@ -164,8 +167,10 @@
     ]
   },
   "pebblarJobContent": {
-    "en": ["Travel Planning Application"],
-    "zh": ["行程規劃系統"]
+    "en": [
+      "Travel Planning Application：refactor from jQuery to React.js and implement unit test"
+    ],
+    "zh": ["行程規劃系統：將 jQuery 版本重構成 React.js, 並導入單元測試"]
   },
   "deepblu": {
     "all": "deepblu"
@@ -181,8 +186,8 @@
     "all": ["React(SSR)", "Redux", "Webpack", "SCSS", "CSS module", "NodeJS"]
   },
   "deepbluJobContent1": {
-    "en": ["Social Platform", "Online Shop"],
-    "zh": ["潛水社交平台", "潛水錶線上購物網站"]
+    "en": ["Social Platform: instant message, ordering system", "Online Shop"],
+    "zh": ["潛水社交平台: 即時聊天系統, 行程訂購系統", "潛水錶線上購物網站"]
   },
   "deepbluJobStack2": {
     "all": ["RoR"]
@@ -206,8 +211,8 @@
     "all": ["VueJS", "Nightwatch", "Webpack", "AWS"]
   },
   "flowJobContent1": {
-    "en": ["Human Resource System"],
-    "zh": ["人力資源管理系統"]
+    "en": ["Human Resource System", "implement e2e test"],
+    "zh": ["人力資源管理系統", "導入 e2e test"]
   },
   "flowJobStack2": {
     "all": ["jQuery", "ChartJS", "SCSS", "Gulp", "AWS"]
