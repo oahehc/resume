@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Github, LinkedinOption, MailOption, Code } from 'grommet-icons'
+import { Github, LinkedinOption, MailOption, Code, Medium } from 'grommet-icons'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { Title } from '../../Elements/Title'
 import Label from '../../Elements/Label'
@@ -27,20 +27,14 @@ const SegmentInfo: React.SFC = () => {
       <Title>{getContent('name')}</Title>
       <List>
         <MailOption />
-        <a href="mailto:chehao@ntu.edu.tw" rel="noopener">
+        <a href="mailto:chehao@ntu.edu.tw" rel="noopener noreferrer">
           chehao@ntu.edu.tw
         </a>
       </List>
       <List>
         <MailOption />
-        <a href="mailto:chehao@ntu.edu.tw" rel="noopener">
+        <a href="mailto:chehao@ntu.edu.tw" rel="noopener noreferrer">
           oahehc@gmail.com
-        </a>
-      </List>
-      <List>
-        <Github />
-        <a target="_blank" href="https://github.com/oahehc" rel="noopener">
-          GitHub
         </a>
       </List>
       <List>
@@ -48,9 +42,29 @@ const SegmentInfo: React.SFC = () => {
         <a
           target="_blank"
           href="https://tw.linkedin.com/in/oahehc"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           Linkedin
+        </a>
+      </List>
+      <List>
+        <Github />
+        <a
+          target="_blank"
+          href="https://github.com/oahehc"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </List>
+      <List>
+        <Medium />
+        <a
+          target="_blank"
+          href="https://medium.com/@oahehc"
+          rel="noopener noreferrer"
+        >
+          Medium stories
         </a>
       </List>
       <List>
