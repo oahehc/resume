@@ -6,8 +6,6 @@ import {
   GridItemRight,
   GridItemLeftShort,
   GridItemRightShort,
-  GridItemLeftLarge,
-  GridItemRightLarge,
   TimeLine,
 } from './SegmentExp.style'
 import { lightRed } from '../../styles/vars'
@@ -33,7 +31,11 @@ const SegmentExp: React.SFC = () => {
         <GridItemRight>
           <div>
             {generateDateString('2018/8', 'now')}
-            <a href={getContent('anueLink')} target="_blank" rel="noopener">
+            <a
+              href={getContent('anueLink')}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {getContent('anue')}
             </a>
           </div>
@@ -58,7 +60,11 @@ const SegmentExp: React.SFC = () => {
         <GridItemLeft>
           <div>
             {generateDateString('2018/4', '2018/7')}
-            <a href={getContent('pebblarLink')} target="_blank" rel="noopener">
+            <a
+              href={getContent('pebblarLink')}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {getContent('pebblar')}
             </a>
           </div>
@@ -86,7 +92,11 @@ const SegmentExp: React.SFC = () => {
         <GridItemRight>
           <div>
             {generateDateString('2017/11', '2018/3')}
-            <a href={getContent('deepbluLink')} target="_blank" rel="noopener">
+            <a
+              href={getContent('deepbluLink')}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {getContent('deepblu')}
             </a>
           </div>
@@ -135,7 +145,11 @@ const SegmentExp: React.SFC = () => {
         <GridItemRight>
           <div>
             {generateDateString('2016/6', '2017/10')}
-            <a href={getContent('flowLink')} target="_blank" rel="noopener">
+            <a
+              href={getContent('flowLink')}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {getContent('flow')}
             </a>
           </div>
@@ -188,7 +202,11 @@ const SegmentExp: React.SFC = () => {
         <GridItemLeft>
           <div>
             {generateDateString('2009/12', '2016/5')}
-            <a href={getContent('asusLink')} target="_blank" rel="noopener">
+            <a
+              href={getContent('asusLink')}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {getContent('asus')}
             </a>
           </div>

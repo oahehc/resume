@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext, useEffect, useCallback } from 'react'
 import { I18nContext } from '../../Context/Context'
 import is from 'is_js'
 import { NotificationWrapper, Notification } from './BrowserNotification.style'
@@ -16,21 +16,22 @@ const BrowserNotification: React.SFC = () => {
   const { getContent } = useContext(I18nContext)
   const [state, setState] = useState(defaultState)
 
-  const checkBrowser = () => {
+  const checkBrowser = useCallback(() => {
     let isBrowserSupport = false
 
     if (is.chrome('>=69')) {
       isBrowserSupport = true
     }
 
-    setState({
+    setState(state => ({
       ...state,
       isBrowserSupport,
-    })
-  }
+    }))
+  }, [])
+
   useEffect(() => {
     checkBrowser()
-  }, [])
+  }, [checkBrowser])
 
   const handleCloseNotification = () => {
     setState({

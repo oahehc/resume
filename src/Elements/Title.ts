@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro'
-import { grey1 } from '../styles/vars'
 
 export const Title = styled.h2`
   font-weight: 800;

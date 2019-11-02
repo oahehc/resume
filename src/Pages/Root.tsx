@@ -9,16 +9,13 @@ import SegmentPortfolio from '../Components/SegmentPortfolio/SegmentPortfolio'
 const Root: React.SFC = () => {
   const { getContent } = useContext(I18nContext)
 
-  useEffect(
-    () => {
-      const title = `${getContent('name')} | ${getContent('resume')}`
+  useEffect(() => {
+    const title = `${getContent('name')} | ${getContent('resume')}`
 
-      if (document.title !== title) {
-        document.title = title
-      }
-    },
-    [getContent('name')],
-  )
+    if (document.title !== title) {
+      document.title = title
+    }
+  }, [getContent])
 
   return (
     <React.Fragment>
