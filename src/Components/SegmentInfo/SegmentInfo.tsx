@@ -1,8 +1,16 @@
 import React, { useContext } from 'react'
-import { Github, LinkedinOption, MailOption, Code, Medium } from 'grommet-icons'
+import {
+  Github,
+  LinkedinOption,
+  MailOption,
+  Code,
+  Medium,
+  StackOverflow,
+} from 'grommet-icons'
 import { SegmentWrapper } from '../../Elements/Wrapper'
 import { Title } from '../../Elements/Title'
 import Label from '../../Elements/Label'
+import { Space, DevIcon } from '../../Elements'
 import { I18nContext } from '../../Context/Context'
 import { infoColor1 } from '../../styles/vars'
 import { List, Set } from './SegmentInfo.style'
@@ -19,6 +27,12 @@ const skills = [
   'Lang',
 ]
 
+const ExternalLink = ({ href, name }: { href: string; name: string }) => (
+  <a target="_blank" href={href} rel="noopener noreferrer">
+    {name}
+  </a>
+)
+
 const SegmentInfo: React.SFC = () => {
   const { getContent } = useContext(I18nContext)
 
@@ -28,44 +42,39 @@ const SegmentInfo: React.SFC = () => {
       <List>
         <MailOption />
         <a href="mailto:chehao@ntu.edu.tw" rel="noopener noreferrer">
+          oahehc@gmail.com
+        </a>
+        <Space width="5px" />|<Space width="5px" />
+        <a href="mailto:chehao@ntu.edu.tw" rel="noopener noreferrer">
           chehao@ntu.edu.tw
         </a>
       </List>
       <List>
-        <MailOption />
-        <a href="mailto:chehao@ntu.edu.tw" rel="noopener noreferrer">
-          oahehc@gmail.com
-        </a>
-      </List>
-      <List>
         <LinkedinOption />
-        <a
-          target="_blank"
+        <ExternalLink
+          name="Linkedin"
           href="https://tw.linkedin.com/in/oahehc"
-          rel="noopener noreferrer"
-        >
-          Linkedin
-        </a>
+        />
       </List>
       <List>
         <Github />
-        <a
-          target="_blank"
-          href="https://github.com/oahehc"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
+        <ExternalLink name="GitHub" href="https://github.com/oahehc" />
       </List>
       <List>
         <Medium />
-        <a
-          target="_blank"
-          href="https://medium.com/@oahehc"
-          rel="noopener noreferrer"
-        >
-          Medium stories
-        </a>
+        <ExternalLink name="Medium stories" href="https://medium.com/@oahehc" />
+      </List>
+      <List>
+        <StackOverflow />
+        <ExternalLink
+          name="StackOverflow"
+          href="https://stackoverflow.com/users/6337192/oahehc"
+        />
+      </List>
+      <List>
+        <DevIcon />
+        <Space width="8px" />
+        <ExternalLink name="Dev.to" href="https://dev.to/oahehc" />
       </List>
       <List>
         <Code />

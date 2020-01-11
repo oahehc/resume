@@ -1,5 +1,14 @@
 import React, { useContext } from 'react'
-import { Github, LinkedinOption, MailOption, Code, Globe } from 'grommet-icons'
+import {
+  Github,
+  LinkedinOption,
+  MailOption,
+  Code,
+  Globe,
+  Medium,
+  StackOverflow,
+} from 'grommet-icons'
+import { DevIcon } from '../../Elements'
 import { I18nContext } from '../../Context/Context'
 import Link from '../PrintLink/PrintLink'
 import { SegmentWrapper, Title, Item, Set } from '../../Elements/Print'
@@ -28,13 +37,7 @@ const PrintInfo: React.SFC = () => {
       <Item>
         <MailOption />
         <span>
-          <Link src="oahehc@gmail.com" />
-        </span>
-      </Item>
-      <Item>
-        <MailOption />
-        <span>
-          <Link src="chehao@ntu.edu.tw" />
+          <Link src="oahehc@gmail.com" /> | <Link src="chehao@ntu.edu.tw" />
         </span>
       </Item>
       <Item>
@@ -53,6 +56,24 @@ const PrintInfo: React.SFC = () => {
         <LinkedinOption />
         <span>
           <Link src="https://tw.linkedin.com/in/oahehc" />
+        </span>
+      </Item>
+      <Item>
+        <Medium />
+        <span>
+          <Link src="https://medium.com/@oahehc" />
+        </span>
+      </Item>
+      <Item>
+        <StackOverflow />
+        <span>
+          <Link src="https://stackoverflow.com/users/6337192/oahehc" />
+        </span>
+      </Item>
+      <Item>
+        <DevIcon />
+        <span>
+          <Link src="https://dev.to/oahehc" />
         </span>
       </Item>
       <Item>
