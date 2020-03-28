@@ -9,6 +9,7 @@ import {
   ExpTitle,
   ExpSkill,
   Item,
+  LayoutSpace,
 } from '../../Elements/Print'
 import IconLink from '../../Elements/IconLink'
 import Label from '../../Elements/Label'
@@ -54,6 +55,7 @@ const PrintPortfolio: React.SFC = () => {
             </Item>
           ))}
           <div>▶ {getContent(`portfolio${project}Content`)}</div>
+          <LayoutSpace height="12px" />
         </ExpDiv>
       ))}
     </SegmentWrapper>

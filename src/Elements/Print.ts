@@ -56,7 +56,7 @@ export const Set = styled.div`
 export const ExpDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 5px 0 25px 0;
+  margin: 5px 0 20px 0;
 `
 
 export const ExpTitle = styled.div`
@@ -77,4 +77,12 @@ export const ExpDetail = styled.ul`
   margin: 2px 0;
   font-size: 16px;
   padding-left: 20px;
+`
+
+type LayoutSpaceProps = {
+  height: string
+}
+
+export const LayoutSpace = styled.div`
+  height: ${(props: LayoutSpaceProps) => props.height || '0'};
 `
