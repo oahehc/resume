@@ -65,16 +65,16 @@ const SegmentInfo: React.SFC = () => {
         <ExternalLink name="Medium stories" href="https://medium.com/@oahehc" />
       </List>
       <List>
+        <DevIcon />
+        <Space width="8px" />
+        <ExternalLink name="Dev.to" href="https://dev.to/oahehc" />
+      </List>
+      <List>
         <StackOverflow />
         <ExternalLink
           name="StackOverflow"
           href="https://stackoverflow.com/users/6337192/oahehc"
         />
-      </List>
-      <List>
-        <DevIcon />
-        <Space width="8px" />
-        <ExternalLink name="Dev.to" href="https://dev.to/oahehc" />
       </List>
       <List>
         <Code />

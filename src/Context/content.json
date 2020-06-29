@@ -75,7 +75,7 @@
     "all": "CI/CD"
   },
   "skillCICDContent": {
-    "all": "Travis CI, Codecov, Heroku, Netlify, Zeit now"
+    "all": "Travis CI, Codecov, Heroku, Netlify, Vercel (Zeit now), GitHub action"
   },
   "skillData": {
     "en": "Data-analysis",
@@ -122,27 +122,28 @@
       "Webpack",
       "Styled-jsx",
       "Jest",
-      "Enzyme"
+      "Enzyme",
+      "AMP"
     ]
   },
   "anueJobContent": {
     "en": [
+      "team management: schedule tracking, recruiting and mentor team members, spec review, PR review, cross-department communication, develop process improvement, ect..",
       "implement AMP for our news channel",
       "online course platform",
       "website refactoring, from .NET to React.js with SSR",
       "stock, forex, index data integrate and virtualization: hightChart, tradingView, custom SVG chart",
       "Social platform for investor",
-      "auto screenshot tool by AWS lambda and puppeteer",
-      "team management: schedule tracking, PR review, develop process improvement, ect.."
+      "auto screenshot tool by AWS lambda and puppeteer"
     ],
     "zh": [
+      "部門管理：掌握專案開發進度, 人員招募與培訓, spec review, PR review, 跨部門溝通協調, 開發流程改善...",
       "新聞頻道導入 AMP",
       "線上課程平台",
       "網站改版，從 .NET 轉為 React.js (SSR) 架構",
       "國內外股市、外匯、指數等投資資訊源串接與視覺化呈現：hightChart, tradingView, 客制 SVG chart",
       "投資社群平台開發",
-      "使用 AWS lambda, puppeteer 開發網站自動截圖工具",
-      "部門管理：掌握專案開發進度, PR review, 開發流程改善..."
+      "使用 AWS lambda, puppeteer 開發網站自動截圖工具"
     ]
   },
   "pebblar": {

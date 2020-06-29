@@ -65,15 +65,15 @@ const PrintInfo: React.SFC = () => {
         </span>
       </Item>
       <Item>
-        <StackOverflow />
-        <span>
-          <Link src="https://stackoverflow.com/users/6337192/oahehc" />
-        </span>
-      </Item>
-      <Item>
         <DevIcon />
         <span>
           <Link src="https://dev.to/oahehc" />
+        </span>
+      </Item>
+      <Item>
+        <StackOverflow />
+        <span>
+          <Link src="https://stackoverflow.com/users/6337192/oahehc" />
         </span>
       </Item>
       <Item>

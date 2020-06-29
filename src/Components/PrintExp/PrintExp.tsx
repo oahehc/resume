@@ -149,6 +149,12 @@ const PrintExp: React.SFC = () => {
           )}
         </ExpDetail>
       </ExpDiv>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <ExpDiv>
         <ExpTitle>
           <span>{getContent('asus')}</span>
