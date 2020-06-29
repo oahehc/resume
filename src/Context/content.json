@@ -12,8 +12,8 @@
     "zh": "最近更新"
   },
   "browserSupportNotice": {
-    "en": "I will try newest stack on this project, so suggest you to use latest version of Chrome for better browse experience",
-    "zh": "此專案將嘗試各種新的技術，因此建議您改用最新版本的 Chrome 享有更好的瀏覽體驗"
+    "en": "recommend to use latest version of Chrome or Firefox for better experience",
+    "zh": "此專案將嘗試各種新的技術，因此建議您改用最新版本的 Chrome 或 Firefox 享有更好的瀏覽體驗"
   },
   "close": {
     "en": "CLOSE",
@@ -44,7 +44,7 @@
     "zh": "技能"
   },
   "skillFrontEnd": {
-    "en": "Front-end",
+    "en": "Front-End",
     "zh": "前端"
   },
   "skillFrontEndContent": {
@@ -55,10 +55,10 @@
     "zh": "測試"
   },
   "skillTestContent": {
-    "all": "Jest / Enzyme, Cypress / testCafe / Nightwatch, eslint"
+    "all": "Jest / Enzyme, Cypress / testCafe / NightWatch, eslint"
   },
   "skillBackEnd": {
-    "en": "Back-end",
+    "en": "Back-End",
     "zh": "後端"
   },
   "skillBackEndContent": {
@@ -118,7 +118,9 @@
     "all": [
       "Nextjs",
       "React",
+      "React Hook",
       "Redux",
+      "Typescript",
       "Webpack",
       "Styled-jsx",
       "Jest",
@@ -128,22 +130,35 @@
   },
   "anueJobContent": {
     "en": [
-      "team management: schedule tracking, recruiting and mentor team members, spec review, PR review, cross-department communication, develop process improvement, ect..",
-      "implement AMP for our news channel",
-      "online course platform",
-      "website refactoring, from .NET to React.js with SSR",
-      "stock, forex, index data integrate and virtualization: hightChart, tradingView, custom SVG chart",
-      "Social platform for investor",
-      "auto screenshot tool by AWS lambda and puppeteer"
+      "manage over 10 projects, in charge of the new version release and deal with the production issues",
+      "using puppeteer to create automatic tools, simplify the deploy process",
+      "recruit and mentor team members (5 members)",
+      "implement PR review to enhance the code quality",
+      "co-work with devOps to implement the GitLab CI/CD process",
+      "implement image compression and code splitting to reduce the CDN cost",
+      "develop AMP news channel, enhance SEO and mobile UX",
+      "finish online course platform within 2 months",
+      "create auto screenshot tool by using AWS lambda and puppeteer, dynamically generate og:image to optimize the social media sharing feature",
+      "stock, forex, index data integration and virtualization: HightChart, TradingView, custom SVG chart",
+      "Social media platform for investor",
+      "develop the subscription system and integrate 3rd party payment service",
+      "website refactoring, from .NET to React.js with SSR"
     ],
     "zh": [
-      "部門管理：掌握專案開發進度, 人員招募與培訓, spec review, PR review, 跨部門溝通協調, 開發流程改善...",
-      "新聞頻道導入 AMP",
-      "線上課程平台",
-      "網站改版，從 .NET 轉為 React.js (SSR) 架構",
-      "國內外股市、外匯、指數等投資資訊源串接與視覺化呈現：hightChart, tradingView, 客制 SVG chart",
-      "投資社群平台開發",
-      "使用 AWS lambda, puppeteer 開發網站自動截圖工具"
+      "管理前端超過 10 個專案開發進度、推版與解決線上問題",
+      "使用 puppeteer 開發自動化工具，提高推版作業效率",
+      "負責前端團隊 (5人) 招募與培訓，完善線上文件提高新人學習效率",
+      "落實 PR review 並建立良好的討論風氣，確保團隊能相互學習持續成長",
+      "開發流程改善，與 devOps 合作規劃與測試 GitLab CI/CD 流程",
+      "成本改善，導入縮圖機制與 code splitting，大幅降低 CDN 成本",
+      "新聞頻道導入 AMP，明顯提升網站 SEO 並改善 mobile 使用體驗",
+      "兩個月內完成線上課程平台開發並上線",
+      "使用 AWS lambda, puppeteer 開發網站自動截圖工具，動態產生 og:image 優化社群分享功能",
+      "國內外股市、外匯、指數等投資資訊源串接與視覺化呈現：HightChart, TradingView, 客制 SVG chart",
+      "開發投資社群平台",
+      "開發會員訂閱功能與金流串接",
+      "開發區塊鏈身份識別應用",
+      "將舊版 .NET 網站逐步轉為 React (SSR) 架構"
     ]
   },
   "pebblar": {
@@ -166,14 +181,22 @@
       "Enzyme",
       "firebase",
       "GoogleMap API",
-      "websockets"
+      "WebSocket"
     ]
   },
   "pebblarJobContent": {
     "en": [
-      "Travel Planning Application：refactor from jQuery to React.js and implement unit test"
+      "Travel Planning Application：refactor from jQuery to React.js",
+      "implement unit test",
+      "implement WebSocket and Firebase",
+      "using Redux-Saga to implement background data synchronize mechanism to enhance UX"
     ],
-    "zh": ["行程規劃系統：將 jQuery 版本重構成 React.js, 並導入單元測試"]
+    "zh": [
+      "行程規劃系統：將 jQuery 版本重構成 React.js",
+      "導入單元測試",
+      "串接 WebSocket & Firebase",
+      "透過 Redux-Saga 實現背景資料同步機制，改善使用體驗"
+    ]
   },
   "deepblu": {
     "all": "deepblu"
@@ -189,15 +212,21 @@
     "all": ["React(SSR)", "Redux", "Webpack", "SCSS", "CSS module", "NodeJS"]
   },
   "deepbluJobContent1": {
-    "en": ["Social Platform: instant message, ordering system", "Online Shop"],
-    "zh": ["潛水社交平台: 即時聊天系統, 行程訂購系統", "潛水錶線上購物網站"]
+    "en": [
+      "Social Platform: finish instant message and itinerary booking system within 2 months",
+      "Online Shop: co-work with designer, redesign the website for our new watch"
+    ],
+    "zh": [
+      "潛水社交平台：兩個月內完成即時聊天系統與行程訂購功能",
+      "潛水錶線上購物網站：與設計合作完成新錶上市的網站改版"
+    ]
   },
   "deepbluJobStack2": {
     "all": ["RoR"]
   },
   "deepbluJobContent2": {
-    "en": ["Internal SCM system"],
-    "zh": ["內部庫存與訂單管理系統"]
+    "en": ["Maintain internal SCM system"],
+    "zh": ["維護內部庫存與訂單管理系統"]
   },
   "flow": {
     "en": "Flow INC.",
@@ -211,11 +240,11 @@
     "zh": "前端工程師暨ERP導入顧問"
   },
   "flowJobStack1": {
-    "all": ["VueJS", "Nightwatch", "Webpack", "AWS"]
+    "all": ["Vue.js", "NightWatch", "Webpack", "AWS"]
   },
   "flowJobContent1": {
-    "en": ["Human Resource System", "implement e2e test"],
-    "zh": ["人力資源管理系統", "導入 e2e test"]
+    "en": ["Human Resource System", "implement Vue.js and e2e test"],
+    "zh": ["人力資源管理系統", "導入 Vue.js 與 e2e test 提高開發效率"]
   },
   "flowJobStack2": {
     "all": ["jQuery", "ChartJS", "SCSS", "Gulp", "AWS"]
@@ -225,7 +254,7 @@
     "zh": ["雲端 ERP 系統", "資料視覺化報表"]
   },
   "flowJobStack3": {
-    "all": ["jQuery", "Boostrap", "SCSS", "Gulp"]
+    "all": ["jQuery", "Bootstrap", "SCSS", "Gulp"]
   },
   "flowJobContent3": {
     "en": ["Company Website"],
