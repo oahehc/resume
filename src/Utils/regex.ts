@@ -1,20 +1,11 @@
 export const getLangFromUrlSearch = (search: string): string => {
-  const result = search
-    .replace('?', '')
+  const langParam = search
+    .replace(/^\?/, '')
     .split('&')
-    .map((param: string) => {
-      const match = param.toLowerCase().match(/lang=(.*)/)
+    .find((param: string) => /^lang=/.test(param.toLowerCase()))
 
-      if (match && match[1]) {
-        return match[1]
-      }
-
-      return ''
-    })
-    .filter((param: string) => param)
-
-  if (result && result.length > 0) {
-    return result[0]
+  if (langParam) {
+    return langParam.replace(/^lang=/, '')
   }
 
   return ''

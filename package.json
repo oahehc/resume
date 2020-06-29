@@ -23,7 +23,8 @@
   },
   "lint-staged": {
     "*.+(js|ts|tsx)": [
-      "npm run lint"
+      "npm run lint",
+      "jest --findRelatedTests"
     ],
     "*.+(js|ts|tsx|json|yml|yaml|css|less|scss|md|mdx|graphql)": [
       "prettier --write",
@@ -74,6 +75,9 @@
     "typescript": "^3.5.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.1",
     "@types/classnames": "^2.2.9",
     "@types/react-router-dom": "^4.3.4",
     "eslint-plugin-react-hooks": "^1.6.1",
