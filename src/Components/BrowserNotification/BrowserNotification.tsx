@@ -19,7 +19,7 @@ const BrowserNotification: React.SFC = () => {
   const checkBrowser = useCallback(() => {
     let isBrowserSupport = false
 
-    if (is.chrome('>=69')) {
+    if (is.chrome('>=69') || is.firefox('>=70')) {
       isBrowserSupport = true
     }
 
