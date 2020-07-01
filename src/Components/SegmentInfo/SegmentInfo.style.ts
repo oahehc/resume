@@ -26,3 +26,8 @@ export const Set = styled.div`
     margin-right: 10px;
   }
 `
+
+export const Ulist = styled.ul`
+  margin: 0;
+  padding-left: 25px;
+`

@@ -17,7 +17,7 @@ const PrintEduction: React.SFC = () => {
   }
 
   return (
-    <SegmentWrapper>
+    <SegmentWrapper shouldPageBreak>
       <Title>{getContent('anchorEdu')}</Title>
       <ExpDiv>
         <ExpTitle>

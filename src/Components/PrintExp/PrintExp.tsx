@@ -21,7 +21,7 @@ const PrintExp: React.SFC = () => {
   }
 
   return (
-    <SegmentWrapper>
+    <SegmentWrapper shouldPageBreak>
       <Title>{getContent('anchorWork')}</Title>
       <ExpDiv>
         <ExpTitle>
@@ -111,6 +111,13 @@ const PrintExp: React.SFC = () => {
           )}
         </ExpDetail>
       </ExpDiv>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <ExpDiv>
         <ExpTitle>
           <span>{getContent('flow')}</span>

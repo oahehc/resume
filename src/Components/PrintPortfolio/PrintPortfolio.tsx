@@ -30,7 +30,7 @@ const projectList = [
 const PrintPortfolio: React.SFC = () => {
   const { getContent } = useContext(I18nContext)
   return (
-    <SegmentWrapper>
+    <SegmentWrapper shouldPageBreak>
       <Title>{getContent('anchorPortfolio')}</Title>
       {projectList.map(project => (
         <ExpDiv key={project}>

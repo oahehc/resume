@@ -14,7 +14,13 @@ export const Page = styled.div`
 
 export const PageBreak = styled.div`
   page-break-before: always;
+  height: 1px;
+  width: 1px;
 `
+
+type SegmentProps = {
+  shouldPageBreak?: boolean
+}
 
 export const SegmentWrapper = styled.div`
   display: flex;
@@ -25,7 +31,8 @@ export const SegmentWrapper = styled.div`
   box-sizing: border-box;
   padding: 20px;
   margin: 20px auto;
-  page-break-before: always;
+  ${({ shouldPageBreak }: SegmentProps) =>
+    `page-break-before: ${shouldPageBreak ? 'always' : 'avoid'}`};
 `
 
 export const Title = styled.h2`
@@ -52,7 +59,6 @@ export const Set = styled.div`
   margin-left: 38px;
   font-size: 16px;
 `
-
 export const ExpDiv = styled.div`
   display: flex;
   flex-direction: column;

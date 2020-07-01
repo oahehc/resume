@@ -13,7 +13,7 @@ import Label from '../../Elements/Label'
 import { Space, DevIcon } from '../../Elements'
 import { I18nContext } from '../../Context/Context'
 import { infoColor1 } from '../../styles/vars'
-import { List, Set } from './SegmentInfo.style'
+import { List, Set, Ulist } from './SegmentInfo.style'
 import { infoColor2 } from '../../styles/vars'
 
 const skills = [
@@ -91,6 +91,13 @@ const SegmentInfo: React.SFC = () => {
           // RoR, Phonegap, Unity, Java, Meteor, Ionic
         }
       </Set>
+      <br />
+      <Title>{getContent('anchorSummary')}</Title>
+      <Ulist>
+        {getContent('summaryItems').map((item: string, index: number) => (
+          <li key={index}>{item}</li>
+        ))}
+      </Ulist>
     </SegmentWrapper>
   )
 }
