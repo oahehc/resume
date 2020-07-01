@@ -4,7 +4,7 @@
     "zh": "履歷"
   },
   "name": {
-    "en": "Andrew",
+    "en": "Andrew Chang",
     "zh": "張哲豪"
   },
   "lastUpdate": {
@@ -13,7 +13,7 @@
   },
   "browserSupportNotice": {
     "en": "recommend to use latest version of Chrome or Firefox for better experience",
-    "zh": "此專案將嘗試各種新的技術，因此建議您改用最新版本的 Chrome 或 Firefox 享有更好的瀏覽體驗"
+    "zh": "建議您改用最新版本的 Chrome 或 Firefox 享有更好的瀏覽體驗"
   },
   "close": {
     "en": "CLOSE",
@@ -22,6 +22,10 @@
   "anchorInfo": {
     "en": "Information",
     "zh": "個人資料"
+  },
+  "anchorSummary": {
+    "en": "Summary",
+    "zh": "總覽"
   },
   "anchorExp": {
     "en": "Experience",
@@ -98,6 +102,34 @@
   "skillLangContent": {
     "en": "Mandarian, English(Toeic 830/990), Taiwanese",
     "zh": "國語, 台語, 英文(多益 830)"
+  },
+  "summaryItems": {
+    "en": [
+      "+6 years of experience as a project manager. (became a team leader within 2 years)",
+      "+4 years of experience as a frontend developer. (became a team leader within 2 years)",
+      "Deep understanding of modern web technologies, especially about React.js & Vue.js.",
+      "Familiar with the testing tools & frameworks. (eslint, Jest, Enzyme, Typescript, NightWatch, Cypress)",
+      "Highly recognized by the manager: 1st rank in annual assessment both as a PM or developer",
+      "Passionate about programming: spend +20 hours every week to learn new technologies",
+      "Responsible: never blame others when the result isn't as we expected. The only thing I care about is how much I can do to make sure we can reach our goal",
+      "Fast learner: able to learn the techniques in short time and start contributing to the company",
+      "Great leadership: devote to create a great working environment for my team, be transparent and make sure all members are able to keep improving their skills",
+      "Team player: love to co-work with different people, willing to share my ideas and also love to listen to others' opinions",
+      "Love sharing: share everything I learn with my team and write articles to share with the community constantly"
+    ],
+    "zh": [
+      "+6 年專案經理工作經驗 (2年內晉升為課級主管)",
+      "+4 年前端工程師開發經驗 (2年內晉升為前端團隊主管)",
+      "熟悉網頁開發技術，擅長 React.js 與 Vue.js",
+      "熟悉測試工具與框架，包含 eslint, Jest, Enzyme, Typescript, NightWatch, Cypress",
+      "於專案經理與前端工程師期間，均曾獲得年度績效考核全部門第一的肯定",
+      "對程式設計具備高度熱忱，每週投入 +20 小時於新技術學習",
+      "有責任感，不將失敗歸咎他人，專注在自己能如何讓團隊達成目標",
+      "能在短時間內熟悉新技術/框架，為團隊與公司提供貢獻",
+      "具備領導能力，致力於為團隊建立良好的工作環境與氛圍，保持資訊透明，確保團隊成員都能持續學習進步",
+      "具備團隊精神，願意分享個人想法，也樂於聆聽其他成員的不同看法",
+      "樂於分享，持續與團隊成員分享新知，並持續撰寫文章分享於網路社群"
+    ]
   },
   "expTitle": {
     "en": "Work Experience & Education",
