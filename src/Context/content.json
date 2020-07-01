@@ -114,7 +114,7 @@
       "Responsible: never blame others when the result isn't as we expected. The only thing I care about is how much I can do to make sure we can reach our goal",
       "Fast learner: able to learn the techniques in short time and start contributing to the company",
       "Great leadership: devote to create a great working environment for my team, be transparent and make sure all members are able to keep improving their skills",
-      "Team player: love to co-work with different people, willing to share my ideas and also love to listen to others' opinions",
+      "Team player: love to co-work with different people, willing to share my ideas and also open-minded to listen to others' opinions",
       "Love sharing: share everything I learn with my team and write articles to share with the community constantly"
     ],
     "zh": [
@@ -122,13 +122,13 @@
       "+4 年前端工程師開發經驗 (2年內晉升為前端團隊主管)",
       "熟悉網頁開發技術，擅長 React.js 與 Vue.js",
       "熟悉測試工具與框架，包含 eslint, Jest, Enzyme, Typescript, NightWatch, Cypress",
-      "於專案經理與前端工程師期間，均曾獲得年度績效考核全部門第一的肯定",
-      "對程式設計具備高度熱忱，每週投入 +20 小時於新技術學習",
+      "任職專案經理與前端工程師期間，均獲得全部門年度績效考核第一的肯定",
+      "對程式設計具備高度熱忱，每週投入 +20 小時於學習新知與精進技術",
       "有責任感，不將失敗歸咎他人，專注在自己能如何讓團隊達成目標",
       "能在短時間內熟悉新技術/框架，為團隊與公司提供貢獻",
       "具備領導能力，致力於為團隊建立良好的工作環境與氛圍，保持資訊透明，確保團隊成員都能持續學習進步",
       "具備團隊精神，願意分享個人想法，也樂於聆聽其他成員的不同看法",
-      "樂於分享，持續與團隊成員分享新知，並持續撰寫文章分享於網路社群"
+      "樂於分享，持續與團隊成員分享新知，並定期撰寫技術文章分享於網路社群"
     ]
   },
   "expTitle": {
@@ -174,23 +174,23 @@
       "stock, forex, index data integration and virtualization: HightChart, TradingView, custom SVG chart",
       "Social media platform for investor",
       "develop the subscription system and integrate 3rd party payment service",
-      "website refactoring, from .NET to React.js with SSR"
+      "refactoring old website from .NET to React.js (SSR), increase the maintainability"
     ],
     "zh": [
       "管理前端超過 10 個專案開發進度、推版與解決線上問題",
-      "使用 puppeteer 開發自動化工具，提高推版作業效率",
       "負責前端團隊 (5人) 招募與培訓，完善線上文件提高新人學習效率",
       "落實 PR review 並建立良好的討論風氣，確保團隊能相互學習持續成長",
       "開發流程改善，與 devOps 合作規劃與測試 GitLab CI/CD 流程",
+      "使用 puppeteer 開發自動化工具，提高推版作業效率",
       "成本改善，導入縮圖機制與 code splitting，大幅降低 CDN 成本",
       "新聞頻道導入 AMP，明顯提升網站 SEO 並改善 mobile 使用體驗",
-      "兩個月內完成線上課程平台開發並上線",
+      "開發投資社群平台",
       "使用 AWS lambda, puppeteer 開發網站自動截圖工具，動態產生 og:image 優化社群分享功能",
       "國內外股市、外匯、指數等投資資訊源串接與視覺化呈現：HightChart, TradingView, 客制 SVG chart",
-      "開發投資社群平台",
+      "兩個月內完成線上課程平台開發上線",
       "開發會員訂閱功能與金流串接",
       "開發區塊鏈身份識別應用",
-      "將舊版 .NET 網站逐步轉為 React (SSR) 架構"
+      "逐步將舊版 .NET 網站轉為 React (SSR) 架構，降低維護成本"
     ]
   },
   "pebblar": {
