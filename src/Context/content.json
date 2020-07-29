@@ -52,7 +52,7 @@
     "zh": "前端"
   },
   "skillFrontEndContent": {
-    "all": "Next.js / React.js / Vue.js / Typescript / AMP, styled-component / style-jsx / SASS / CSS module"
+    "all": "Next.js / React.js / Vue.js / Typescript / AMP, styled-component / style-jsx / SASS"
   },
   "skillTest": {
     "en": "Test",
@@ -105,12 +105,12 @@
   },
   "summaryItems": {
     "en": [
-      "+6 years of experience as a project manager. (became a team leader within 2 years)",
       "+4 years of experience as a frontend developer. (became a team leader within 2 years)",
-      "Deep understanding of modern web technologies, especially about React.js & Vue.js.",
+      "+6 years of experience as a project manager. (became a team leader within 2 years)",
+      "Deep understanding of modern web technologies, especially in React.js & Vue.js.",
       "Familiar with the testing tools & frameworks. (eslint, Jest, Enzyme, Typescript, NightWatch, Cypress)",
       "Proven engineer & PM: 1st rank in annual assessment both as a PM or a developer",
-      "Passionate about programming: spend +20 hours every week to learn new technologies",
+      "Passionate about programming: spend +20 hours every week to learn new technologies relentlessly",
       "Fierce sense of ownership: never blame others when the result isn't as we expected. (The only thing I care about is how much I can do to make sure we can reach our goal)",
       "Fast learner: able to learn the techniques in a short time and start contributing to the company",
       "Great leadership: devote to create a great working environment for my team, be transparent and make sure all members are able to keep improving their skills",
@@ -173,6 +173,7 @@
       "create auto screenshot tool by using AWS lambda and puppeteer, dynamically generate og:image to optimize the social media sharing feature",
       "stock, forex, index data integration and virtualization: HightChart, TradingView, custom SVG chart",
       "Social media platform for investor",
+      "Using webview to implement register, login, and checkout process in native app",
       "develop the subscription system and integrate 3rd party payment service",
       "refactoring old website from .NET to React.js (SSR), increase the maintainability"
     ],
@@ -188,6 +189,7 @@
       "使用 AWS lambda, puppeteer 開發網站自動截圖工具，動態產生 og:image 優化社群分享功能",
       "國內外股市、外匯、指數等投資資訊源串接與視覺化呈現：HightChart, TradingView, 客制 SVG chart",
       "兩個月內完成線上課程平台開發上線",
+      "使用 webview 與 Native App 串接登入與會員訂購流程",
       "開發會員訂閱功能與金流串接",
       "開發區塊鏈身份識別應用",
       "逐步將舊版 .NET 網站轉為 React (SSR) 架構，降低維護成本"
@@ -246,11 +248,13 @@
   "deepbluJobContent1": {
     "en": [
       "Social Platform: finish instant message and itinerary booking system within 2 months",
-      "Online Shop: co-work with designer, redesign the website for our new watch"
+      "Online Shop: co-work with designer, redesign the website for our new watch",
+      "implement i18n (internationalisation)"
     ],
     "zh": [
       "潛水社交平台：兩個月內完成即時聊天系統與行程訂購功能",
-      "潛水錶線上購物網站：與設計合作完成新錶上市的網站改版"
+      "潛水錶線上購物網站：與設計合作完成新錶上市的網站改版",
+      "實作多語系功能"
     ]
   },
   "deepbluJobStack2": {

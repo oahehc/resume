@@ -116,8 +116,6 @@ const PrintExp: React.SFC = () => {
       <br />
       <br />
       <br />
-      <br />
-      <br />
       <ExpDiv>
         <ExpTitle>
           <span>{getContent('flow')}</span>
