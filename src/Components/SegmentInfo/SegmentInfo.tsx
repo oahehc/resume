@@ -16,11 +16,11 @@ import { infoColor1 } from '../../styles/vars'
 import { List, Set, Ulist } from './SegmentInfo.style'
 import { infoColor2 } from '../../styles/vars'
 
-const skills = [
+export const skills = [
   'FrontEnd',
   'Test',
   'Tool',
-  'BackEnd',
+  'Infra',
   'CICD',
   'Data',
   'Others',

@@ -52,48 +52,47 @@
     "zh": "前端"
   },
   "skillFrontEndContent": {
-    "all": "Next.js / React.js / Vue.js / Typescript / AMP, styled-component / style-jsx / SASS"
+    "all": "Next, React, Nuxt, Vue, Svelte, Typescript, AMP, Tailwind, Styled-component, Style-jsx, SASS"
   },
   "skillTest": {
     "en": "Test",
     "zh": "測試"
   },
   "skillTestContent": {
-    "all": "Jest / Enzyme, Cypress / testCafe / NightWatch, eslint"
-  },
-  "skillBackEnd": {
-    "en": "Back-End",
-    "zh": "後端"
-  },
-  "skillBackEndContent": {
-    "all": "Node.js, AWS, firebase"
+    "all": "Jest, test-library, Enzyme, Cypress, testCafe, NightWatch, eslint"
   },
   "skillTool": {
     "en": "Tools",
     "zh": "開發工具"
   },
   "skillToolContent": {
-    "all": "Git, Webpack, Yarn / NPM, Gulp, VSCode, Slack, Jira, Confluence, Sentry"
+    "all": "Git, Webpack, Vite, Rollup, Parcel, Yarn, NPM"
   },
   "skillCICD": {
     "all": "CI/CD"
   },
   "skillCICDContent": {
-    "all": "Travis CI, Codecov, Heroku, Netlify, Vercel (Zeit now), GitHub action"
+    "all": "CircelCI, GitHub Action, Travis CI, Codecov"
+  },
+  "skillInfra": {
+    "all": "Infra"
+  },
+  "skillInfraContent": {
+    "all": "AWS, GCP, Firebase, Heroku, Netlify, Vercel"
   },
   "skillData": {
-    "en": "Data-analysis",
+    "en": "Data Analysis",
     "zh": "資料分析"
   },
   "skillDataContent": {
-    "all": "TensorFlow, Python, GTM, GA, Piwik"
+    "all": "TensorFlow, Python, GTM, GA, Sentry, Datadog, Piwik"
   },
   "skillOthers": {
     "en": "Others",
     "zh": "其他"
   },
   "skillOthersContent": {
-    "all": "Google map API, Youtube API, DFP, LineBot"
+    "all": "Google API, DFP, LineBot, ..."
   },
   "skillLang": {
     "en": "Language",
@@ -134,6 +133,33 @@
   "expTitle": {
     "en": "Work Experience & Education",
     "zh": "學經歷"
+  },
+  "sn": {
+    "all": "SmartNews"
+  },
+  "snLink": {
+    "all": "https://www.smartnews.com/ja/"
+  },
+  "snJobTitle": {
+    "all": "Tech Lead"
+  },
+  "snJobStack": {
+    "all": [
+      "Next.js",
+      "Svelte",
+      "Typescript",
+      "Tailwind",
+      "Jest",
+      "test-library",
+      "AWS",
+      "Datadog"
+    ]
+  },
+  "snJobContent": {
+    "en": [
+      "Build web applications: US election 2020, local coupon map, COVID-19 visualization, Vaccine tracker, ..."
+    ],
+    "zh": ["開發 折價券地圖、COVID-19資料視覺化、疫苗接種通知等 相關功能"]
   },
   "anue": {
     "en": "Anue",

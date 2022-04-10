@@ -27,10 +27,40 @@ const SegmentExp: React.SFC = () => {
     <SegmentWrapper id="exp" topBorderColor={expColor1}>
       <Title>{getContent('expTitle')}</Title>
       <GridContainer>
-        <TimeLine isStart />
+        <TimeLine isStart isSingle />
+        <GridItemLeft>
+          <div>
+            {generateDateString('2020/10', 'now')}
+            <a
+              href={getContent('snLink')}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {getContent('sn')}
+            </a>
+          </div>
+          <div>{getContent('snJobTitle')}</div>
+          <div>
+            <div>
+              {getContent('snJobStack').map((stack: string, index: number) => (
+                <Label key={index} bgColor={expColor3}>
+                  {stack}
+                </Label>
+              ))}
+              {getContent('snJobContent').map(
+                (detail: string, index: number) => (
+                  <div key={index}>{detail}</div>
+                ),
+              )}
+            </div>
+          </div>
+        </GridItemLeft>
+      </GridContainer>
+      <GridContainer>
+        <TimeLine />
         <GridItemRight>
           <div>
-            {generateDateString('2018/8', 'now')}
+            {generateDateString('2018/8', '2020/9')}
             <a
               href={getContent('anueLink')}
               target="_blank"
@@ -88,7 +118,7 @@ const SegmentExp: React.SFC = () => {
         </GridItemLeft>
       </GridContainer>
       <GridContainer>
-        <TimeLine />
+        <TimeLine isSingle />
         <GridItemRight>
           <div>
             {generateDateString('2017/11', '2018/3')}
@@ -132,13 +162,6 @@ const SegmentExp: React.SFC = () => {
             </div>
           </div>
         </GridItemRight>
-        <GridItemLeft borderColor={eduColor2} bgColor={lightRed}>
-          <div>{generateDateString('2017/4', '2017/7')}</div>
-          <div>{getContent('uxCourse')}</div>
-          <div>
-            <div>{getContent('uxCourseContent')}</div>
-          </div>
-        </GridItemLeft>
       </GridContainer>
       <GridContainer>
         <TimeLine />

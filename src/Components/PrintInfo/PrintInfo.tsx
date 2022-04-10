@@ -12,17 +12,7 @@ import { DevIcon } from '../../Elements'
 import { I18nContext } from '../../Context/Context'
 import Link from '../PrintLink/PrintLink'
 import { SegmentWrapper, Title, Item, Set } from '../../Elements/Print'
-
-const skills = [
-  'FrontEnd',
-  'Test',
-  'Tool',
-  'BackEnd',
-  'CICD',
-  'Data',
-  'Others',
-  'Lang',
-]
+import { skills } from '../SegmentInfo/SegmentInfo'
 
 const PrintInfo: React.SFC = () => {
   const { lang, getContent } = useContext(I18nContext)
