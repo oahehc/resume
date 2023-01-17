@@ -4,7 +4,6 @@ import {
   LinkedinOption,
   MailOption,
   Code,
-  Globe,
   Medium,
   StackOverflow,
 } from 'grommet-icons'
@@ -12,7 +11,8 @@ import { DevIcon } from '../../Elements'
 import { I18nContext } from '../../Context/Context'
 import Link from '../PrintLink/PrintLink'
 import { SegmentWrapper, Title, Item, Set } from '../../Elements/Print'
-import { skills } from '../SegmentInfo/SegmentInfo'
+
+const skills = ['FrontEnd', 'Test', 'Tool', 'Service', 'Lang']
 
 const PrintInfo: React.SFC = () => {
   const { lang, getContent } = useContext(I18nContext)
@@ -34,12 +34,6 @@ const PrintInfo: React.SFC = () => {
         <Github />
         <span>
           <Link src="https://github.com/oahehc" />
-        </span>
-      </Item>
-      <Item>
-        <Globe />
-        <span>
-          <Link src="https://github.com/oahehc/resume" />
         </span>
       </Item>
       <Item>
@@ -73,7 +67,8 @@ const PrintInfo: React.SFC = () => {
       <Set>
         {skills.map((skill: string, index: number) => (
           <div key={index}>
-            {getContent(`skill${skill}`)}: {getContent(`skill${skill}Content`)}
+            <b>{getContent(`skill${skill}`)}</b>:{' '}
+            {getContent(`skill${skill}Content`)}
           </div>
         ))}
       </Set>

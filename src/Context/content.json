@@ -52,73 +52,51 @@
     "zh": "前端"
   },
   "skillFrontEndContent": {
-    "all": "Next, React, Nuxt, Vue, Svelte, Typescript, AMP, Tailwind, Styled-component, Style-jsx, SASS"
+    "all": "Typescript, React/Next, Vue/Nuxt, Svelte/SvelteKit, AMP, Tailwind/Styled-component/SASS, ..."
   },
   "skillTest": {
     "en": "Test",
     "zh": "測試"
   },
   "skillTestContent": {
-    "all": "Jest, test-library, Enzyme, Cypress, testCafe, NightWatch, eslint"
+    "all": "Jest, Testing-library, Vitest, PlayWright, Cypress, NightWatch, Enzyme, eslint, ..."
   },
   "skillTool": {
     "en": "Tools",
     "zh": "開發工具"
   },
   "skillToolContent": {
-    "all": "Git, Webpack, Vite, Rollup, Parcel, Yarn, NPM"
+    "all": "TurboRepo/Lerna, Webpack/Vite/Rollup/Parcel, Yarn/NPM/PNPM, ..."
   },
-  "skillCICD": {
-    "all": "CI/CD"
+  "skillService": {
+    "all": "Services"
   },
-  "skillCICDContent": {
-    "all": "CircelCI, GitHub Action, Travis CI, Codecov"
-  },
-  "skillInfra": {
-    "all": "Infra"
-  },
-  "skillInfraContent": {
-    "all": "AWS, GCP, Firebase, Heroku, Netlify, Vercel"
-  },
-  "skillData": {
-    "en": "Data Analysis",
-    "zh": "資料分析"
-  },
-  "skillDataContent": {
-    "all": "TensorFlow, Python, GTM, GA, Sentry, Datadog, Piwik"
-  },
-  "skillOthers": {
-    "en": "Others",
-    "zh": "其他"
-  },
-  "skillOthersContent": {
-    "all": "Google API, DFP, LineBot, ..."
+  "skillServiceContent": {
+    "all": "CircelCI/GitHub Action, AWS/GCP, Firebase, Vercel, Sentry, Datadog, LineBot, ..."
   },
   "skillLang": {
     "en": "Language",
     "zh": "語言"
   },
   "skillLangContent": {
-    "en": "Mandarian, English(Toeic 830/990), Taiwanese",
-    "zh": "國語, 台語, 英文(多益 830)"
+    "en": "Mandarian(native), English(Toeic 830/990), Japanese(N3), Taiwanese(native), ",
+    "zh": "國語, 台語, 英文(多益 830), 日文(N3)"
   },
   "summaryItems": {
     "en": [
-      "+4 years of experience as a frontend developer. (became a team leader within 2 years)",
+      "+6 years of experience as a frontend developer. (became a team leader within 2 years)",
       "+6 years of experience as a project manager. (became a team leader within 2 years)",
-      "Deep understanding of modern web technologies, especially in React.js & Vue.js.",
-      "Familiar with the testing tools & frameworks. (eslint, Jest, Enzyme, Typescript, NightWatch, Cypress)",
-      "Proven engineer & PM: 1st rank in annual assessment both as a PM or a developer",
-      "Passionate about programming: spend +20 hours every week to learn new technologies relentlessly",
-      "Fierce sense of ownership: never blame others when the result isn't as we expected. (The only thing I care about is how much I can do to make sure we can reach our goal)",
-      "Fast learner: able to learn the techniques in a short time and start contributing to the company",
-      "Great leadership: devote to create a great working environment for my team, be transparent and make sure all members are able to keep improving their skills",
-      "Team player: love to co-work with different people, willing to share my ideas and open-minded to different opinions",
-      "Love sharing: share everything I learn with my team and write articles to share with the community constantly"
+      "Proven engineer & PM: ranked first in annual assessments both as a PM and a developer",
+      "Has a deep understanding of modern web technologies, especially in React.js & Vue.js",
+      "Familiar with the testing tools & frameworks. (eslint, Jest, testing-library, vitest, Playwright, Enzyme, Cypress)",
+      "<b>Take responsibility</b> for the outcome and never blame others when results fall short. My focus is on what I can do to ensure we reach our goals",
+      "<b>Fast learner</b>, able to quickly acquire the necessary skills and make meaningful contributions to the company",
+      "Has good <b>leadership</b> skills, who is dedicated to creating a positive work environment for their team, is transparent, and ensures all team members have opportunities to improve their skills",
+      "<b>Team player</b>, enjoys collaborating with others, and open-minded to different opinions"
     ],
     "zh": [
+      "+6 年前端工程師開發經驗 (2年內晉升為前端團隊主管)",
       "+6 年專案經理工作經驗 (2年內晉升為課級主管)",
-      "+4 年前端工程師開發經驗 (2年內晉升為前端團隊主管)",
       "熟悉網頁開發技術，擅長 React.js 與 Vue.js",
       "熟悉測試工具與框架，包含 eslint, Jest, Enzyme, Typescript, NightWatch, Cypress",
       "任職專案經理與前端工程師期間，均獲得全部門年度績效考核第一的肯定",
@@ -145,12 +123,16 @@
   },
   "snJobStack": {
     "all": [
-      "Next.js",
-      "Svelte",
+      "Next.js/React",
+      "Svelte/SvelteKit",
       "Typescript",
       "Tailwind",
       "Jest",
-      "test-library",
+      "testing-library",
+      "vitest",
+      "playwright",
+      "vite",
+      "turborepo",
       "AWS",
       "Datadog"
     ]
@@ -188,20 +170,21 @@
   },
   "anueJobContent": {
     "en": [
-      "manage over 10 projects, in charge of the new version release and deal with the production issues",
-      "using puppeteer to create automatic tools, simplify the deploy process",
-      "recruit and mentor team members (5 members)",
-      "implement PR review to enhance the code quality",
-      "co-work with devOps to implement the GitLab CI/CD process",
-      "implement image compression and code splitting to reduce the CDN cost",
-      "develop AMP news channel, enhance SEO and mobile UX",
-      "finish online course platform within 2 months",
-      "create auto screenshot tool by using AWS lambda and puppeteer, dynamically generate og:image to optimize the social media sharing feature",
-      "stock, forex, index data integration and virtualization: HightChart, TradingView, custom SVG chart",
+      "Manage over 10 projects, in charge of the new version release and deal with the production issues",
+      "Use puppeteer to create automatic tools, simplify the deploy process",
+      "Recruit and mentor team members (5 members)",
+      "Implement PR review to enhance the code quality",
+      "Co-work with devOps to implement the GitLab CI/CD process",
+      "Implement image compression and code splitting to reduce the CDN cost",
+      "Develop AMP news channel, enhance SEO and mobile UX",
+      "Finish online course platform within 2 months",
+      "Create auto screenshot tool by using AWS lambda and puppeteer, dynamically generate og:image to optimize the social media sharing feature",
+      "Stock, forex, index data integration and virtualization: HightChart, TradingView, custom SVG chart",
       "Social media platform for investor",
       "Using webview to implement register, login, and checkout process in native app",
-      "develop the subscription system and integrate 3rd party payment service",
-      "refactoring old website from .NET to React.js (SSR), increase the maintainability"
+      "Develop the subscription system and integrate 3rd party payment service",
+      "Refactor the old website from .NET to Next.js and improve the maintainability",
+      "Apply webpack code splitting to optimize the CDN cache and reduce the infra cost"
     ],
     "zh": [
       "管理前端超過 10 個專案開發進度、推版與解決線上問題",

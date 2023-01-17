@@ -14,7 +14,13 @@ const PrintSummary: React.SFC = () => {
       <Title>{getContent('anchorSummary')}</Title>
       <ExpDetail>
         {getContent('summaryItems').map((item: string, index: number) => (
-          <li key={index}>{item}</li>
+          <li key={index}>
+            <span
+              dangerouslySetInnerHTML={{
+                __html: item,
+              }}
+            />
+          </li>
         ))}
       </ExpDetail>
       <LayoutSpace height="12px" />

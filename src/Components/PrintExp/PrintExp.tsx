@@ -25,9 +25,31 @@ const PrintExp: React.SFC = () => {
       <Title>{getContent('anchorWork')}</Title>
       <ExpDiv>
         <ExpTitle>
+          <span>{getContent('sn')}</span>
+          <span>{getContent('snJobTitle')}</span>
+          <span>{generateDateString('2020/10', 'now')}</span>
+        </ExpTitle>
+        <div>
+          <Link src={getContent('snLink')} />
+        </div>
+        <ExpSkill>
+          {getContent('snJobStack').map((stack: string, index: number) => (
+            <Label key={index} bgColor={grey5}>
+              {stack}
+            </Label>
+          ))}
+        </ExpSkill>
+        <ExpDetail>
+          {getContent('snJobContent').map((detail: string, index: number) => (
+            <li key={index}>{detail}</li>
+          ))}
+        </ExpDetail>
+      </ExpDiv>
+      <ExpDiv>
+        <ExpTitle>
           <span>{getContent('anue')}</span>
           <span>{getContent('anueJobTitle')}</span>
-          <span>{generateDateString('2018/8', 'now')}</span>
+          <span>{generateDateString('2018/8', '2020/9')}</span>
         </ExpTitle>
         <div>
           <Link src={getContent('anueLink')} />
