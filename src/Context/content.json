@@ -66,7 +66,7 @@
     "zh": "開發工具"
   },
   "skillToolContent": {
-    "all": "TurboRepo/Lerna, Webpack/Vite/Rollup/Parcel, Yarn/NPM/PNPM, ..."
+    "all": "TurboRepo/Lerna, Webpack/Vite/Rollup/Parcel, Yarn/NPM/PNPM, storybook, ..."
   },
   "skillService": {
     "all": "Services"
@@ -86,13 +86,13 @@
     "en": [
       "+6 years of experience as a frontend developer. (became a team leader within 2 years)",
       "+6 years of experience as a project manager. (became a team leader within 2 years)",
-      "Proven engineer & PM: ranked first in annual assessments both as a PM and a developer",
-      "Has a deep understanding of modern web technologies, especially in React.js & Vue.js",
-      "Familiar with the testing tools & frameworks. (eslint, Jest, testing-library, vitest, Playwright, Enzyme, Cypress)",
-      "<b>Take responsibility</b> for the outcome and never blame others when results fall short. My focus is on what I can do to ensure we reach our goals",
-      "<b>Fast learner</b>, able to quickly acquire the necessary skills and make meaningful contributions to the company",
-      "Has good <b>leadership</b> skills, who is dedicated to creating a positive work environment for their team, is transparent, and ensures all team members have opportunities to improve their skills",
-      "<b>Team player</b>, enjoys collaborating with others, and open-minded to different opinions"
+      "Proven engineer & PM: ranked first in annual assessments both as a PM and a developer.",
+      "Has a deep understanding of modern web technologies, especially in React.js & Vue.js.",
+      "Familiar with the testing tools & frameworks. (eslint, Jest, testing-library, vitest, Playwright, Enzyme, Cypress).",
+      "<b>Take responsibility</b> for the outcome and never blame others when results fall short. My focus is on what I can do to ensure we reach our goals.",
+      "<b>Fast learner</b>, able to quickly acquire the necessary skills and make meaningful contributions to the company.",
+      "Has good <b>leadership</b> skills, who is dedicated to creating a positive work environment for their team, is transparent, and ensures all team members have opportunities to improve their skills.",
+      "<b>Team player</b>, enjoys collaborating with others, and open-minded to different opinions."
     ],
     "zh": [
       "+6 年前端工程師開發經驗 (2年內晉升為前端團隊主管)",
@@ -123,7 +123,7 @@
   },
   "snJobStack": {
     "all": [
-      "Next.js/React",
+      "React/Next.js",
       "Svelte/SvelteKit",
       "Typescript",
       "Tailwind",
@@ -139,7 +139,15 @@
   },
   "snJobContent": {
     "en": [
-      "Build web applications: US election 2020, local coupon map, COVID-19 visualization, Vaccine tracker, ..."
+      "Built the web applications such as US election 2020, local coupon map, COVID-19 visualization, COVID-19 Vaccine tracker, Japan weather forecast page, SmartNews feature instruction page, Ads management console, etc.",
+      "Implemented vaccine alarm/map project within one week, reached 1M unique users in first week and 5M users in 3 months.",
+      "Migrated a few projects from Javascript to Typescript.",
+      "Worked as a tech lead in a few projects, responsible for tasks such as reviewing specifications, designing the architecture, and managing the schedule.",
+      "Improved the CI/CD workflow in order to make it easier for multiple teams to contribute to the project.",
+      "Built an internal tool that makes it easier to generate deeplinks.",
+      "Improved the code coverage rate.",
+      "Hosted a few internal sharing sessions and created multiple documents for knowledge sharing.",
+      "Added code generation script to a few projects, which made it easier to create new features."
     ],
     "zh": ["開發 折價券地圖、COVID-19資料視覺化、疫苗接種通知等 相關功能"]
   },
