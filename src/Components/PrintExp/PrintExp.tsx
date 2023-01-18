@@ -180,7 +180,7 @@ const PrintExp: React.SFC = () => {
         <div>
           <Link src={getContent('asusLink')} />
         </div>
-        <div>▶ {getContent('asusJobItem1')}</div>
+        <div>{getContent('asusJobItem1')}</div>
         <ExpDetail>
           {getContent('asusJobContent1').map(
             (detail: string, index: number) => (
@@ -188,7 +188,7 @@ const PrintExp: React.SFC = () => {
             ),
           )}
         </ExpDetail>
-        <div>▶ {getContent('asusJobItem2')}</div>
+        <div>{getContent('asusJobItem2')}</div>
         <ExpDetail>
           {getContent('asusJobContent2').map(
             (detail: string, index: number) => (
@@ -196,7 +196,7 @@ const PrintExp: React.SFC = () => {
             ),
           )}
         </ExpDetail>
-        <div>▶ {getContent('asusJobItem3')}</div>
+        <div>{getContent('asusJobItem3')}</div>
         <ExpDetail>
           {getContent('asusJobContent3').map(
             (detail: string, index: number) => (

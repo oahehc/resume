@@ -54,7 +54,7 @@ const PrintPortfolio: React.SFC = () => {
               </span>
             </Item>
           ))}
-          <div>▶ {getContent(`portfolio${project}Content`)}</div>
+          <div>・{getContent(`portfolio${project}Content`)}</div>
           <LayoutSpace height="12px" />
         </ExpDiv>
       ))}
