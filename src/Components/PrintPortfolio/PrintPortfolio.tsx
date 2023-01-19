@@ -15,12 +15,12 @@ import IconLink from '../../Elements/IconLink'
 import Label from '../../Elements/Label'
 
 const projectList = [
+  'JpBlog',
+  'IgGenerator',
+  'ReactVueComparison',
   'Shorten',
   'MusicBook',
-  'SpeakTrainer',
-  'Onboard',
   'CalendarLineBot',
-  'RestaurantLineBot',
   'Lottery',
   'Serverless',
   'DL',
@@ -46,6 +46,7 @@ const PrintPortfolio: React.SFC = () => {
               ),
             )}
           </ExpSkill>
+          <div>{getContent(`portfolio${project}Content`)}</div>
           {getContent(`portfolio${project}Link`).map(({ type, link }: any) => (
             <Item key={type}>
               <IconLink type={type} link={link} />
@@ -54,7 +55,6 @@ const PrintPortfolio: React.SFC = () => {
               </span>
             </Item>
           ))}
-          <div>・{getContent(`portfolio${project}Content`)}</div>
           <LayoutSpace height="12px" />
         </ExpDiv>
       ))}

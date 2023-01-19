@@ -9,9 +9,9 @@ const Label = styled.label`
   background-color: ${(props: LabelProps) => props.bgColor};
   font-size: 12px;
   font-weight: 600;
-  padding: 2px 5px;
+  padding: 2px 8px;
   margin: 2px;
-  border-radius: 10px;
+  border-radius: 15px;
   display: inline-block;
 `
 
