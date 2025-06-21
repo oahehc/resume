@@ -41,3 +41,11 @@ Adjust the `content.json` file
    ```
 
 2. add the project in `PrintPortfolio.tsx`
+
+## deploy
+
+Deploy to gh-page
+
+```
+npm run deploy
+```
