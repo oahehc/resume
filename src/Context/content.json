@@ -72,7 +72,13 @@
     "all": "Services"
   },
   "skillServiceContent": {
-    "all": "CircelCI/GitHub Action, AWS/GCP, Firebase, Vercel, Sentry, Datadog, LineBot, ..."
+    "all": "CircelCI/GitHub Action, AWS/GCP, Firebase, Vercel, Sentry, Datadog, LineBot, Stripe, ..."
+  },
+  "skillWeb3": {
+    "all": "Web3"
+  },
+  "skillWeb3Content": {
+    "all": "Solidity, Hardhat, Viem, Wagmi"
   },
   "skillLang": {
     "en": "Language",
@@ -84,18 +90,19 @@
   },
   "summaryItems": {
     "en": [
-      "+6 years of experience as a frontend developer. (became a team leader within 2 years)",
-      "+6 years of experience as a project manager. (became a team leader within 2 years)",
-      "Proven engineer & PM. (ranked first in annual assessments both as a PM and a developer)",
-      "Has a deep understanding of modern web technologies.",
-      "Familiar with the testing tools & frameworks. (Jest, Testing-Library, Vitest, Playwright, Cypress, ...).",
-      "<b>Take responsibility</b> for the outcome and never blame others when results fall short. My focus is on what I can do to ensure we reach our goals.",
-      "<b>Fast learner</b>, able to quickly acquire the necessary skills and make meaningful contributions to the company.",
-      "Has good <b>leadership</b> skills, who is dedicated to creating a positive work environment for their team, is transparent, and ensures all team members have opportunities to improve their skills.",
-      "<b>Team player</b>, enjoys collaborating with others, and open-minded to different opinions."
+      "Over 9 years of experience as a frontend engineer and became a team leader within 2 years.",
+      "Over 6 years of experience as a project manager and became a team leader within 2 years.",
+      "Ranked first in annual performance assessments as both an engineer and a project manager.",
+      "Strong understanding of modern web technologies, including react, vue, svelte and related server side rendering frameworks.",
+      "Experienced with testing tools and frameworks such as Jest, Testing Library, Vitest, Playwright, and Cypress.",
+      "Take responsibility for outcomes and focus on actions to reach goals without placing blame.",
+      "Learn quickly and contribute meaningfully in new environments.",
+      "Demonstrate strong leadership by fostering transparency and growth in the team.",
+      "Value teamwork and enjoy collaborating with people from diverse backgrounds.",
+      "Open-minded and receptive to different opinions."
     ],
     "zh": [
-      "+6 年前端工程師開發經驗 (2年內晉升為前端團隊主管)",
+      "+9 年前端工程師開發經驗 (2年內晉升為前端團隊主管)",
       "+6 年專案經理工作經驗 (2年內晉升為課級主管)",
       "熟悉網頁開發技術，擅長 React.js 與 Vue.js",
       "熟悉測試工具與框架，包含 eslint, Jest, Enzyme, Typescript, NightWatch, Cypress",
@@ -139,6 +146,8 @@
   },
   "snJobContent": {
     "en": [
+      "Ads platform rebuild",
+      "Stripe integration",
       "Built the web applications such as US election 2020, local coupon map, COVID-19 visualization, COVID-19 Vaccine tracker, Japan weather forecast page, SmartNews feature instruction page, Ads management console, etc.",
       "Implemented vaccine alarm/map project within one week, reached 1M unique users in first week and 5M users in 3 months.",
       "Migrated a few projects from Javascript to Typescript.",
@@ -857,8 +866,60 @@
   "portfolioAmpExampleImages": {
     "all": []
   },
-  "_temp": {
-    "en": "",
-    "zh": ""
+  "portfolioJpNews": {
+    "en": "News videos for Japanese learner",
+    "zh": "日文學習精選新聞網"
+  },
+  "portfolioJpNewsStack": {
+    "all": [
+      "Nextjs",
+      "Typescript",
+      "AntDesign",
+      "TailwindCSS",
+      "openAI API",
+      "YouTube API",
+      "GH action"
+    ]
+  },
+  "portfolioJpNewsLink": {
+    "all": [
+      {
+        "type": "preview",
+        "link": "https://news.oahehc.com/videos"
+      }
+    ]
+  },
+  "portfolioJpNewsContent": {
+    "en": "A website that helps Japanese learners by offering short news videos with English subtitles and AI-powered explanations for vocabulary and grammar.",
+    "zh": "一個專為日語學習者設計的網站，提供附有英文字幕的短篇新聞影片，並搭配 AI 解釋單字與文法。"
+  },
+  "portfolioSlotMachine": {
+    "all": "(web3) Slot Machine dApp"
+  },
+  "portfolioSlotMachineStack": {
+    "all": [
+      "Solidity",
+      "Hardhat",
+      "Viem",
+      "Wagmi",
+      "React",
+      "TypeScript",
+      "Vite",
+      "React Query",
+      "Tailwind CSS",
+      "Ant Design",
+      "Biome"
+    ]
+  },
+  "portfolioSlotMachineLink": {
+    "all": [
+      {
+        "type": "preview",
+        "link": "slot-machine-dapp.vercel.app/"
+      }
+    ]
+  },
+  "portfolioSlotMachineContent": {
+    "all": "The Slot Machine is a decentralized gambling application that operates with fully transparent rules using blockchain technology and smart contracts on the Polygon network."
   }
 }

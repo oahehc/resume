@@ -15,6 +15,8 @@ import IconLink from '../../Elements/IconLink'
 import Label from '../../Elements/Label'
 
 const projectList = [
+  'SlotMachine',
+  'JpNews',
   'JpBlog',
   'IgGenerator',
   'ReactVueComparison',
@@ -24,7 +26,7 @@ const projectList = [
   'Lottery',
   'Serverless',
   'DL',
-  'Resume',
+  // 'Resume',
 ]
 
 const PrintPortfolio: React.SFC = () => {

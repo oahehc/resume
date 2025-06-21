@@ -22,6 +22,7 @@ export const skills = [
   'Tool',
   'Infra',
   'CICD',
+  'Web3',
   'Data',
   'Others',
   'Lang',
