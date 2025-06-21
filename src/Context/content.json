@@ -894,7 +894,7 @@
     "zh": "一個專為日語學習者設計的網站，提供附有英文字幕的短篇新聞影片，並搭配 AI 解釋單字與文法。"
   },
   "portfolioSlotMachine": {
-    "all": "(web3) Slot Machine dApp"
+    "all": "[web3] Slot Machine dApp  (on testnet only)"
   },
   "portfolioSlotMachineStack": {
     "all": [
@@ -920,6 +920,6 @@
     ]
   },
   "portfolioSlotMachineContent": {
-    "all": "The Slot Machine is a decentralized gambling application that operates with fully transparent rules using blockchain technology and smart contracts on the Polygon network."
+    "all": "The Slot Machine is a decentralized gambling application that operates with fully transparent rules using blockchain technology and smart contracts on the Polygon network. (on testnet only)"
   }
 }
