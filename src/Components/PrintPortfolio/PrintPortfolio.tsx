@@ -15,10 +15,11 @@ import IconLink from '../../Elements/IconLink'
 import Label from '../../Elements/Label'
 
 const projectList = [
+  'OpenaiExtension',
   'SlotMachine',
   'JpNews',
   'JpBlog',
-  'IgGenerator',
+  // 'IgGenerator',
   'ReactVueComparison',
   'Shorten',
   'MusicBook',

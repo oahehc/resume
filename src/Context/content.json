@@ -921,5 +921,22 @@
   },
   "portfolioSlotMachineContent": {
     "all": "The Slot Machine is a decentralized gambling application that operates with fully transparent rules using blockchain technology and smart contracts on the Polygon network. (on testnet only)"
+  },
+  "portfolioOpenaiExtension": {
+    "all": "PromptSnippet"
+  },
+  "portfolioOpenaiExtensionStack": {
+    "all": ["plasmo", "react", "typescript"]
+  },
+  "portfolioOpenaiExtensionLink": {
+    "all": [
+      {
+        "type": "preview",
+        "link": "https://chromewebstore.google.com/detail/promptsnippet/dfbijgoabmaphdbhcaednilmocjmillp"
+      }
+    ]
+  },
+  "portfolioOpenaiExtensionContent": {
+    "all": "Chrome extension turns frequently used prompts into custom buttons and snippets on your ChatGPT UI."
   }
 }

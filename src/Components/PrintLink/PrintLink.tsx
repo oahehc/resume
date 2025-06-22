@@ -1,11 +1,11 @@
 import React from 'react'
 
 type LinkProps = {
-  src?: string
+  src: string
 }
 const Link: React.SFC<LinkProps> = ({ src }) => (
   <a href={src} target="_blank" rel="noreferrer">
-    {src}
+    {src.replace(/^https:\/\//, '')}
   </a>
 )
 
